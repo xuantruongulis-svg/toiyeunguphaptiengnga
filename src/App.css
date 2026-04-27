@@ -1,0 +1,20 @@
+.stats {
+  margin-top: 3rem;
+  padding: 1.5rem 3rem;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border-radius: 3rem;
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-weight: 500;
+  box-shadow: var(--glass-shadow);
+  animation: fadeInUp 1s ease 0.5s forwards;
+  opacity: 0;
+}
+
+.stats p {
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,16 @@
+export const verbs = [
+  { id: 'pisat', ru: 'писать', en: 'write', icon: '✍️', page: '211' },
+  { id: 'chitat', ru: 'читать', en: 'read', icon: '📖', page: '216' },
+  { id: 'govorit', ru: 'говорить', en: 'speak', icon: '🗣️', page: '218' },
+  { id: 'skazat', ru: 'сказать', en: 'say', icon: '💬', page: '222' },
+  { id: 'smotret', ru: 'смотреть', en: 'watch/look', icon: '📺', page: '224' },
+  { id: 'glyadet', ru: 'глядеть', en: 'gaze', icon: '👀', page: '227' },
+  { id: 'videt', ru: 'видеть', en: 'see', icon: '👁️', page: '229' },
+  { id: 'slushat', ru: 'слушать', en: 'listen', icon: '🎧', page: '230' },
+  { id: 'slyshat', ru: 'слышать', en: 'hear', icon: '👂', page: '232' },
+  { id: 'dumat', ru: 'думать', en: 'think', icon: '💡', page: '233' },
+  { id: 'rabotat', ru: 'работать', en: 'work', icon: '💼', page: '236' },
+  { id: 'delat', ru: 'делать', en: 'do', icon: '🛠️', page: '239' },
+  { id: 'gotovit', ru: 'готовить', en: 'prepare', icon: '🍳', page: '242' },
+  { id: 'zhit', ru: 'жить', en: 'live', icon: '🏠', page: '244' },
+];
