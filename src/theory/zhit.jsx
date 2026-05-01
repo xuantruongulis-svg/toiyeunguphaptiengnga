@@ -1,6 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FlashcardList from '../components/Flashcard';
+
+const zhitCards = [
+  { verb: '(вживаться — вжиться)', meaning: 'Nhập tâm, hòa mình vào' },
+  { verb: 'выживать — выжить', meaning: '1) Sống sót\n2) Đuổi khéo' },
+  { verb: 'доживать — дожить', meaning: '1) Sống đến lúc nào đó\n2) Ở hết thời hạn còn lại' },
+  { verb: 'заживать — зажить', meaning: '1) Bắt đầu cuộc sống mới\n2) Vết thương lành' },
+  { verb: 'заживаться — зажиться', meaning: 'Ở lâu hơn bình thường' },
+  { verb: '*изживать — изжить', meaning: 'Loại bỏ cái bất lợi' },
+  { verb: '*наживать — нажить', meaning: '1) Tích lũy, kiếm được\n2) Chuốc lấy điều xấu' },
+  { verb: 'наживаться — нажиться', meaning: '1) Làm giàu\n2) Ở đủ lâu' },
+  { verb: '*оживать — ожить', meaning: '1) Sống lại, hồi sinh\n2) Tràn đầy sinh lực' },
+  { verb: 'обживать — обжить', meaning: 'Biến thành nơi ở tiện nghi' },
+  { verb: 'обживаться — обжиться', meaning: 'Quen với môi trường mới' },
+  { verb: 'отживать — отжить', meaning: '1) Kết thúc cuộc đời\n2) Trở nên lỗi thời' },
+  { verb: 'переживать — пережить', meaning: '1) Sống lâu hơn ai/gì\n2) Trải qua, chịu đựng\n3) Lo lắng' },
+  { verb: 'пожить', meaning: 'Sống một thời gian ngắn' },
+  { verb: 'жить', meaning: '1) Tồn tại, có mặt\n2) Tự nuôi sống\n3) Có quan hệ tình cảm' },
+  { verb: 'житься', meaning: 'Vô nhân xưng: diễn tả cuộc sống như thế nào' },
+  { verb: '*приживать — прижить', meaning: 'Sinh con ngoài giá thú' },
+  { verb: '*приживаться — прижиться', meaning: 'Thích nghi với hoàn cảnh mới' },
+  { verb: 'прожить', meaning: '1) Sống một khoảng thời gian dài\n2) Tiêu hết tiền' },
+  { verb: 'проживать', meaning: 'Cư trú' },
+  { verb: '(*проживаться — прожиться)', meaning: 'Tiêu hết tiền, hết vốn' },
+  { verb: '*разживаться — разжиться', meaning: 'Làm giàu/kiếm được gì' },
+  { verb: 'сживать — сжить', meaning: 'Tạo điều kiện không thể ở được' },
+  { verb: 'сживаться — сжиться', meaning: 'Quen chịu đựng' },
+  { verb: 'уживаться — ужиться', meaning: 'Sống hòa thuận với ai' }
+];
 
 export default function ZhitTheory() {
+  const [viewMode, setViewMode] = useState('table');
+
   return (
     <div className="theory-wrapper">
       <div className="theory-section">
@@ -9,12 +40,21 @@ export default function ZhitTheory() {
           <span className="subtitle">Động từ phái sinh từ ЖИТЬ — sống</span>
         </div>
 
-        <div className="verb-list-box">
-          <strong>Danh sách:</strong> (вжиться), выжить, дожить, зажить, зажиться, *изжить, *нажить, нажиться, *ожить, обжить, обжиться, отжить, пережить, пожить, жить, житься, *прижить, *прижиться, прожить, *(прожиться), *разжиться, сжить, сжиться, ужиться<br/>
-          <small className="note">* = ý nghĩa mới / hiếm; () = rất hiếm</small>
+        <div className="exercise-tabs" style={{marginBottom: '1.5rem', justifyContent: 'center'}}>
+          <button className={`ex-tab ${viewMode === 'table' ? 'active' : ''}`} onClick={() => setViewMode('table')}>Dạng Bảng</button>
+          <button className={`ex-tab ${viewMode === 'flashcard' ? 'active' : ''}`} onClick={() => setViewMode('flashcard')}>Luyện Flashcard</button>
         </div>
 
-        <div className="theory-table-container">
+        {viewMode === 'flashcard' ? (
+          <FlashcardList cards={zhitCards} />
+        ) : (
+          <>
+            <div className="verb-list-box">
+              <strong>Danh sách:</strong> (вжиться), выжить, дожить, зажить, зажиться, *изжить, *нажить, нажиться, *ожить, обжить, обжиться, отжить, пережить, пожить, жить, житься, *прижить, *прижиться, прожить, *(прожиться), *разжиться, сжить, сжиться, ужиться<br/>
+              <small className="note">* = ý nghĩa mới / hiếm; () = rất hiếm</small>
+            </div>
+
+            <div className="theory-table-container">
           <table className="theory-table">
             <thead>
               <tr>
@@ -167,6 +207,8 @@ export default function ZhitTheory() {
             <li>• <strong>НСВ</strong> = không hoàn thành | <strong>СВ</strong> = hoàn thành</li>
           </ul>
         </div>
+        </>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lời giải bài tập — Работать & Делать</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714;
+    --ink-mid: #3d3830;
+    --ink-light: #6b6358;
+    --ink-faint: #a09890;
+    --paper: #f5f0e8;
+    --paper-warm: #ede7d9;
+    --paper-deep: #e2dace;
+    --accent-r: #8b2020;
+    --accent-d: #1a4a6b;
+    --accent-r-light: #c9474740;
+    --accent-d-light: #2a6ea640;
+    --gold: #b8922a;
+    --gold-light: #f0e4c4;
+    --border: #c8bfae;
+    --correct-bg: #e8f5e2;
+    --correct-border: #5a8a3a;
+    --correct-text: #2a5a10;
+    --note-bg: #fdf5e0;
+    --note-border: #c8a830;
+    --rule: #c8bfae;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* ── PAGE HEADER ── */
+  .page-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent, transparent 20px,
+      rgba(255,255,255,0.025) 20px, rgba(255,255,255,0.025) 21px
+    );
+  }
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.4rem;
+    position: relative;
+  }
+  .page-header .subtitle {
+    font-size: 0.95rem;
+    color: #b8a88a;
+    font-style: italic;
+    position: relative;
+  }
+  .page-header .pills {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .pill {
+    font-size: 0.75rem;
+    font-family: 'Source Serif 4', serif;
+    padding: 3px 12px;
+    border-radius: 99px;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #d4c8b0;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── NAVIGATION ── */
+  nav {
+    background: var(--paper-warm);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    overflow-x: auto;
+  }
+  nav a {
+    display: block;
+    padding: 0.85rem 1.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink-light);
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+    font-family: 'Source Serif 4', serif;
+  }
+  nav a.r:hover, nav a.r.active { color: var(--accent-r); border-color: var(--accent-r); }
+  nav a.d:hover, nav a.d.active { color: var(--accent-d); border-color: var(--accent-d); }
+
+  /* ── MAIN LAYOUT ── */
+  main { max-width: 860px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  /* ── SECTION HEADERS ── */
+  .section-header {
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--ink);
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .section-header h2.r { color: var(--accent-r); }
+  .section-header h2.d { color: var(--accent-d); }
+  .section-header .sec-vi {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--ink-light);
+  }
+
+  /* ── EXERCISE BLOCK ── */
+  .exercise {
+    margin-bottom: 2.5rem;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .ex-head {
+    padding: 0.9rem 1.4rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .ex-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    min-width: 36px;
+    line-height: 1.3;
+  }
+  .ex-num.r { color: var(--accent-r); }
+  .ex-num.d { color: var(--accent-d); }
+  .ex-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-mid);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding-top: 3px;
+  }
+  .ex-type {
+    margin-left: auto;
+    font-size: 0.72rem;
+    padding: 2px 9px;
+    border-radius: 99px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    align-self: center;
+  }
+  .ex-type.kontrol { background: #fff3cd; color: #7a5800; border: 1px solid #e0c060; }
+  .ex-type.read    { background: #e8f0fb; color: #1a4a6b; border: 1px solid #a0bce0; }
+  .ex-type.dialog  { background: #f0ebe0; color: #5a4820; border: 1px solid #c0a870; }
+  .ex-type.zamena  { background: #f5ebe8; color: #6b2020; border: 1px solid #d08878; }
+
+  .ex-body { padding: 1.2rem 1.4rem 1.4rem; }
+
+  /* ── SENTENCE ITEM ── */
+  .sentence-list { list-style: none; }
+  .sentence-item {
+    padding: 0.7rem 0;
+    border-bottom: 1px dashed var(--rule);
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 0 0.6rem;
+  }
+  .sentence-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .sn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink-faint);
+    padding-top: 2px;
+    text-align: right;
+  }
+  .scontent {}
+  .src-sentence {
+    font-style: italic;
+    color: var(--ink-mid);
+    font-size: 0.93rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.6;
+  }
+  .verb-key {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 2px;
+  }
+
+  /* ── ANSWER BOX ── */
+  .answer {
+    background: var(--correct-bg);
+    border: 1px solid var(--correct-border);
+    border-radius: 3px;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.9rem;
+    color: var(--correct-text);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .answer::before { content: '✓'; font-size: 0.8rem; opacity: 0.7; }
+  .answer-alt {
+    background: var(--gold-light);
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+    color: #5a4010;
+    margin-bottom: 0.3rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .answer-alt::before { content: '◆'; font-size: 0.65rem; opacity: 0.6; margin-top: 2px; flex-shrink: 0; }
+
+  /* ── GRAMMAR NOTE ── */
+  .note {
+    background: var(--note-bg);
+    border-left: 3px solid var(--note-border);
+    border-radius: 0 3px 3px 0;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.82rem;
+    color: #4a3800;
+    margin-top: 0.35rem;
+    line-height: 1.55;
+  }
+  .note strong { font-weight: 600; color: #2a2000; }
+
+  /* ── ЗАМЕНА TABLE ── */
+  .zamena-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.5rem; }
+  .zamena-table th {
+    background: var(--paper-deep);
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    border: 1px solid var(--border);
+  }
+  .zamena-table td {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .zamena-table tr:nth-child(even) td { background: var(--paper); }
+  .zamena-table td.orig { font-style: italic; color: var(--ink-mid); }
+  .zamena-table td.repl { font-weight: 600; color: var(--correct-text); }
+  .zamena-table td.result { color: var(--ink-mid); }
+  .zamena-table td.change { font-size: 0.78rem; color: var(--ink-faint); }
+  .no-change { color: var(--ink-faint); font-style: italic; font-weight: 400; }
+
+  /* ── DIALOG exercise ── */
+  .dialog-prompt {
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 0.5rem 0.9rem;
+    font-style: italic;
+    color: var(--ink-mid);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .dialog-answer {
+    background: #e8f5e2;
+    border: 1px solid #7ab870;
+    border-radius: 3px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    color: #1a4a10;
+  }
+
+  /* ── DIVIDER ── */
+  .chapter-divider {
+    margin: 3rem 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .chapter-divider::before, .chapter-divider::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+  .chapter-divider span {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* ── LEGEND ── */
+  .legend {
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1rem 1.4rem;
+    margin-bottom: 2rem;
+    font-size: 0.82rem;
+    color: var(--ink-light);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    line-height: 1.6;
+  }
+  .legend strong { color: var(--ink-mid); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .page-header h1 { font-size: 1.6rem; }
+    .ex-head { flex-wrap: wrap; gap: 0.5rem; }
+    .ex-type { margin-left: 0; }
+    .zamena-table { font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Lời giải toàn bộ bài tập</h1>
+  <div class="subtitle">Глаголы, мотивированные глаголами <em>работать</em> и <em>делать</em> — Чистая грамматика</div>
+  <div class="pills">
+    <span class="pill">Упр. 47–53 · Работать</span>
+    <span class="pill">Упр. 54–60 · Делать</span>
+    <span class="pill">Giải thích Nga–Việt</span>
+    <span class="pill">Bình luận ngữ pháp</span>
+  </div>
+</div>
+
+<nav id="main-nav">
+  <a href="#r47" class="r">№47</a>
+  <a href="#r48" class="r">№48</a>
+  <a href="#r49" class="r">№49</a>
+  <a href="#r50" class="r">№50</a>
+  <a href="#r51" class="r">№51</a>
+  <a href="#r52" class="r">№52</a>
+  <a href="#r53" class="r">№53</a>
+  <a href="#sep" class="d" style="border-left:2px solid #c8bfae; color:#c8bfae; pointer-events:none">|</a>
+  <a href="#d54" class="d">№54</a>
+  <a href="#d55" class="d">№55</a>
+  <a href="#d56" class="d">№56</a>
+  <a href="#d57" class="d">№57</a>
+  <a href="#d58" class="d">№58</a>
+  <a href="#d59" class="d">№59</a>
+  <a href="#d60" class="d">№60</a>
+</nav>
+
+<main>
+
+<div class="legend">
+  <span><strong>✓ Ô xanh lá</strong> = đáp án chính xác</span>
+  <span><strong>◆ Ô vàng</strong> = đáp án thay thế được chấp nhận</span>
+  <span><strong>Ô vàng nhạt (ghi chú)</strong> = bình luận ngữ pháp / phong cách</span>
+  <span><strong>На контроль</strong> = bài kiểm tra (chọn đáp án đúng)</span>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     РАБОТАТЬ
+     ════════════════════════════════════════════════ -->
+
+<div class="section-header" id="rabotat">
+  <h2 class="r">Работать</h2>
+  <span class="sec-vi">Động từ gốc: làm việc, vận hành — Упражнения 47–53</span>
+</div>
+
+<!-- ── УПР 47 ── -->
+<div class="exercise" id="r47">
+  <div class="ex-head">
+    <div class="ex-num r">47</div>
+    <div class="ex-title">Прочитайте предложения. Проследите употребление глаголов, мотивированных глаголом <em>работать</em>. Придумайте свои примеры.</div>
+    <span class="ex-type read">Đọc hiểu</span>
+  </div>
+  <div class="ex-body">
+    <p style="font-size:0.85rem;color:var(--ink-light);margin-bottom:1rem;font-style:italic;">Bài tập yêu cầu đọc và nhận diện nghĩa của từng động từ. Dưới đây là phân tích từng câu.</p>
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Кем <span class="verb-key">работает</span> твой отец?</div>
+          <div class="answer">работает — nghĩa 3: иметь должность (làm nghề gì, giữ chức vụ gì)</div>
+          <div class="note">Câu hỏi về nghề nghiệp. Dùng НСВ vì đây là trạng thái thường xuyên/ổn định.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Я хочу сначала <span class="verb-key">поработать</span>, а уже потом поступать в аспирантуру.</div>
+          <div class="answer">поработать — làm việc một thời gian (ngắn), có giới hạn thời gian</div>
+          <div class="note">СВ <strong>поработать</strong> = làm việc trong thời gian nhất định, không kéo dài mãi. Tương phản với <em>работать</em> НСВ.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Телевизор не <span class="verb-key">работает</span>, надо ремонтировать.</div>
+          <div class="answer">работает — nghĩa 1: находиться в действии (hoạt động, vận hành)</div>
+          <div class="note">Chủ thể là vật/thiết bị. НСВ vì đây là trạng thái hiện tại.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Отец <span class="verb-key">проработал</span> на этом заводе десять лет.</div>
+          <div class="answer">проработал — làm việc suốt (10 năm liên tục)</div>
+          <div class="note">СВ <strong>проработать</strong> = làm việc trong một khoảng thời gian dài xác định (có đích). Khác với <em>работал</em> НСВ (không nhấn mạnh khoảng thời gian).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Он уже <span class="verb-key">доработал</span> до пенсии.</div>
+          <div class="answer">доработал — làm việc đến tận (ngày về hưu), đạt tới một mốc thời gian</div>
+          <div class="note"><strong>Доработать до + Р.п.</strong> = làm việc đến/tới mốc nào đó. СВ nhấn mạnh việc đạt đến đích (до пенсии).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Можно спросить: сколько ты <span class="verb-key">зарабатываешь</span>?</div>
+          <div class="answer">зарабатываешь — kiếm (bao nhiêu tiền), nghĩa 1 НСВ</div>
+          <div class="note">НСВ = hành động lặp lại/thường xuyên (thu nhập đều đặn hàng tháng).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Этот писатель сейчас <span class="verb-key">работает</span> над новым романом.</div>
+          <div class="answer">работает над — đang làm việc trên/với (tác phẩm mới)</div>
+          <div class="note"><strong>Работать над + Т.п.</strong> = làm việc, nghiên cứu về cái gì đó. Cấu trúc quan trọng cần nhớ.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Машина долго не заводилась, но наконец мотор <span class="verb-key">заработал</span>.</div>
+          <div class="answer">заработал — bắt đầu hoạt động/vận hành (nghĩa 3 của заработать)</div>
+          <div class="note">СВ <strong>заработать</strong> = bắt đầu hoạt động (về máy móc, thiết bị). Chú ý đây là nghĩa 3, không phải nghĩa "kiếm tiền".</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Мы прекрасно <span class="verb-key">отработали</span> на практике.</div>
+          <div class="answer">отработали — hoàn thành/kết thúc tốt đợt thực tập (nghĩa 3: кончить работать)</div>
+          <div class="note">СВ <strong>отработать</strong> = hoàn thành ca làm/kỳ thực tập. Có sắc thái "đã làm xong, hoàn thành".</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Мой друг учится в университете и <span class="verb-key">подрабатывает</span> в газете.</div>
+          <div class="answer">подрабатывает — làm thêm (ngoài giờ học), kiếm thêm chút ít</div>
+          <div class="note">НСВ <strong>подрабатывать</strong> = làm thêm, part-time. Khẩu ngữ, thường gặp ở sinh viên.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 48 ── -->
+<div class="exercise" id="r48">
+  <div class="ex-head">
+    <div class="ex-num r">48</div>
+    <div class="ex-title">Прочитайте предложения. Проследите употребление глаголов, мотивированных глаголом <em>работать</em>. Придумайте свои примеры.</div>
+    <span class="ex-type read">Đọc hiểu</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Это важные научные статьи, вам следует их серьёзно <span class="verb-key">проработать</span>.</div>
+          <div class="answer">проработать — nghiên cứu kỹ, đào sâu (nghĩa 2 разг.)</div>
+          <div class="note">СВ <strong>проработать</strong> nghĩa 2 = đọc/nghiên cứu thấu đáo từng chi tiết. Ít trang trọng hơn <em>изучить</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Этот учёный выдвинул и <span class="verb-key">разработал</span> принципиально новую систему исследования.</div>
+          <div class="answer">разработал — xây dựng/phát triển (hệ thống mới), nghĩa 2: исследовать, подготовить</div>
+          <div class="note">СВ <strong>разработать</strong> = phát triển, nghiên cứu xây dựng. Thuật ngữ khoa học/kỹ thuật, văn phong trang trọng.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Следует <span class="verb-key">выработать</span> план действий.</div>
+          <div class="answer">выработать — xây dựng (kế hoạch), nghĩa 2 перен.: обдумывая, создать</div>
+          <div class="note"><strong>Выработать план</strong> là cụm từ cố định. Khác với <em>разработать план</em> (разработать nhấn mạnh quá trình nghiên cứu chi tiết hơn).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">План не совсем удачный, его надо <span class="verb-key">переработать</span>.</div>
+          <div class="answer">переработать — làm lại, sửa lại (nghĩa 2)</div>
+          <div class="note">СВ <strong>переработать</strong> = viết/soạn lại. Nghĩa 2, khác với nghĩa 1 (chế biến nguyên liệu) và nghĩa 3 (làm quá giờ).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Что <span class="verb-key">вырабатывают</span> из нефти?</div>
+          <div class="answer">вырабатывают — sản xuất, chế biến ra (từ dầu mỏ), nghĩa 1</div>
+          <div class="note">НСВ = hành động thường xuyên/tổng quát. Nghĩa 1 = sản xuất vật chất.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">У меня уже <span class="verb-key">выработалась</span> привычка рано вставать.</div>
+          <div class="answer">выработалась — hình thành (thói quen) theo thời gian</div>
+          <div class="note">СВ <strong>выработаться</strong> = xuất hiện/hình thành nhờ kinh nghiệm, thực hành lặp đi lặp lại. Ngôi 1&2 không dùng được.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">В желудке пища <span class="verb-key">перерабатывается</span>.</div>
+          <div class="answer">перерабатывается — được chuyển hóa (thức ăn trong dạ dày), nghĩa 1 перерабатываться</div>
+          <div class="note">Ngôi 3 (vật vô nhân xưng). Dùng НСВ vì đây là quá trình sinh học diễn ra liên tục.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Он уже ушёл домой? Да, он не <span class="verb-key">переработает</span>!</div>
+          <div class="answer">не переработает — (mỉa mai) anh ấy không bao giờ làm quá giờ đâu (nghĩa 3: làm quá giờ)</div>
+          <div class="note">Mang sắc thái mỉa mai/hài hước. <strong>Переработать</strong> nghĩa 3 (разг.) = làm việc quá giờ quy định.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Ух, мы сегодня за день <span class="verb-key">наработались</span>!</div>
+          <div class="answer">наработались — làm đã đủ, mệt bở hơi tai (разг.)</div>
+          <div class="note">СВ <strong>наработаться</strong> = đã làm đủ/thỏa thích đến mức kiệt sức. Khẩu ngữ, biểu cảm mạnh.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Отдохни, а то ты совсем <span class="verb-key">заработался</span>!</div>
+          <div class="answer">заработался — bị cuốn vào làm việc quá mức, kiệt sức</div>
+          <div class="note">СВ <strong>заработаться</strong> = mải làm đến mức quên mọi thứ, kiệt sức. Thường dùng với sắc thái lo lắng/quan tâm.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">11</span>
+        <div class="scontent">
+          <div class="src-sentence">Надо <span class="verb-key">обработать</span> рану спиртом.</div>
+          <div class="answer">обработать — xử lý, sát trùng (vết thương), nghĩa 1</div>
+          <div class="note">СВ <strong>обработать</strong> nghĩa 1 = xử lý y tế. Cụm <em>обработать рану</em> là cụm từ cố định trong lĩnh vực y tế.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">12</span>
+        <div class="scontent">
+          <div class="src-sentence">Вы пропустили занятие, вам нужно его <span class="verb-key">отработать</span>.</div>
+          <div class="answer">отработать — bù lại (buổi học đã bỏ), nghĩa 1: возместить</div>
+          <div class="note">СВ <strong>отработать</strong> nghĩa 1 = bù đắp bằng công sức. <em>Отработать занятие</em> = học bù.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 49 ── -->
+<div class="exercise" id="r49">
+  <div class="ex-head">
+    <div class="ex-num r">49</div>
+    <div class="ex-title">Прочитайте предложения. Проследите употребление глаголов, мотивированных глаголом <em>работать</em>. При желании придумайте свои примеры.</div>
+    <span class="ex-type read">Đọc hiểu</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Что-то мне не <span class="verb-key">работается</span> сегодня!</div>
+          <div class="answer">работается — (vô nhân xưng разг.) cảm giác không muốn/không thể làm việc hôm nay</div>
+          <div class="note"><strong>Работаться</strong> — cấu trúc vô nhân xưng. Chủ thể ở 3 cách: <em>мне не работается</em>. Diễn đạt trạng thái chủ quan về việc làm việc.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Пересядь подальше от окна, а то <span class="verb-key">заработаешь</span> бронхит!</div>
+          <div class="answer">заработаешь — (мỉa mai) sẽ "kiếm được" bệnh viêm phế quản (nghĩa *2 разг. ирон.)</div>
+          <div class="note">Nghĩa 2 của <strong>заработать</strong> (разг., ирон.) = nhận/hứng chịu hậu quả xấu. Đây là cách dùng hài hước, mỉa mai.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Твою статью надо лишь немного <span class="verb-key">подработать</span> — и можно печатать.</div>
+          <div class="answer">подработать — hoàn thiện thêm một chút (nghĩa 2: немного доделать)</div>
+          <div class="note"><strong>Подработать</strong> nghĩa 2 = chỉnh sửa nhỏ, hoàn thiện thêm. Nghĩa này ít gặp hơn nghĩa 1 (kiếm thêm tiền).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Отлично <span class="verb-key">сработано</span>!</div>
+          <div class="answer">сработано — được làm ra xuất sắc (прост., nghĩa 1: сделать, изготовить)</div>
+          <div class="note">Dạng краткое причастие của <strong>сработать</strong> (прост.) = chế tạo/làm ra. Cụm <em>отлично сработано!</em> = Làm tuyệt lắm! (thông tục).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Вы прекрасный специалист. Думаю, мы с вами <span class="verb-key">сработаемся</span>.</div>
+          <div class="answer">сработаемся — sẽ ăn ý với nhau, hợp tác tốt được</div>
+          <div class="note">СВ <strong>сработаться</strong> = đạt được sự phối hợp nhịp nhàng trong công việc. Chủ thể phải ở ngôi nhiều người.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Крестьянин <span class="verb-key">разрабатывает</span> свой участок.</div>
+          <div class="answer">разрабатывает — khai phá/vỡ hoang mảnh đất (nghĩa 1: сделать пригодным)</div>
+          <div class="note">НСВ <strong>разрабатывать</strong> nghĩa 1 = làm cho đất đai phù hợp để canh tác. Hành động diễn ra liên tục.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Помоги мне сделать грядку. На! Поработай лопатой!</div>
+          <div class="answer">поработай лопатой — làm việc một lúc bằng xẻng (nghĩa 5 работать: управлять лопатой)</div>
+          <div class="note"><strong>Работать/поработать + Т.п.</strong> (lопатой, руками…) = sử dụng công cụ để làm. Nghĩa 5.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Он часто опаздывает, вот его сегодня и <span class="verb-key">прорабатывали</span> на собрании.</div>
+          <div class="answer">прорабатывали — phê bình tập thể tại cuộc họp (nghĩa *3 разг., шутл.)</div>
+          <div class="note">Nghĩa 3 (разг., шутл.) của <strong>прорабатывать</strong> = chỉ trích, phê bình ai đó trước tập thể. Hài hước/mỉa mai.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Заработок маленький, и надо где-то ещё <span class="verb-key">прирабатывать</span>.</div>
+          <div class="answer">прирабатывать — kiếm thêm ngoài thu nhập chính</div>
+          <div class="note"><strong>Прирабатывать</strong> = kiếm thêm ngoài lương chính. Gần nghĩa với <em>подрабатывать</em> nhưng nhấn mạnh phần thu nhập phụ thêm (<em>при-</em>).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Ну что, много <span class="verb-key">наработал</span> сегодня?</div>
+          <div class="answer">наработал — (разг.) làm ra được nhiều không? (hàm ý mỉa mai)</div>
+          <div class="note">СВ <strong>наработать</strong> (разг.) = làm ra nhiều. Thường dùng với hàm ý mỉa mai khi hỏi người lười.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">11</span>
+        <div class="scontent">
+          <div class="src-sentence">Всё! Отдыхаем! Совсем <span class="verb-key">уработались</span>!</div>
+          <div class="answer">уработались — kiệt sức vì làm nhiều quá (прост.)</div>
+          <div class="note">СВ <strong>уработаться</strong> (прост.) = mệt lả vì làm việc. Thông tục, biểu cảm mạnh. Tương tự <em>наработаться, заработаться</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">12</span>
+        <div class="scontent">
+          <div class="src-sentence">Так и до инфаркта можно <span class="verb-key">доработаться</span>!</div>
+          <div class="answer">доработаться — (разг., tiêu cực) làm đến mức tự hủy hoại bản thân</div>
+          <div class="note">СВ <strong>доработаться</strong> (разг., негативное) = làm việc căng thẳng đến mức gây hại cho sức khỏe. <em>До инфаркта</em> = đến mức nhồi máu cơ tim.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 50 ── -->
+<div class="exercise" id="r50">
+  <div class="ex-head">
+    <div class="ex-num r">50</div>
+    <div class="ex-title">На контроль. Выберите правильный вариант.</div>
+    <span class="ex-type kontrol">На контроль</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Мой дедушка … до пенсии. (выработал — <u>доработал</u>)</div>
+          <div class="answer">доработал</div>
+          <div class="note"><strong>Доработать до пенсии</strong> = làm đến tận ngày về hưu. <em>Выработать</em> nghĩa là sản xuất ra — không phù hợp ngữ cảnh.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Он уже … положенные для пенсии двадцать лет. (заработал — <u>отработал</u>)</div>
+          <div class="answer">отработал</div>
+          <div class="note"><strong>Отработать + время</strong> = làm đủ số năm/giờ quy định. <em>Заработал</em> nghĩa là kiếm được tiền — không phù hợp.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Он всегда много … . (зарабатывал — <u>прорабатывал</u>)</div>
+          <div class="answer">зарабатывал</div>
+          <div class="note"><strong>Зарабатывать много</strong> = kiếm được nhiều tiền. <em>Прорабатывал много</em> có thể nói được nhưng ít tự nhiên hơn trong ngữ cảnh thu nhập.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Ты будешь … пропущенные семинарские занятия? (зарабатывать — <u>отрабатывать</u>)</div>
+          <div class="answer">отрабатывать</div>
+          <div class="note"><strong>Отрабатывать занятия</strong> = học bù. Chỉ <em>отрабатывать</em> có nghĩa "bù đắp bằng công sức/thời gian".</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Я хочу … эту тему. (выработать — <u>разработать</u>)</div>
+          <div class="answer">разработать</div>
+          <div class="note"><strong>Разработать тему</strong> = phát triển/nghiên cứu đề tài. <em>Выработать тему</em> không đúng — <em>выработать</em> cần tân ngữ là kế hoạch, chương trình, thói quen...</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Рабочий … детали на станке. (<u>обрабатывает</u> — перерабатывает)</div>
+          <div class="answer">обрабатывает</div>
+          <div class="note"><strong>Обрабатывать детали</strong> = gia công chi tiết (trên máy tiện). <em>Перерабатывать</em> = chuyển hóa/biến đổi thành thứ khác — không phù hợp.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Ему сегодня хорошо … . (<u>работается</u> — работает)</div>
+          <div class="answer">работается</div>
+          <div class="note"><strong>Работается</strong> — cấu trúc vô nhân xưng, diễn đạt trạng thái: <em>ему хорошо работается</em> = anh ấy cảm thấy làm việc tốt hôm nay. Không thể dùng <em>работает</em> theo cách này.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Он … всю ночь. (<u>переработал</u> — проработал)</div>
+          <div class="answer">проработал <span style="font-weight:400;font-size:0.85em;color:var(--ink-faint)"> / переработал (cũng chấp nhận)</span></div>
+          <div class="answer-alt">Cả hai đều dùng được: <strong>проработал</strong> = làm việc suốt cả đêm (khoảng thời gian dài); <strong>переработал</strong> = làm quá giờ (cả đêm)</div>
+          <div class="note">Theo đáp án sách: <strong>переработал</strong>. Nhưng <em>проработал</em> cũng tự nhiên với ngữ cảnh "thời gian cụ thể" (всю ночь).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Он … до утра. (<u>заработался</u> — переработался)</div>
+          <div class="answer">заработался</div>
+          <div class="note"><strong>Заработаться до утра</strong> = mải làm đến tận sáng. <em>Переработаться</em> = kiệt sức do làm quá giờ — đúng ngữ nghĩa nhưng <em>заработаться</em> tự nhiên hơn với <em>до утра</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Надо знать меру: работай, но не … ! (<u>перерабатывай</u> — разрабатывай)</div>
+          <div class="answer">перерабатывай</div>
+          <div class="note"><strong>Не перерабатывай</strong> = đừng làm quá sức. <em>Разрабатывай</em> = hãy phát triển — hoàn toàn khác nghĩa, không phù hợp.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 51 ── -->
+<div class="exercise" id="r51">
+  <div class="ex-head">
+    <div class="ex-num r">51</div>
+    <div class="ex-title">На контроль. Выберите правильный вариант.</div>
+    <span class="ex-type kontrol">На контроль</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Он закаляет волю, … характер. (<u>вырабатывает</u> — разрабатывает)</div>
+          <div class="answer">вырабатывает</div>
+          <div class="note"><strong>Вырабатывать характер</strong> = rèn giũa, xây dựng tính cách (qua quá trình luyện tập). Đây là cụm cố định. <em>Разрабатывать</em> = phát triển đề án/kế hoạch — không dùng cho tính cách.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Мы сегодня так устали, так … ! (<u>доработались</u> — наработались)</div>
+          <div class="answer">наработались</div>
+          <div class="note"><strong>Наработаться</strong> = làm đã mệt. Cả hai gần nghĩa nhưng <em>наработаться</em> nhấn mạnh "đã làm đủ/đến mức kiệt sức". <em>Доработаться</em> có nghĩa tiêu cực hơn (đến mức hại bản thân).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Для написания диссертации необходимо … массу специальной литературы. (подработать — <u>переработать</u>)</div>
+          <div class="answer">переработать</div>
+          <div class="note"><strong>Переработать литературу</strong> = đọc qua, tiêu hóa một khối lượng lớn tài liệu. Đây là cách dùng đặc biệt của <em>переработать</em> trong học thuật. <em>Подработать</em> không phù hợp.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">На тренировке спортсмен … труднейший прыжок. (<u>отрабатывал</u> — обрабатывал)</div>
+          <div class="answer">отрабатывал</div>
+          <div class="note"><strong>Отрабатывать прыжок</strong> = luyện tập thuần thục kỹ thuật nhảy (nghĩa 5: получить навык). <em>Обрабатывал</em> không dùng cho kỹ năng thể thao.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Не опаздывай, а то … выговор от начальника! (<u>заработаешь</u> — отработаешь)</div>
+          <div class="answer">заработаешь</div>
+          <div class="note"><strong>Заработать выговор</strong> (разг., ирон.) = bị nhận khiển trách (nghĩa 2 ирон.). Cụm cố định hay gặp.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">На этом заводе … макулатуру. (<u>вырабатывают</u> — перерабатывают)</div>
+          <div class="answer">перерабатывают</div>
+          <div class="note"><strong>Перерабатывать макулатуру</strong> = tái chế giấy vụn (chuyển hóa thành thứ khác, nghĩa 1). <em>Вырабатывать</em> cũng dùng được nhưng <em>перерабатывать</em> đúng hơn với nguyên liệu tái chế.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Ты порезался! Надо чем-то … рану! (<u>обработать</u> — разработать)</div>
+          <div class="answer">обработать</div>
+          <div class="note"><strong>Обработать рану</strong> = sát trùng, xử lý vết thương. Cụm cố định y tế. <em>Разработать</em> hoàn toàn khác nghĩa.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Статья сырая, её надо … . (<u>переработать</u> — разработать)</div>
+          <div class="answer">переработать</div>
+          <div class="note"><strong>Переработать статью</strong> = viết lại, sửa lại bài viết (nghĩa 2). <em>Статья сырая</em> = bài còn thô, chưa hoàn chỉnh.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Лучше не занимать деньги: придётся … долги! (<u>зарабатывать</u> — отрабатывать)</div>
+          <div class="answer">отрабатывать</div>
+          <div class="note"><strong>Отрабатывать долги</strong> = trả nợ bằng sức lao động. <em>Зарабатывать</em> = kiếm tiền (tổng quát hơn).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Уже пора домой: мы и так … несколько часов! (<u>заработались</u> — переработали)</div>
+          <div class="answer">переработали</div>
+          <div class="note"><strong>Переработали несколько часов</strong> = đã làm thêm mấy tiếng. <em>Заработались</em> cũng được nhưng <em>переработать</em> với thời gian cụ thể tự nhiên hơn.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 52 ── -->
+<div class="exercise" id="r52">
+  <div class="ex-head">
+    <div class="ex-num r">52</div>
+    <div class="ex-title">Определите, возможна ли замена. Изменится ли смысл? Изменится ли структура предложения? Изменится ли стиль?</div>
+    <span class="ex-type zamena">Замена</span>
+  </div>
+  <div class="ex-body">
+    <table class="zamena-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Câu gốc (глагол выделен)</th>
+          <th>Thay bằng</th>
+          <th>Kết quả &amp; nhận xét</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="orig">Он <strong>работал</strong> всю ночь.</td>
+          <td class="repl">проработал / заработался</td>
+          <td><strong>Проработал</strong>: đúng, nhấn mạnh thời gian liên tục (СВ). <strong>Заработался</strong>: đúng, thêm nghĩa "mải làm quên thời gian" (разг.).</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="orig">На этом заводе он <strong>отработал</strong> три года.</td>
+          <td class="repl">проработал</td>
+          <td><strong>Проработал</strong> thay được, nghĩa tương tự. <em>Отработал</em> nhấn mạnh nghĩa vụ đã hoàn thành; <em>проработал</em> chỉ đơn thuần nói thời gian.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="orig">Надо <strong>разработать</strong> план.</td>
+          <td class="repl">выработать / переработать</td>
+          <td><strong>Выработать план</strong>: đúng, gần nghĩa. <strong>Переработать план</strong>: chỉ đúng nếu kế hoạch đã có và cần làm lại — ngữ nghĩa khác.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="orig">Следует <strong>подработать</strong> статью.</td>
+          <td class="repl">доработать / переработать</td>
+          <td><strong>Доработать</strong>: đúng, hoàn thiện thêm. <strong>Переработать</strong>: làm lại toàn bộ — mạnh hơn, thay đổi nghĩa.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="orig">Ух, мы сегодня <strong>переработали</strong>!</td>
+          <td class="repl">заработались / наработались / уработались</td>
+          <td>Cả ba đều thay được với nghĩa "kiệt sức". Khác biệt phong cách: <em>переработали</em> trung tính; <em>наработались</em> разг.; <em>уработались</em> прост.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── УПР 53 ── -->
+<div class="exercise" id="r53">
+  <div class="ex-head">
+    <div class="ex-num r">53</div>
+    <div class="ex-title">Составьте микродиалоги, используя предложенные сочетания.</div>
+    <span class="ex-type dialog">Диалог</span>
+  </div>
+  <div class="ex-body">
+    <p style="font-size:0.85rem;color:var(--ink-light);margin-bottom:1rem;font-style:italic;">Mỗi cụm từ in đậm là "mồi" cho hội thoại. Dưới đây là gợi ý mẫu hội thoại ngắn.</p>
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Над какой темой вы <strong>работаете</strong> — …?</div>
+          <div class="dialog-answer">— Над какой темой вы работаете?<br>— Я работаю над историей русской литературы XIX века.</div>
+          <div class="note"><strong>Работать над + Т.п.</strong> = nghiên cứu/làm về đề tài nào đó.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Сколько надо <strong>зарабатывать</strong> — …?</div>
+          <div class="dialog-answer">— Сколько надо зарабатывать, чтобы жить нормально?<br>— Думаю, не меньше пятидесяти тысяч рублей в месяц.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Какую привычку необходимо <strong>выработать</strong> — …?</div>
+          <div class="dialog-answer">— Какую привычку необходимо выработать, чтобы хорошо учиться?<br>— Нужно выработать привычку читать каждый день.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Что <strong>вырабатывают</strong> из нефти — …?</div>
+          <div class="dialog-answer">— Что вырабатывают из нефти?<br>— Из нефти вырабатывают бензин, пластик и многое другое.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Сколько лет нужно <strong>отработать</strong>, чтобы стать хорошим специалистом — …?</div>
+          <div class="dialog-answer">— Сколько лет нужно отработать, чтобы стать хорошим специалистом?<br>— Говорят, что нужно не менее десяти лет практики.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Когда растения активно <strong>вырабатывают</strong> кислород — …?</div>
+          <div class="dialog-answer">— Когда растения активно вырабатывают кислород?<br>— Они вырабатывают кислород в светлое время суток.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто часто <strong>подрабатывает</strong> — …?</div>
+          <div class="dialog-answer">— Кто часто подрабатывает в наше время?<br>— Чаще всего студенты и молодые специалисты.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Когда вам лучше <strong>работается</strong>: утром или вечером — …?</div>
+          <div class="dialog-answer">— Когда вам лучше работается: утром или вечером?<br>— Мне лучше работается утром, пока голова свежая.</div>
+          <div class="note">Cấu trúc vô nhân xưng <strong>работается</strong> + дательный падеж người trải nghiệm.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто советует <strong>переработать</strong> статью — …?</div>
+          <div class="dialog-answer">— Кто советует переработать статью?<br>— Научный руководитель считает, что нужно полностью переработать введение.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто может <strong>заработаться</strong> до утра — …?</div>
+          <div class="dialog-answer">— Кто может заработаться до утра?<br>— Программисты часто заработываются и не замечают, как наступает утро.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">11</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто из родственников <strong>доработал</strong> до пенсии — …?</div>
+          <div class="dialog-answer">— Кто из родственников доработал до пенсии?<br>— Мой дед доработал до шестидесяти пяти лет и ушёл на заслуженный отдых.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">12</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто должен <strong>обработать</strong> собранный для статьи материал — …?</div>
+          <div class="dialog-answer">— Кто должен обработать собранный для статьи материал?<br>— Обычно это делает сам автор, но иногда помогает лаборант.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     ДЕЛАТЬ
+     ════════════════════════════════════════════════ -->
+
+<div class="chapter-divider" id="sep"><span>✦ Делать ✦</span></div>
+
+<div class="section-header" id="delat">
+  <h2 class="d">Делать</h2>
+  <span class="sec-vi">Động từ gốc: làm, tạo ra — Упражнения 54–60</span>
+</div>
+
+<!-- ── УПР 54 ── -->
+<div class="exercise" id="d54">
+  <div class="ex-head">
+    <div class="ex-num d">54</div>
+    <div class="ex-title">Прочитайте предложения. Проследите употребление глаголов, мотивированных глаголом <em>делать</em>. Придумайте свои примеры.</div>
+    <span class="ex-type read">Đọc hiểu</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Мальчик с полчаса <span class="verb-key">поделал</span> уроки и побежал гулять.</div>
+          <div class="answer">поделал — làm (bài tập) một lúc ngắn rồi thôi</div>
+          <div class="note">СВ <strong>поделать</strong> = làm trong thời gian ngắn. Thường hàm ý làm không nghiêm túc, chưa xong đã dừng.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Мы <span class="verb-key">проделали</span> большую и трудную работу.</div>
+          <div class="answer">проделали — đã thực hiện/hoàn thành (một khối lượng công việc lớn), nghĩa 2</div>
+          <div class="note">СВ <strong>проделать работу</strong> = thực hiện xong một công việc (nhấn mạnh khối lượng hoàn thành). Trang trọng hơn <em>сделали работу</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Что ты <span class="verb-key">наделал</span>!</div>
+          <div class="answer">наделал — đã gây ra bao nhiêu chuyện! (nghĩa: произвести много — ở đây là rắc rối)</div>
+          <div class="note">Biểu thức cảm thán. <strong>Наделать</strong> thường đi với тân ngữ tiêu cực: <em>наделать ошибок, наделать хлопот</em>. Tương đương "Anh/em làm gì vậy trời ơi!"</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Эту работу надо <span class="verb-key">переделать</span>.</div>
+          <div class="answer">переделать — làm lại (nghĩa 1: заново или по-иному)</div>
+          <div class="note">СВ <strong>переделать</strong> = làm lại từ đầu hoặc theo cách khác. Khác với <em>доделать</em> (hoàn thành nốt phần còn lại).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Ничего не <span class="verb-key">поделаешь</span>, надо идти на работу!</div>
+          <div class="answer">не поделаешь — chẳng làm được gì (thành ngữ: vô phương, đành chịu)</div>
+          <div class="note"><strong>Ничего не поделаешь</strong> = thành ngữ cố định, nghĩa "không thể làm gì khác được, đành chấp nhận". Tương đương "Biết làm sao bây giờ!"</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Пойду спать, а реферат завтра <span class="verb-key">доделаю</span>.</div>
+          <div class="answer">доделаю — sẽ hoàn thành nốt (bài) vào ngày mai</div>
+          <div class="note">СВ <strong>доделать</strong> (чаще СВ) = làm xong phần còn lại. Luôn hàm ý công việc đang dang dở.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Завтра выходной! Ничего не буду <span class="verb-key">делать</span>!</div>
+          <div class="answer">делать — làm (bất cứ việc gì), НСВ tổng quát</div>
+          <div class="note">НСВ <strong>делать</strong> trong phủ định tổng quát. Không thể thay bằng СВ <em>сделать</em> ở đây vì nói về thói quen/kế hoạch chứ không phải hành động cụ thể.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Он <span class="verb-key">сделал</span> большую ошибку, когда бросил университет.</div>
+          <div class="answer">сделал — đã phạm (một lỗi lớn), nghĩa 4: совершать</div>
+          <div class="note"><strong>Сделать ошибку</strong> = phạm lỗi. Cụm cố định quan trọng. СВ nhấn mạnh hành động đã xảy ra và hoàn thành.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Надо вызвать мастера: пусть <span class="verb-key">заделает</span> щель в двери или поменяет дверь.</div>
+          <div class="answer">заделает — trám/bịt kín khe hở</div>
+          <div class="note">СВ <strong>заделать щель</strong> = bịt kín, trám đầy kẽ hở. Cụm thông dụng trong sửa chữa nhà cửa.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Не говори глупости! Не надо делать из меня идиота!</div>
+          <div class="answer">делать из меня идиота — biến tôi thành kẻ ngốc (nghĩa 5: превращать)</div>
+          <div class="note"><strong>Делать из кого-либо кого-либо</strong> = biến ai thành ai. Cấu trúc: делать из + Р.п. + В.п. Thường dùng trong câu phản đối.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">11</span>
+        <div class="scontent">
+          <div class="src-sentence">Всех дел не переделаешь!</div>
+          <div class="answer">не переделаешь — không thể làm hết mọi việc (nghĩa 2: много)</div>
+          <div class="note">Thành ngữ dân gian: <em>Всех дел не переделаешь</em> = Không ai có thể làm hết việc trên đời. Lời khuyên đừng quá cố.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">12</span>
+        <div class="scontent">
+          <div class="src-sentence">Ребята <span class="verb-key">проделали</span> дыру в заборе.</div>
+          <div class="answer">проделали — đục/khoét một lỗ trên hàng rào (nghĩa 1: сделать отверстие)</div>
+          <div class="note">СВ <strong>проделать дыру/отверстие</strong> = khoét/đục lỗ. Nghĩa 1 cụ thể, vật lý.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 55 ── -->
+<div class="exercise" id="d55">
+  <div class="ex-head">
+    <div class="ex-num d">55</div>
+    <div class="ex-title">Прочитайте предложения. Проследите употребление глаголов, мотивированных глаголом <em>делать</em>. Придумайте свои примеры на некоторые случаи употребления.</div>
+    <span class="ex-type read">Đọc hiểu</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Эта статья в газете <span class="verb-key">наделала</span> много шума.</div>
+          <div class="answer">наделала — gây ra nhiều tiếng ồn/xôn xao (dư luận)</div>
+          <div class="note"><strong>Наделать шума</strong> = gây xôn xao, làm dư luận ồn ào. Cụm cố định, nghĩa bóng.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">У корзинки оторвалась ручка, но ребята её <span class="verb-key">приделали</span>.</div>
+          <div class="answer">приделали — gắn lại, lắp lại (tay cầm)</div>
+          <div class="note">СВ <strong>приделать</strong> = gắn chặt, lắp cố định vào vật khác.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Она <span class="verb-key">сделала</span> его несчастным на всю жизнь!</div>
+          <div class="answer">сделала — biến anh ấy thành người bất hạnh (nghĩa 5: превращать)</div>
+          <div class="note"><strong>Сделать кого-либо + Т.п.</strong> (несчастным, счастливым…) = làm cho ai trở thành như thế nào.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Этот портфель служит мне много лет — и всё как новенький! Ему ничего не <span class="verb-key">делается</span>!</div>
+          <div class="answer">не делается — chẳng hề hấn gì, không sao cả (вô nhân xưng, nghĩa 2 сделаться)</div>
+          <div class="note"><strong>Ничего не делается</strong> (вô nhân xưng) = không có gì xảy ra (với vật), không hư hỏng gì. Cấu trúc: с чем-либо ничего не делается.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Зачем ты <span class="verb-key">подделал</span> подпись директора?</div>
+          <div class="answer">подделал — làm giả (chữ ký)</div>
+          <div class="note">СВ <strong>подделать</strong> = làm giả (tài liệu, chữ ký). Hành vi phạm pháp. Nghĩa rõ ràng, không có nghĩa thứ hai.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Была авария, но с нами всё в порядке, мы <span class="verb-key">отделались</span> лишь лёгким испугом.</div>
+          <div class="answer">отделались — thoát ra/qua được chỉ với (một cú sợ nhẹ), nghĩa 3</div>
+          <div class="note"><strong>Отделаться лёгким испугом</strong> = thoát hiểm mà chỉ bị sợ chút thôi. Thành ngữ cố định, nghĩa 3.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Я отделался лишь одной царапиной!</div>
+          <div class="answer">отделался — thoát nạn chỉ với một vết xước nhỏ (nghĩa 3)</div>
+          <div class="note">Tiếp tục nghĩa 3 <strong>отделаться</strong> = trải qua mà chỉ bị thiệt hại nhỏ.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Посмотри, как быстро он <span class="verb-key">разделался</span> с обедом!</div>
+          <div class="answer">разделался — giải quyết xong, thanh toán gọn (bữa ăn trưa), nghĩa 1 разг.</div>
+          <div class="note"><strong>Разделаться с чем-либо</strong> (разг.) = xong xôi, giải quyết nhanh gọn. Thường dùng cho ăn uống, công việc.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Ну, я с тобой сейчас за это <span class="verb-key">разделаюсь</span>!</div>
+          <div class="answer">разделаюсь — sẽ tính sổ với mày! (nghĩa *2: наказать)</div>
+          <div class="note">Nghĩa 2 (<strong>разделаться с обидчиком</strong>) = trừng phạt, "tính sổ". Thường mang tính đe dọa/bạo lực.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Что за глупые шутки?! Что там у вас <span class="verb-key">делается</span>?</div>
+          <div class="answer">делается — đang xảy ra chuyện gì vậy? (nghĩa 2 сделаться: происходить)</div>
+          <div class="note"><strong>Что делается?</strong> = chuyện gì xảy ra vậy? Câu hỏi ngạc nhiên/bực bội. Ngôi 3, вô nhân xưng.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">11</span>
+        <div class="scontent">
+          <div class="src-sentence">От выпитого вина ему <span class="verb-key">сделалось</span> плохо.</div>
+          <div class="answer">сделалось плохо — trở nên thấy khó chịu, buồn nôn (nghĩa 1 сделаться: становиться)</div>
+          <div class="note"><strong>Сделаться + краткое прилагательное</strong> (плохо, хорошо, грустно…) = trở nên (cảm giác). Cấu trúc vô nhân xưng: <em>ему сделалось плохо</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">12</span>
+        <div class="scontent">
+          <div class="src-sentence">Вы знаете, как он <span class="verb-key">отделал</span> свою новую квартиру? Это просто сказка!</div>
+          <div class="answer">отделал — trang trí/hoàn thiện nội thất (căn hộ), nghĩa 1</div>
+          <div class="note">СВ <strong>отделать квартиру</strong> = hoàn thiện, trang trí nội thất. Nghĩa tích cực. Khác với nghĩa 3 (mắng/đánh).</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 56 ── -->
+<div class="exercise" id="d56">
+  <div class="ex-head">
+    <div class="ex-num d">56</div>
+    <div class="ex-title">Прочитайте предложения. Проследите употребление глаголов, мотивированных глаголом <em>делать</em>. При желании придумайте свои примеры.</div>
+    <span class="ex-type read">Đọc hiểu</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Она шьёт ночную рубашку и хочет <span class="verb-key">отделать</span> её кружевами.</div>
+          <div class="answer">отделать кружевами — trang trí/đính ren (nghĩa 2: украсить)</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Мясник <span class="verb-key">разделывает</span> туши.</div>
+          <div class="answer">разделывает — mổ xẻ, chế biến thịt (nghĩa 1: привести в состояние)</div>
+          <div class="note"><strong>Разделывать тушу</strong> = mổ/pha thịt. Thuật ngữ chuyên ngành hàng thịt/bếp núc.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Он умеет прыгать на батуте. Посмотри, какие фигуры он <span class="verb-key">проделывает</span> в воздухе!</div>
+          <div class="answer">проделывает — thực hiện (các động tác, tiết mục) (nghĩa 2: сделать, выполнить)</div>
+          <div class="note"><strong>Проделывать фигуры/трюки</strong> = thực hiện các kỹ thuật. НСВ vì hành động lặp lại nhiều lần.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Крестьянин <span class="verb-key">возделывает</span> свою землю и мечтает получить хороший урожай.</div>
+          <div class="answer">возделывает — canh tác, cày xới (ruộng đất) — НСВ chủ đạo</div>
+          <div class="note">НСВ <strong>возделывать</strong> (чаще НСВ) = canh tác liên tục. Từ trang trọng/văn viết hơn <em>обрабатывать землю</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Шкуры животных нужно долго <span class="verb-key">выделывать</span>.</div>
+          <div class="answer">выделывать — chế biến, thuộc (da) (nghĩa 1: обработать, изготовить)</div>
+          <div class="note">НСВ <strong>выделывать шкуры</strong> = thuộc da, xử lý da thú. Thuật ngữ nghề thủ công.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Как он мне надоел! Как от него <span class="verb-key">отделаться</span>?</div>
+          <div class="answer">отделаться — thoát khỏi/loại bỏ (người phiền phức) (nghĩa 1 разг.: избавиться)</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">В кольцо <span class="verb-key">вделан</span> великолепный драгоценный камень.</div>
+          <div class="answer">вделан — được gắn/chế tác vào (nhẫn) (дạng ngắn của страдательного причастия)</div>
+          <div class="note">СВ <strong>вделать камень в кольцо</strong> = gắn đá quý vào nhẫn. Dạng bị động краткое причастие: <em>камень вделан</em>.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">На него напали хулиганы, но он парень крепкий, и он их так <span class="verb-key">отделал</span>, что они еле ноги унесли!</div>
+          <div class="answer">отделал — đánh cho nhừ tử (nghĩa *3 прост.: выругать или избить)</div>
+          <div class="note">Nghĩa 3 (СВ, прост.) của <strong>отделать</strong> = đánh đập/mắng chửi. Cực kỳ thông tục.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="src-sentence">Кто сказал, что наша команда проиграет вашей? Да мы вас так <span class="verb-key">разделаем</span>, что плохо будет!</div>
+          <div class="answer">разделаем — sẽ "xử gọn" các anh, đánh thắng áp đảo (nghĩa *2 прост.: избить)</div>
+          <div class="note">Thể thao/khẩu khí đe dọa. <strong>Разделать команду</strong> (прост.) = đánh bại hoàn toàn.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="src-sentence">Он <span class="verb-key">заделался</span> завсегдатаем этого клуба.</div>
+          <div class="answer">заделался — trở thành (khách quen) (прост.: стать кем-либо)</div>
+          <div class="note">СВ <strong>заделаться</strong> (прост.) = trở thành ai đó (thường với hàm ý ngạc nhiên hoặc mỉa mai).</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">11</span>
+        <div class="scontent">
+          <div class="src-sentence">Не знаю, чем он занят. Наверно, <span class="verb-key">обделывает</span> там какие-то делишки.</div>
+          <div class="answer">обделывает — đang lo liệu/thu vén (những việc mờ ám) (nghĩa 2 прост.)</div>
+          <div class="note"><strong>Обделывать делишки</strong> (прост.) = mưu mô, thu vén lợi ích cá nhân. Hàm ý tiêu cực.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">12</span>
+        <div class="scontent">
+          <div class="src-sentence">Только не надо <span class="verb-key">подделываться</span> под интеллигента!</div>
+          <div class="answer">подделываться под — giả vờ/bắt chước (dáng vẻ trí thức)</div>
+          <div class="note"><strong>Подделываться под кого-либо</strong> = bắt chước, giả giọng/hành vi của ai. Có sắc thái chê bai.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 57 ── -->
+<div class="exercise" id="d57">
+  <div class="ex-head">
+    <div class="ex-num d">57</div>
+    <div class="ex-title">На контроль. Выберите правильный вариант.</div>
+    <span class="ex-type kontrol">На контроль</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Реферат не закончен, его надо … . (выделать — <u>доделать</u>)</div>
+          <div class="answer">доделать</div>
+          <div class="note"><strong>Доделать реферат</strong> = hoàn thành nốt bài luận. <em>Выделать</em> = thuộc da/chế tác — không liên quan.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Она … его несчастным. (наделала — <u>сделала</u>)</div>
+          <div class="answer">сделала</div>
+          <div class="note"><strong>Сделать кого-либо несчастным</strong> = làm ai bất hạnh. <em>Наделала его несчастным</em> — sai cấu trúc, <em>наделать</em> cần tân ngữ ở Р.п.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">У нас будут гости, и мы … всяких разных салатов. (<u>наделали</u> — проделали)</div>
+          <div class="answer">наделали</div>
+          <div class="note"><strong>Наделать салатов</strong> = làm ra nhiều loại salad (Р.п. = số lượng nhiều). <em>Проделали</em> không dùng cho thức ăn.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Пожалуйста, … мне одолжение: реши за меня эти две задачи! (<u>проделай</u> — сделай)</div>
+          <div class="answer">сделай</div>
+          <div class="note"><strong>Сделай мне одолжение</strong> = làm ơn cho tôi. Thành ngữ cố định. <em>Проделай</em> không dùng trong thành ngữ này.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Новая квартира готова, теперь надо её … . (<u>заделать</u> — отделать)</div>
+          <div class="answer">отделать</div>
+          <div class="note"><strong>Отделать квартиру</strong> = hoàn thiện nội thất (nghĩa 1). <em>Заделать</em> = trám bít khe hở — không phù hợp ngữ cảnh "квартира готова".</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Мы мастерим куклу: вот туловище, сейчас … ручки и ножки — и кукла готова. (<u>приделаем</u> — разделаем)</div>
+          <div class="answer">приделаем</div>
+          <div class="note"><strong>Приделать ручки/ножки</strong> = gắn tay/chân vào. <em>Разделаем</em> nghĩa là chia thịt — hoàn toàn không phù hợp.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">Зачем здесь … отверстие? (приделали — <u>проделали</u>)</div>
+          <div class="answer">проделали</div>
+          <div class="note"><strong>Проделать отверстие</strong> = đục/khoét lỗ (nghĩa 1). <em>Приделать</em> = gắn thêm vật gì — không tạo ra lỗ.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Отверстие надо срочно … . (выделать — <u>заделать</u>)</div>
+          <div class="answer">заделать</div>
+          <div class="note"><strong>Заделать отверстие</strong> = bịt kín lỗ hổng. Cặp đối lập quan trọng: <em>проделать</em> (tạo lỗ) ↔ <em>заделать</em> (bịt lỗ).</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 58 ── -->
+<div class="exercise" id="d58">
+  <div class="ex-head">
+    <div class="ex-num d">58</div>
+    <div class="ex-title">На контроль. Выберите правильный вариант.</div>
+    <span class="ex-type kontrol">На контроль</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="src-sentence">Мне … дурно, как только подумаю об экзаменах. (делает — <u>делается</u>)</div>
+          <div class="answer">делается</div>
+          <div class="note"><strong>Мне делается дурно</strong> = tôi thấy buồn nôn/chóng mặt. Cấu trúc vô nhân xưng: <em>кому-либо делается + краткое прилагательное/наречие</em>. <em>Делает</em> không dùng theo cách này.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="src-sentence">Зачем бандиты … паспорта? (<u>подделывают</u> — проделывают)</div>
+          <div class="answer">подделывают</div>
+          <div class="note"><strong>Подделывать паспорта</strong> = làm giả hộ chiếu. <em>Проделывать</em> không có nghĩa làm giả tài liệu.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="src-sentence">Это целина, её никто ещё не … . (<u>возделывал</u> — разделывал)</div>
+          <div class="answer">возделывал</div>
+          <div class="note"><strong>Возделывать целину</strong> = khai hoang, vỡ đất hoang. <em>Разделывать</em> = mổ thịt — không dùng cho đất đai.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="src-sentence">Не стоит … из мухи слона! (возделывал — <u>делать</u>)</div>
+          <div class="answer">делать</div>
+          <div class="note"><strong>Делать из мухи слона</strong> = thành ngữ: thổi phồng, làm chuyện bé xé ra to. Câu hoàn toàn cố định.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="src-sentence">Наконец-то мы … все домашние дела! (<u>переделали</u> — разделались)</div>
+          <div class="answer">переделали</div>
+          <div class="note"><strong>Переделать все дела</strong> = làm xong tất cả việc nhà (nghĩa 2: много). <em>Разделались с делами</em> cũng đúng (разг.) nhưng đòi hỏi предлог С.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="src-sentence">Ты обещал помочь мне. Нет, не завтра, а сегодня! Ты от меня так просто не … ! (<u>отделаешься</u> — разделаешься)</div>
+          <div class="answer">отделаешься</div>
+          <div class="note"><strong>Не отделаешься</strong> (разг.) = không thoát được/không trốn tránh được (nghĩa 1). <em>Разделаешься</em> nghĩa khác: tính sổ.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="src-sentence">У тебя новое кожаное пальто? Кожа хорошо … . (<u>выделана</u> — сделана)</div>
+          <div class="answer">выделана</div>
+          <div class="note"><strong>Кожа выделана</strong> = da được thuộc/chế biến tốt. Dạng краткое причастие. <em>Сделана</em> quá chung chung, không phù hợp ngữ cảnh da thuộc.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="src-sentence">Ну, вот мы и … с экзаменами! Каникулы! (<u>переделали</u> — разделались)</div>
+          <div class="answer">разделались</div>
+          <div class="note"><strong>Разделались с экзаменами</strong> (разг.) = xong hết thi cử rồi! Nghĩa 1. <em>Переделали экзамены</em> sai cấu trúc — <em>переделать</em> không dùng với exзамены theo nghĩa này.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── УПР 59 ── -->
+<div class="exercise" id="d59">
+  <div class="ex-head">
+    <div class="ex-num d">59</div>
+    <div class="ex-title">Прочитайте предложения. Определите, возможна ли замена. Изменится ли смысл? Изменится ли структура предложения? Изменится ли стиль?</div>
+    <span class="ex-type zamena">Замена</span>
+  </div>
+  <div class="ex-body">
+    <table class="zamena-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Câu gốc (глагол выделен)</th>
+          <th>Thay bằng</th>
+          <th>Kết quả &amp; nhận xét</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="orig">Разве так можно?! Что ты <strong>делаешь</strong>!</td>
+          <td class="repl">наделал</td>
+          <td><strong>Наделал</strong>: thay được, nhưng đổi sang СВ và quá khứ — nghĩa thay đổi: "Mày đã gây ra bao nhiêu chuyện!" Câu gốc hỏi về hiện tại.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="orig">Мы <strong>проделали</strong> большую работу.</td>
+          <td class="repl">сделали</td>
+          <td><strong>Сделали</strong>: thay được, nghĩa tương tự. <em>Проделали</em> trang trọng hơn, nhấn mạnh hơn vào quá trình.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="orig">Статья плохая, её надо <strong>переделать</strong>.</td>
+          <td class="repl">доделать</td>
+          <td><strong>Доделать</strong>: nghĩa khác — hoàn thành nốt (bài chưa xong). <em>Переделать</em> = làm lại từ đầu. <strong>Thay đổi nghĩa đáng kể.</strong></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="orig">Конечно, он совершил ошибку, но уже ничего не <strong>поделаешь</strong>!</td>
+          <td class="repl">сделаешь</td>
+          <td><strong>Ничего не сделаешь</strong>: thay được, nghĩa tương tự. Cả hai đều là thành ngữ "đành chịu". <em>Поделаешь</em> разг. hơn một chút.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="orig">Ребята <strong>проделали</strong> дыру в заборе.</td>
+          <td class="repl">заделали</td>
+          <td><strong>Заделали дыру</strong>: NGƯỢC nghĩa hoàn toàn! <em>Проделать</em> = tạo lỗ; <em>заделать</em> = bịt lỗ. <strong>Không thay được.</strong></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="orig">Зачем вы <strong>подделали</strong> подпись начальника?</td>
+          <td class="repl">переделали, приделали</td>
+          <td>Cả hai đều sai. <em>Переделали подпись</em> = làm lại chữ ký (khác nghĩa). <em>Приделали</em> = gắn thêm vào. <strong>Không thay được.</strong></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="orig">Он здорово <strong>проделывает</strong> этот фокус!</td>
+          <td class="repl">делает, разделывает</td>
+          <td><strong>Делает</strong>: thay được, nhưng <em>проделывает</em> nhấn mạnh hơn vào kỹ năng. <em>Разделывает</em> = mổ thịt — không phù hợp.</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="orig">Ваше платье уже сшили, только надо чем-то его украсить, чем-то <strong>отделать</strong>.</td>
+          <td class="repl">доделать, приделать</td>
+          <td><strong>Доделать</strong>: thay được (hoàn thiện thêm). <strong>Приделать</strong>: cần tân ngữ cụ thể (<em>приделать украшение</em>), không dùng một mình được.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── УПР 60 ── -->
+<div class="exercise" id="d60">
+  <div class="ex-head">
+    <div class="ex-num d">60</div>
+    <div class="ex-title">Составьте микродиалоги, используя предложенные сочетания.</div>
+    <span class="ex-type dialog">Диалог</span>
+  </div>
+  <div class="ex-body">
+    <ul class="sentence-list">
+      <li class="sentence-item">
+        <span class="sn">1</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто что <strong>делает</strong> сегодня вечером — …?</div>
+          <div class="dialog-answer">— Кто что делает сегодня вечером?<br>— Я буду готовиться к экзамену, а мой друг пойдёт в кино.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">2</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Какие дела необходимо <strong>переделать</strong> завтра — …?</div>
+          <div class="dialog-answer">— Какие дела необходимо переделать завтра?<br>— Надо переделать доклад: преподаватель сказал, что структура неправильная.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">3</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто <strong>наделал</strong> ошибок в контрольной работе — …?</div>
+          <div class="dialog-answer">— Кто наделал ошибок в контрольной работе?<br>— К сожалению, почти все студенты наделали много ошибок.</div>
+          <div class="note"><strong>Наделать ошибок</strong> (Р.п.) = phạm nhiều lỗi. Cụm cố định hay gặp.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">4</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Где и какие щели и дыры надо <strong>заделать</strong> — …?</div>
+          <div class="dialog-answer">— Где и какие щели нужно заделать?<br>— В ванной есть трещина в стене, её нужно срочно заделать цементом.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">5</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто <strong>проделал</strong> огромную работу — …?</div>
+          <div class="dialog-answer">— Кто проделал огромную работу по подготовке конференции?<br>— Весь наш отдел работал над этим три месяца.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">6</span>
+        <div class="scontent">
+          <div class="dialog-prompt">От кого вы никак не можете <strong>отделаться</strong> — …?</div>
+          <div class="dialog-answer">— От кого вы никак не можете отделаться?<br>— Никак не могу отделаться от одного навязчивого знакомого — звонит каждый день!</div>
+          <div class="note"><strong>Отделаться от кого-либо</strong> (разг.) = thoát khỏi ai phiền phức. Cấu trúc: отделаться от + Р.п.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">7</span>
+        <div class="scontent">
+          <div class="dialog-prompt">С кем или с чем можно быстро <strong>разделаться</strong> — …?</div>
+          <div class="dialog-answer">— С чем можно быстро разделаться?<br>— Думаю, с этим несложным заданием можно разделаться за полчаса.</div>
+          <div class="note"><strong>Разделаться с чем-либо</strong> (разг.) = giải quyết xong nhanh gọn. Cấu trúc: разделаться с + Т.п.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">8</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто и зачем <strong>подделывает</strong> документы — …?</div>
+          <div class="dialog-answer">— Кто и зачем подделывает документы?<br>— К сожалению, некоторые люди подделывают документы ради личной выгоды.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">9</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Кто и какие фокусы <strong>проделывает</strong> на экзаменах — …?</div>
+          <div class="dialog-answer">— Какие фокусы студенты проделывают на экзаменах?<br>— Некоторые проделывают невероятные фокусы: пишут шпаргалки на руках и прячут телефоны.</div>
+          <div class="note"><strong>Проделывать фокусы/трюки</strong> = thực hiện mánh khoé, thủ thuật. Nghĩa 2.</div>
+        </div>
+      </li>
+      <li class="sentence-item">
+        <span class="sn">10</span>
+        <div class="scontent">
+          <div class="dialog-prompt">Что <strong>делается</strong> в общежитии — …?</div>
+          <div class="dialog-answer">— Что делается в общежитии в эти дни?<br>— Там такой шум и беспорядок! Студенты готовятся к сессии, кто-то кричит, кто-то смеётся.</div>
+          <div class="note"><strong>Что делается?</strong> = Chuyện gì đang xảy ra? Cấu trúc vô nhân xưng, nghĩa 2 сделаться: происходить.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</main>
+
+<script>
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const sections = {};
+  navLinks.forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) sections[id] = { link: a, el };
+  });
+  function updateNav() {
+    let active = null;
+    const scroll = window.scrollY + 100;
+    for (const [id, {el}] of Object.entries(sections)) {
+      if (el.offsetTop <= scroll) active = id;
+    }
+    navLinks.forEach(a => a.classList.remove('active'));
+    if (active && sections[active]) sections[active].link.classList.add('active');
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+</script>
+</body>
+</html>

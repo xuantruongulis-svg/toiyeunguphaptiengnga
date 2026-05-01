@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FlashcardList from '../components/Flashcard';
+
+const gotovitCards = [
+  { verb: 'заготавливать — заготовить', meaning: 'Chuẩn bị trước để dự trữ\n(giấy tờ, củi cho mùa đông)' },
+  { verb: 'изготавливать (изготовлять) — изготовить', meaning: 'Chế tạo, sản xuất ra' },
+  { verb: 'наготавливать — наготовить', meaning: 'Nấu/chuẩn bị với số lượng lớn' },
+  { verb: '(наготовиться СВ)', meaning: 'Cố tình làm phiền (vd: cứ phải nấu mãi không hết cho các vị)' },
+  { verb: 'подготавливать (подготовлять) — подготовить', meaning: '1) Chuẩn bị, sắp xếp\n2) Dạy/huấn luyện ai\n3) Báo trước, thông báo (để chuẩn bị tâm lý)' },
+  { verb: 'готовить НСВ', meaning: '1) Chuẩn bị, làm sẵn\n2) Làm bài vở\n3) Nấu ăn' },
+  { verb: 'готовиться НСВ', meaning: '1) Chuẩn bị cho bản thân\n2) Sắp xảy ra (không dùng ở ngôi 1, 2)' },
+  { verb: 'приготовить СВ', meaning: 'Nấu nướng, chuẩn bị (Động từ СВ vạn năng, dùng được với mọi đối tượng)' },
+  { verb: 'приготовиться СВ', meaning: 'Chuẩn bị tâm thế/hành động' },
+  { verb: 'сготовить СВ', meaning: 'Nấu xong (thức ăn)' },
+  { verb: '(уготовить СВ)', meaning: '(cũ) Tương đương приготовить / подготовить (dành cho số phận)' }
+];
 
 export default function GotovitTheory() {
+  const [viewMode, setViewMode] = useState('table');
+
   return (
     <div className="theory-wrapper">
       <div className="theory-section">
@@ -9,11 +26,20 @@ export default function GotovitTheory() {
           <span className="subtitle">Động từ phái sinh từ ГОТОВИТЬ — nấu, chuẩn bị</span>
         </div>
 
-        <div className="verb-list-box">
-          <strong>Danh sách:</strong> заготовить, изготовить, наготовить, (наготовиться), подготовить, готовить(ся), приготовить, приготовиться, сготовить, (уготовить)
+        <div className="exercise-tabs" style={{marginBottom: '1.5rem', justifyContent: 'center'}}>
+          <button className={`ex-tab ${viewMode === 'table' ? 'active' : ''}`} onClick={() => setViewMode('table')}>Dạng Bảng</button>
+          <button className={`ex-tab ${viewMode === 'flashcard' ? 'active' : ''}`} onClick={() => setViewMode('flashcard')}>Luyện Flashcard</button>
         </div>
 
-        <div className="theory-table-container">
+        {viewMode === 'flashcard' ? (
+          <FlashcardList cards={gotovitCards} />
+        ) : (
+          <>
+            <div className="verb-list-box">
+              <strong>Danh sách:</strong> заготовить, изготовить, наготовить, (наготовиться), подготовить, готовить(ся), приготовить, приготовиться, сготовить, (уготовить)
+            </div>
+
+            <div className="theory-table-container">
           <table className="theory-table">
             <thead>
               <tr>
@@ -157,6 +183,8 @@ export default function GotovitTheory() {
             <li>• Prefix <strong>под-</strong> nghiêng về văn phong <span className="tag tag-ofic">chính thức</span> hơn prefix <strong>при-</strong></li>
           </ul>
         </div>
+        </>
+        )}
       </div>
     </div>
   );

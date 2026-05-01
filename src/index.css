@@ -150,6 +150,114 @@ h1 {
   letter-spacing: 0.05em;
 }
 
+/* Practice Banner */
+.practice-banner {
+  width: 100%;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 2.5rem;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.practice-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.practice-banner:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.practice-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  z-index: 1;
+}
+
+.practice-banner-icon {
+  font-size: 4.5rem;
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.4));
+  animation: float 3s ease-in-out infinite;
+}
+
+.practice-banner-info h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  background: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.practice-banner-info p {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.practice-banner-action {
+  background: #3b82f6;
+  color: #fff;
+  padding: 1.2rem 2.5rem;
+  border-radius: 1.5rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s;
+  z-index: 1;
+  box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);
+}
+
+.practice-banner:hover .practice-banner-action {
+  background: #2563eb;
+  transform: translateX(10px);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Practice Grid */
+.practice-grid-container {
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.verb-card.exercise-only:hover {
+  border-color: #f43f5e;
+  box-shadow: 0 20px 25px -5px rgba(244, 63, 94, 0.2);
+}
+
+.verb-card.exercise-only .page-num {
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.1);
+}
+
 /* Choice Overlay */
 .modal-overlay {
   position: fixed;
@@ -422,6 +530,22 @@ h1 {
   h1 { font-size: 2.5rem; }
   .choice-grid { grid-template-columns: 1fr; }
   .section-content { padding: 2rem; }
+  
+  .practice-banner {
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .practice-banner-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .practice-banner-info p {
+    font-size: 1rem;
+  }
 }
 
 /* Theory Content Specialized Styles */
