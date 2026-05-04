@@ -1,6 +1,8 @@
 import React, { useState, Suspense, lazy } from 'react';
-import { verbs } from './data/verbs';
-import { practicalExercises } from './data/practical_exercises';
+import { verbs } from './prefiksalnye_glagoly/data/verbs';
+import { practicalExercises } from './prefiksalnye_glagoly/data/practical_exercises';
+import { practical4KeyExercises } from './prefiksalnye_glagoly/data/practical_4key_exercises';
+import { padezhiExercises } from './padezhi/data/padezhi_exercises';
 import PracticalExercise from './components/PracticalExercise';
 import AIAssistant from './components/AIAssistant';
 import './App.css';
@@ -10,8 +12,8 @@ const theoryComponents = {};
 const exerciseComponents = {};
 
 verbs.forEach(v => {
-  theoryComponents[v.id] = lazy(() => import(`./theory/${v.id}.jsx`));
-  exerciseComponents[v.id] = lazy(() => import(`./exercise/${v.id}.jsx`));
+  theoryComponents[v.id] = lazy(() => import(`./prefiksalnye_glagoly/${v.id}.jsx`));
+  exerciseComponents[v.id] = lazy(() => import(`./prefiksalnye_glagoly/exercise/${v.id}.jsx`));
 });
 
 function DetailView({ verb, type, onBack }) {
@@ -67,11 +69,25 @@ function ChoiceOverlay({ verb, onChoice, onClose }) {
 
 function App() {
   const [selectedVerb, setSelectedVerb] = useState(null);
+  const [currentSection, setCurrentSection] = useState('Префиксальные глаголы');
   const [currentView, setCurrentView] = useState({ type: 'grid', verb: null });
+
+  const sections = [
+    'Падежи',
+    'Вид глагола',
+    'Глаголы движения',
+    'Причастия и деепричастия',
+    'Префиксальные глаголы',
+    'Ключи к основным упражнениям'
+  ];
 
   const handleBack = () => {
     if (currentView.fromPractice) {
-      setCurrentView({ type: 'practice_grid', verb: null });
+      if (currentView.from4Key) {
+        setCurrentView({ type: 'practice_4key_grid', verb: null });
+      } else {
+        setCurrentView({ type: 'practice_grid', verb: null });
+      }
     } else {
       setCurrentView({ type: 'grid', verb: null });
     }
@@ -79,7 +95,25 @@ function App() {
 
   return (
     <>
-      {currentView.type === 'grid' ? (
+      <nav className="main-nav">
+        <div className="nav-container">
+          {sections.map((section) => (
+            <button
+              key={section}
+              className={`nav-item ${currentSection === section ? 'active' : ''}`}
+              onClick={() => {
+                setCurrentSection(section);
+                setCurrentView({ type: 'grid', verb: null });
+              }}
+            >
+              {section}
+            </button>
+          ))}
+        </div>
+      </nav>
+
+      {currentSection === 'Префиксальные глаголы' ? (
+        currentView.type === 'grid' ? (
         <div className="container">
           <div className="bg-glow"></div>
           <header className="header">
@@ -93,6 +127,19 @@ function App() {
               <div className="practice-banner-info">
                 <h2>Luyện tập thực chiến</h2>
                 <p>Hệ thống bài tập tổng hợp, trắc nghiệm và phân tích chuyên sâu cho 14 cặp động từ</p>
+              </div>
+            </div>
+            <div className="practice-banner-action">
+              Bắt đầu ngay <span>→</span>
+            </div>
+          </div>
+
+          <div className="practice-banner" style={{ marginTop: '-1.5rem', background: 'var(--accent-gradient)' }} onClick={() => setCurrentView({ type: 'practice_4key_grid' })}>
+            <div className="practice-banner-content">
+              <div className="practice-banner-icon">🔑</div>
+              <div className="practice-banner-info">
+                <h2>Thực chiến 4 key</h2>
+                <p>Hệ thống bài tập nâng cao rèn luyện 4 kỹ năng then chốt</p>
               </div>
             </div>
             <div className="practice-banner-action">
@@ -170,6 +217,38 @@ function App() {
             </div>
           </div>
         </div>
+      ) : currentView.type === 'practice_4key_grid' ? (
+        <div className="section-container">
+          <nav className="section-nav">
+            <button className="back-btn" onClick={() => setCurrentView({ type: 'grid', verb: null })}>
+              <span className="arrow">←</span> Quay lại
+            </button>
+            <div className="section-title">
+              <h2>🔑 THỰC CHIẾN 4 KEY</h2>
+            </div>
+            <div className="nav-page">{practical4KeyExercises.length} Bài tập</div>
+          </nav>
+          
+          <div className="practice-grid-container">
+            <div className="grid">
+              {practical4KeyExercises.map((ex, index) => (
+                <div 
+                  key={index} 
+                  className="verb-card simple exercise-only" 
+                  style={{ '--i': index }}
+                  onClick={() => setCurrentView({ type: 'practical_exercise', exercise: ex, fromPractice: true, from4Key: true })}
+                >
+                  <div className="verb-content">
+                    <span className="page-num">Bài {ex.num}</span>
+                    <div className="verb-icon">🔑</div>
+                    <span className="verb-ru" style={{fontSize: '1.2rem', marginTop: '0.5rem'}}>{ex.title.split('-')[1]?.trim() || ex.title}</span>
+                    <span className="verb-hint">Làm bài tập</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       ) : currentView.type === 'practical_exercise' ? (
         <div className="section-container">
           <nav className="section-nav">
@@ -193,6 +272,71 @@ function App() {
           type={currentView.type} 
           onBack={handleBack} 
         />
+      )
+      ) : currentSection === 'Падежи' ? (
+        currentView.type === 'grid' || currentView.type === 'practice_grid' ? (
+        <div className="section-container">
+          <nav className="section-nav">
+            <div className="section-title">
+              <h2>🎯 ПАДЕЖИ - LUYỆN TẬP</h2>
+            </div>
+            <div className="nav-page">{padezhiExercises.length} Bài tập</div>
+          </nav>
+          
+          <div className="practice-grid-container">
+            <div className="grid">
+              {padezhiExercises.map((ex, index) => (
+                <div 
+                  key={index} 
+                  className="verb-card simple exercise-only" 
+                  style={{ '--i': index }}
+                  onClick={() => setCurrentView({ type: 'padezhi_exercise', exercise: ex, fromPractice: true })}
+                >
+                  <div className="verb-content">
+                    <span className="page-num">Bài {ex.num}</span>
+                    <div className="verb-icon">📝</div>
+                    <span className="verb-ru" style={{fontSize: '1.2rem', marginTop: '0.5rem', textAlign: 'center'}}>{ex.title}</span>
+                    <span className="verb-hint">Làm bài tập</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        ) : currentView.type === 'padezhi_exercise' ? (
+        <div className="section-container">
+          <nav className="section-nav">
+            <button className="back-btn" onClick={handleBack}>
+              <span className="arrow">←</span> Quay lại
+            </button>
+            <div className="section-title">
+              <span className="verb-icon">📝</span>
+              <h2>{currentView.exercise.title}</h2>
+            </div>
+            <div className="nav-page">Bài {currentView.exercise.num}</div>
+          </nav>
+          
+          <main className="section-content">
+            <PracticalExercise exercise={currentView.exercise} />
+          </main>
+        </div>
+        ) : (
+        <div className="placeholder-section">
+          <div className="placeholder-content">
+            <div className="placeholder-icon">🚧</div>
+            <h2>{currentSection}</h2>
+            <p>Nội dung đang được cập nhật. Vui lòng quay lại sau!</p>
+          </div>
+        </div>
+        )
+      ) : (
+        <div className="placeholder-section">
+          <div className="placeholder-content">
+            <div className="placeholder-icon">🚧</div>
+            <h2>{currentSection}</h2>
+            <p>Nội dung đang được cập nhật. Vui lòng quay lại sau!</p>
+          </div>
+        </div>
       )}
       <AIAssistant />
     </>

@@ -39,9 +39,112 @@ body {
 
 #root {
   width: 100%;
-  max-width: 1200px;
-  padding: 2rem;
+  max-width: 1400px;
+  padding: 0 2rem 2rem 2rem;
   z-index: 1;
+  margin-top: 80px;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.nav-container {
+  display: flex;
+  gap: 1rem;
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 2rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.nav-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.nav-item {
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.nav-item:hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.nav-item.active {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1.2rem;
+  right: 1.2rem;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 3px 3px 0 0;
+}
+
+.placeholder-section {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.placeholder-content {
+  text-align: center;
+  background: white;
+  padding: 4rem;
+  border-radius: 3rem;
+  box-shadow: var(--glass-shadow);
+  max-width: 600px;
+  border: 1px solid var(--glass-border);
+}
+
+.placeholder-icon {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.placeholder-content h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.placeholder-content p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
 }
 
 .container {
