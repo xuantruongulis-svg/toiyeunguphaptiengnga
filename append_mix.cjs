@@ -1,0 +1,266 @@
+const fs = require('fs');
+const path = require('path');
+
+const exercises = [
+  {
+    id: 'ex68',
+    num: 68,
+    title: 'Упражнение 68 - Заключительное (Телевизор)',
+    description: 'От данных в скобках глаголов образуйте либо причастия, либо деепричастия.',
+    questions: [
+      {
+        sentence: "Каждый раз, ... (посмотреть) телевизор, надо умыть лицо.",
+        options: ["посмотрев", "посмотревший", "посмотренная"],
+        correct: "посмотрев",
+        viet: "Mỗi lần xem TV xong, bạn cần rửa mặt ngay.",
+        why: "Hành động phụ xảy ra trước hành động chính -> dùng trạng động từ hoàn thành (СВ) 'посмотрев'."
+      },
+      {
+        sentence: "Идёт ... (определить) процесс взаимодействия телеизлучения с воздухом.",
+        options: ["определённый", "определяя", "определив"],
+        correct: "определённый",
+        viet: "Một quá trình tương tác nhất định giữa bức xạ truyền hình và không khí đang diễn ra.",
+        why: "Bổ nghĩa cho 'процесс' (giống đực, Cách 1) -> dùng phân từ bị động 'определённый'."
+      },
+      {
+        sentence: "Электроны, непрерывным потоком ... (поступать) на экран...",
+        options: ["поступая", "поступающие", "поступавших"],
+        correct: "поступающие",
+        viet: "Các electron liên tục truyền tới màn hình...",
+        why: "Bổ nghĩa cho 'электроны' (số nhiều, Cách 1) -> phân từ chủ động 'поступающие'."
+      },
+      {
+        sentence: "...приводят к образованию статического электричества, ... (притягивать) пыль.",
+        options: ["притягивая", "притягивающего", "притягиваемого"],
+        correct: "притягивающего",
+        viet: "...dẫn đến sự hình thành tĩnh điện hút bụi.",
+        why: "Bổ nghĩa cho 'электричества' (giống trung, Cách 2) -> phân từ chủ động 'притягивающего'."
+      },
+      {
+        sentence: "Пыль оседает на коже ... (сидеть) у экрана людей, ... (*образовать) чёрные точки.",
+        options: ["сидящих, образуя", "сидящих, образованные", "сидя, образуя"],
+        correct: "сидящих, образуя",
+        viet: "Bụi đọng lại trên da của những người đang ngồi trước màn hình, tạo thành những chấm đen.",
+        why: "людей (Cách 2) -> сидящих (phân từ). Hành động phụ tạo thành chấm đen -> образуя (trạng động từ)."
+      },
+      {
+        sentence: "Сколько гадости ловит человек, часами ... (проводить) время у телевизора?",
+        options: ["проведя", "проводящий", "проводимый"],
+        correct: "проводящий",
+        viet: "Một người dành hàng giờ trước TV sẽ hứng chịu bao nhiêu thứ độc hại này?",
+        why: "Bổ nghĩa cho 'человек' (Cách 1, giống đực) -> phân từ chủ động 'проводящий'."
+      }
+    ]
+  },
+  {
+    id: 'ex69',
+    num: 69,
+    title: 'Упражнение 69 - Дом ХХI века',
+    description: 'Образуйте причастия или деепричастия от глаголов в скобках.',
+    questions: [
+      {
+        sentence: "Его дом, ... (расположить) на берегу озера, стоит того, чтобы о нём рассказать.",
+        options: ["расположенный", "располагая", "расположив"],
+        correct: "расположенный",
+        viet: "Ngôi nhà của ông ấy, nằm trên bờ hồ, rất đáng để kể đến.",
+        why: "Bổ nghĩa cho 'дом' (Cách 1, bị động) -> расположенный."
+      },
+      {
+        sentence: "В здании ... (реализовать) самые современные технологии...",
+        options: ["реализованные", "реализованы", "реализуя"],
+        correct: "реализованы",
+        viet: "Trong tòa nhà, những công nghệ hiện đại nhất đã được hiện thực hóa...",
+        why: "Đóng vai trò vị ngữ bị động -> dùng phân từ ngắn đuôi 'реализованы'."
+      },
+      {
+        sentence: "...что позволяет дому «приспособиться» к любому гостю, ... (попасть) туда.",
+        options: ["попавшему", "попав", "попадая"],
+        correct: "попавшему",
+        viet: "...điều này cho phép ngôi nhà 'thích ứng' với bất kỳ vị khách nào bước vào đó.",
+        why: "гостю (Cách 3, chủ động quá khứ) -> попавшему."
+      },
+      {
+        sentence: "Каждый ... (входить) сюда получает личный номер.",
+        options: ["входя", "входящий", "входивший"],
+        correct: "входящий",
+        viet: "Mỗi người bước vào đây đều nhận được một mã số cá nhân.",
+        why: "Dùng như danh từ làm chủ ngữ (Cách 1) -> входящий."
+      },
+      {
+        sentence: "Имеются ... (встроить) устройства, ... (обслуживать) гостя.",
+        options: ["встроенные, обслуживающие", "встроив, обслуживая", "встроенные, обслуживая"],
+        correct: "встроенные, обслуживающие",
+        viet: "Có các thiết bị được tích hợp sẵn để phục vụ khách.",
+        why: "Cả hai đều bổ nghĩa cho 'устройства' (Cách 1) -> phân từ bị động 'встроенные' và phân từ chủ động 'обслуживающие'."
+      },
+      {
+        sentence: "Сенсоры контролируют свет, автоматически ... (выключать) их...",
+        options: ["выключающие", "выключая", "выключив"],
+        correct: "выключая",
+        viet: "Các cảm biến kiểm soát ánh sáng, tự động tắt chúng...",
+        why: "Hành động phụ xảy ra đồng thời với 'контролируют' -> trạng động từ НСВ 'выключая'."
+      }
+    ]
+  },
+  {
+    id: 'ex70',
+    num: 70,
+    title: 'Упражнение 70 - Ум и память',
+    description: 'Образуйте причастия или деепричастия от глаголов в скобках.',
+    questions: [
+      {
+        sentence: "Упражнения, ... (позволять) сохранить ум и память крепкими.",
+        options: ["позволяющие", "позволяя", "позволившие"],
+        correct: "позволяющие",
+        viet: "Những bài tập giúp (cho phép) giữ gìn trí tuệ và trí nhớ minh mẫn.",
+        why: "Bổ nghĩa cho 'Упражнения' (Cách 1) -> phân từ chủ động 'позволяющие'."
+      },
+      {
+        sentence: "Перечислите в ... (возрастать) порядке числа...",
+        options: ["возрастающем", "возрастающим", "возрастая"],
+        correct: "возрастающем",
+        viet: "Hãy liệt kê các con số theo thứ tự tăng dần...",
+        why: "в порядке (Cách 6, giống đực) -> возрастающем."
+      },
+      {
+        sentence: "Произнесите буквы, ... (придумывать) на каждую из них слово.",
+        options: ["придумывающие", "придумывая", "придумав"],
+        correct: "придумывая",
+        viet: "Hãy đọc các chữ cái, đồng thời nghĩ ra một từ cho mỗi chữ cái đó.",
+        why: "Hành động phụ xảy ra đồng thời -> trạng động từ НСВ 'придумывая'."
+      },
+      {
+        sentence: "Придумайте фразы, ... (содержать) какое-нибудь ... (выбрать) слово.",
+        options: ["содержащие, выбранное", "содержа, выбрав", "содержащие, выбирая"],
+        correct: "содержащие, выбранное",
+        viet: "Hãy nghĩ ra các cụm từ có chứa một từ nào đó đã được chọn.",
+        why: "фразы (Cách 4 = 1 vô sinh) -> содержащие. слово (Cách 4, bị động quá khứ) -> выбранное."
+      },
+      {
+        sentence: "Делайте это в быстром темпе, не ... (заботиться) о том, чтобы фразы были «умными».",
+        options: ["заботясь", "заботившись", "заботящиеся"],
+        correct: "заботясь",
+        viet: "Hãy làm điều này với tốc độ nhanh, không bận tâm đến việc cụm từ phải 'thông minh'.",
+        why: "Hành động phụ xảy ra đồng thời -> trạng động từ НСВ 'заботясь'."
+      }
+    ]
+  },
+  {
+    id: 'ex71',
+    num: 71,
+    title: 'Упражнение 71 - Лебединое озеро (Сказка)',
+    description: 'Вставьте подходящие причастия или деепричастия.',
+    questions: [
+      {
+        sentence: "Гости, ... (прийти) в замок, поздравляют принца.",
+        options: ["пришедшие", "придя", "приходившие"],
+        correct: "пришедшие",
+        viet: "Những vị khách đã đến lâu đài chúc mừng hoàng tử.",
+        why: "Гости (Cách 1, quá khứ) -> пришедшие."
+      },
+      {
+        sentence: "Лебеди, ... (превратиться) в девушек, окружают Зигфрида, ... (умолять) не убивать их.",
+        options: ["превратившись, умоляя", "превратившиеся, умоляя", "превращаясь, умоляя"],
+        correct: "превратившись, умоляя",
+        viet: "Những con thiên nga, sau khi biến thành các cô gái, vây quanh Siegfried, cầu xin chàng đừng giết họ.",
+        why: "Biến thành cô gái trước (СВ) -> превратившись. Cầu xin đồng thời (НСВ) -> умоляя."
+      },
+      {
+        sentence: "Зигфрид останавливается, ... (поразить) красотой королевы.",
+        options: ["поразив", "поражённый", "поражающий"],
+        correct: "поражённый",
+        viet: "Siegfried dừng lại, bị kinh ngạc bởi vẻ đẹp của nữ hoàng.",
+        why: "Bị tác động (bị động quá khứ) -> поражённый."
+      },
+      {
+        sentence: "Все мысли юноши ... (устремить) к ... (заколдовать) девушке.",
+        options: ["устремлены, заколдованной", "устремлённые, заколдовав", "устремлены, заколдовывая"],
+        correct: "устремлены, заколдованной",
+        viet: "Mọi tâm trí của chàng trai đều hướng về cô gái bị phù phép.",
+        why: "Vị ngữ bị động -> устремлены (ngắn đuôi). Cô gái bị phù phép (Cách 3) -> заколдованной."
+      },
+      {
+        sentence: "... (Понять) весь обман, Зигфрид в отчаянье выбегает из зала.",
+        options: ["Понимая", "Поняв", "Понятый"],
+        correct: "Поняв",
+        viet: "Sau khi hiểu ra toàn bộ sự lừa dối, Siegfried tuyệt vọng chạy ra khỏi hội trường.",
+        why: "Hành động phụ xảy ra trước (СВ) -> Поняв."
+      },
+      {
+        sentence: "Злой волшебник, ... (потрясти) силой их любви, умирает.",
+        options: ["потрясая", "потрясший", "потрясённый"],
+        correct: "потрясённый",
+        viet: "Tên phù thủy độc ác, bị chấn động bởi sức mạnh tình yêu của họ, đã gục chết.",
+        why: "Bị tác động (bị động quá khứ) -> потрясённый."
+      }
+    ]
+  },
+  {
+    id: 'ex72',
+    num: 72,
+    title: 'Упражнение 72 - Щелкунчик',
+    description: 'Вставьте подходящие причастия или деепричастия.',
+    questions: [
+      {
+        sentence: "Множество гостей ... (пригласить) на ёлку. Роскошно ... (украсить), она вызывает восторг.",
+        options: ["приглашено, украшенная", "приглашены, украшая", "приглашая, украсив"],
+        correct: "приглашено, украшенная",
+        viet: "Rất nhiều khách đã được mời đến dự tiệc Giáng sinh. Được trang hoàng lộng lẫy, cây thông gây sự thích thú.",
+        why: "Множество гостей + bị động -> приглашено/приглашены. Cây thông (она, Cách 1) -> украшенная."
+      },
+      {
+        sentence: "Детвора резвится, ... (любоваться) ... (получить) подарками.",
+        options: ["любуясь, полученными", "любовавшись, получая", "любующиеся, получив"],
+        correct: "любуясь, полученными",
+        viet: "Lũ trẻ đùa nghịch, thích thú ngắm nhìn những món quà vừa nhận được.",
+        why: "Hành động đồng thời -> любуясь. Quà được nhận (Cách 5) -> полученными."
+      },
+      {
+        sentence: "... (Завести) куклы танцуют. Взрослые, ... (опасаться) за них, приказывают унести их.",
+        options: ["Заведя, опасаясь", "Заведённые, опасаясь", "Заводя, опасавшись"],
+        correct: "Заведённые, опасаясь",
+        viet: "Những con búp bê được lên dây cót đang nhảy múa. Những người lớn, lo sợ cho chúng, ra lệnh mang chúng đi.",
+        why: "Куклы (Cách 1, bị động) -> Заведённые. Взрослые (Hành động phụ) -> опасаясь."
+      },
+      {
+        sentence: "Маша поднимает ... (изуродовать) Щелкунчика.",
+        options: ["изуродованного", "изуродовав", "изуродуя"],
+        correct: "изуродованного",
+        viet: "Masha nâng Kẹp Hạt Dẻ đã bị làm hỏng lên.",
+        why: "Щелкунчика (Cách 4 động vật, bị động) -> изуродованного."
+      },
+      {
+        sentence: "Маша, ... (снять) туфельку, бросает её в мышиного царя.",
+        options: ["сняв", "снимая", "снятая"],
+        correct: "сняв",
+        viet: "Masha, sau khi tháo chiếc giày ra, ném nó vào vua chuột.",
+        why: "Hành động phụ xảy ra trước (СВ) -> сняв."
+      },
+      {
+        sentence: "... (Встать) на колени перед Машей, принц умоляет её следовать за ним.",
+        options: ["Вставая", "Встав", "Вставший"],
+        correct: "Встав",
+        viet: "Quỳ gối trước Masha, hoàng tử cầu xin cô đi theo chàng.",
+        why: "Hành động hoàn tất (СВ) -> Встав."
+      }
+    ]
+  }
+];
+
+const filePath = path.join(__dirname, 'src', 'formy_glagola', 'data', 'ex_deeprichastie.js');
+let content = fs.readFileSync(filePath, 'utf8');
+
+const closingBracketIndex = content.lastIndexOf('];');
+if (closingBracketIndex !== -1) {
+    let before = content.substring(0, closingBracketIndex);
+    before = before.trimEnd();
+    
+    let objectsToAdd = JSON.stringify(exercises, null, 4);
+    objectsToAdd = objectsToAdd.substring(objectsToAdd.indexOf('[') + 1, objectsToAdd.lastIndexOf(']'));
+    
+    const newContent = before + ',\n' + objectsToAdd + '\n];\n';
+    fs.writeFileSync(filePath, newContent, 'utf8');
+    console.log('Appended mix exercises successfully.');
+} else {
+    console.log('Error: Could not find ];');
+}

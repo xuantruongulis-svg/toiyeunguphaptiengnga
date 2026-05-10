@@ -9,7 +9,7 @@ function PracticalQuestion({ q, index }) {
     <div className={`quiz-item ${answered ? (isCorrect ? 'correct' : 'wrong') : ''}`}>
       <div className="quiz-q">
         <span className="quiz-num">{index + 1}</span>
-        <span dangerouslySetInnerHTML={{ __html: q.sentence.replace('…', '<span class="quiz-blank">___</span>') }} />
+        <span dangerouslySetInnerHTML={{ __html: q.sentence.replace(/\.{3}|…/g, '<span class="quiz-blank">___</span>') }} />
       </div>
       
       <div className="quiz-options">
