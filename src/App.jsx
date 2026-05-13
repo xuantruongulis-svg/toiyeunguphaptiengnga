@@ -4,7 +4,12 @@ import { practicalExercises } from './prefiksalnye_glagoly/data/practical_exerci
 import { practical4KeyExercises } from './prefiksalnye_glagoly/data/practical_4key_exercises';
 import { padezhiExercises_1, padezhiExercises_2, padezhiExercises_3, padezhiExercises } from './padezhi/data/padezhi_exercises';
 import { formyGlagolaExercises } from './formy_glagola/data/formy_glagola_exercises';
+import { deeprichastieExercises } from './formy_glagola/data/ex_deeprichastie';
 import { vidGlagolaExercises } from './vid_glagola/data/ex_vid_glagola';
+import { soedinenieExercises } from './ssp/data/ex_soedinenie';
+import { sopostavlenieExercises } from './ssp/data/ex_sopostavlenie';
+import { protivopostavlenieExercises } from './ssp/data/ex_protivopostavlenie';
+import { izyasnitelnyeExercises, pryamayaRechExercises, opredelitelnyeExercises } from './spp/data/ex_spp';
 import { mestoimenieExercises, neopredelennye_exercises } from './mestoimenie/data/mestoimenie_exercises';
 import { prilagatelnoeExercises_1 } from './prilagatelnoe/data/prilagatelnoe_exercises';
 import PracticalExercise from './components/PracticalExercise';
@@ -25,7 +30,8 @@ verbs.forEach(v => {
 // Participle and Gerund components
 theoryComponents['prichastie'] = lazy(() => import('./formy_glagola/theory/PrichastieTheory.jsx'));
 exerciseComponents['prichastie'] = lazy(() => import('./formy_glagola/exercise/PrichastieExercise.jsx'));
-theoryComponents['deeprichastie'] = lazy(() => import('./formy_glagola/theory/DeeprichastieTheory.jsx'));
+theoryComponents['deeprichastie_nsv'] = lazy(() => import('./formy_glagola/theory/DeeprichastieTheoryNSV.jsx'));
+theoryComponents['deeprichastie_sv'] = lazy(() => import('./formy_glagola/theory/DeeprichastieTheorySV.jsx'));
 exerciseComponents['deeprichastie'] = lazy(() => import('./formy_glagola/exercise/DeeprichastieExercise.jsx'));
 theoryComponents['mix_prich_deeprich'] = lazy(() => import('./formy_glagola/theory/MixTheory.jsx'));
 exerciseComponents['mix_prich_deeprich'] = lazy(() => import('./formy_glagola/exercise/MixExercise.jsx'));
@@ -41,6 +47,11 @@ theoryComponents['vid_future'] = lazy(() => import('./vid_glagola/theory/VidFutu
 exerciseComponents['vid_future'] = lazy(() => import('./vid_glagola/exercise/VidFutureExercise.jsx'));
 theoryComponents['imperative'] = lazy(() => import('./vid_glagola/theory/ImperativeTheory.jsx'));
 theoryComponents['mestoimenie'] = lazy(() => import('./mestoimenie/theory/MestoimenieTheory.jsx'));
+theoryComponents['sopostavlenie'] = lazy(() => import('./ssp/theory/SopostavlenieTheory.jsx'));
+theoryComponents['protivopostavlenie'] = lazy(() => import('./ssp/theory/ProtivopostavlenieTheory.jsx'));
+theoryComponents['izyasnitelnye'] = lazy(() => import('./spp/theory/IzyasnitelnyeTheory.jsx'));
+theoryComponents['pryamaya_rech'] = lazy(() => import('./spp/theory/PryamayaRechTheory.jsx'));
+theoryComponents['opredelitelnye'] = lazy(() => import('./spp/theory/OpredelitelnyeTheory.jsx'));
 
 
 function DetailView({ verb, type, onBack }) {
@@ -119,10 +130,31 @@ function App() {
     '18. Выражение временных и причинных отношений',
     '19. Выражение условных и целевых отношений',
     '20. Выражение следственных отношений и уступки',
-    '21. Префиксальные глаголы'
+    '21. Префиксальные глаголы',
+    'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)',
+    'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП',
+    'III: Nhóm Câu phức chỉ hệ quả logic và hoàn cảnh (Toàn bộ các mục còn lại)'
   ];
 
   const subSectionsMap = {
+    'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)': [
+      { id: 'soedinenie', title: 'Соединение, присоединение (Kết nối, bổ sung)', icon: '🔗' },
+      { id: 'sopostavlenie', title: 'Сопоставление (Đối chiếu)', icon: '⚖️' },
+      { id: 'protivopostavlenie', title: 'Противопоставление (Đối lập)', icon: '⚡' }
+    ],
+    'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП': [
+      { id: 'izyasnitelnye', title: 'Изъяснительные предложения (Mệnh đề phụ bổ ngữ)', icon: '🗣️' },
+      { id: 'pryamaya_rech', title: 'Прямая и косвенная речь (Lời nói trực tiếp/gián tiếp)', icon: '💬' },
+      { id: 'opredelitelnye', title: 'Определительные предложения (Mệnh đề phụ định ngữ)', icon: '📌' }
+    ],
+    'III: Nhóm Câu phức chỉ hệ quả logic và hoàn cảnh (Toàn bộ các mục còn lại)': [
+      { id: 'vremya', title: 'Время (Thời gian)', icon: '⏳' },
+      { id: 'prichina', title: 'Причина (Nguyên nhân)', icon: '❓' },
+      { id: 'uslovie', title: 'Условие (Điều kiện)', icon: '💡' },
+      { id: 'tsel', title: 'Цель (Mục đích)', icon: '🎯' },
+      { id: 'sledstvie', title: 'Следствие (Hệ quả)', icon: '➡️' },
+      { id: 'ustupka', title: 'Уступка (Nhượng bộ)', icon: '🤝' }
+    ],
     '3. Местоимение': [
       { id: 'mestoimenie', title: 'Tổng hợp ngữ pháp Đại từ (Местоимение)', icon: '👤' },
       { id: 'mestoimenie_ex', title: 'Bài tập Đại từ (Местоимение)', icon: '📝' }
@@ -136,12 +168,12 @@ function App() {
     '13. Активные причастия: образование и употребление.': [
       { id: 'prichastie', title: 'Активные причастия', icon: '🔗' }
     ],
-    '14. Пассивные причастия: образование и употребление.': [
+    '14. Пассивные причастия: образование và употребление.': [
       { id: 'prichastie', title: 'Пассивные причастия', icon: '🔗' }
     ],
     '15. Деепричастие': [
-      { id: 'deeprichastie', title: 'Деепричастие', icon: '🏃' },
-      { id: 'mix_prich_deeprich', title: 'Заключительные упражнения', icon: '🎓' }
+      { id: 'deeprichastie_nsv', title: 'Деепричастия НСВ', icon: '🏃', page: 196 },
+      { id: 'deeprichastie_sv', title: 'Деепричастия СВ', icon: '🏃', page: 198 }
     ]
   };
 
@@ -588,7 +620,7 @@ function App() {
           <div className="practice-grid-container">
             {subSectionsMap[currentSection].length > 0 ? (
               <>
-                {['3. Местоимение', '5. Вид глагола'].includes(currentSection) && <h3 style={{color: 'var(--accent-color)', marginBottom: '1.5rem', marginLeft: '1rem', fontSize: '1.5rem'}}>📚 LÝ THUYẾT</h3>}
+                {['3. Местоимение', '5. Вид глагола', '15. Деепричастие'].includes(currentSection) && <h3 style={{color: 'var(--accent-color)', marginBottom: '1.5rem', marginLeft: '1rem', fontSize: '1.5rem'}}>📚 LÝ THUYẾT</h3>}
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))' }}>
                   {subSectionsMap[currentSection].map((sub, index) => (
                     <div 
@@ -598,9 +630,27 @@ function App() {
                       onClick={() => {
                         if (currentSection === 'Формы русского глагола' && (sub.id === 'participle' || sub.id === 'gerund')) {
                           setCurrentView({ type: 'subsection_practice_grid', subId: sub.id, subTitle: sub.title });
-                        } else if (['3. Местоимение', '5. Вид глагола'].includes(currentSection)) {
+                        } else if (currentSection === 'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)') {
+                          if (['soedinenie', 'sopostavlenie', 'protivopostavlenie'].includes(sub.id)) {
+                            setSelectedVerb({ ...sub, ru: sub.title });
+                          } else {
+                            alert('Nội dung đang được cập nhật. Anh vui lòng quay lại sau nhé!');
+                          }
+                        } else if (currentSection === 'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП') {
+                          if (['izyasnitelnye', 'pryamaya_rech', 'opredelitelnye'].includes(sub.id)) {
+                            setSelectedVerb({ ...sub, ru: sub.title });
+                          } else {
+                            alert('Nội dung đang được cập nhật. Anh vui lòng quay lại sau nhé!');
+                          }
+                        } else if (currentSection === 'III: Nhóm Câu phức chỉ hệ quả logic và hoàn cảnh (Toàn bộ các mục còn lại)') {
+                          if (['vremya', 'prichina', 'uslovie', 'tsel', 'sledstvie', 'ustupka'].includes(sub.id)) {
+                            setSelectedVerb({ ...sub, ru: sub.title });
+                          } else {
+                            alert('Nội dung đang được cập nhật. Anh vui lòng quay lại sau nhé!');
+                          }
+                        } else if (['3. Местоимение', '5. Вид глагола', '15. Деепричастие'].includes(currentSection)) {
                           setCurrentView({ type: 'theory', verb: { ...sub, ru: sub.title } });
-                        } else if (['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование и употребление.', '15. Деепричастие'].includes(currentSection)) {
+                        } else if (['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование và употребление.'].includes(currentSection)) {
                           setSelectedVerb({ ...sub, ru: sub.title });
                         } else {
                           alert('Nội dung đang được cập nhật. Anh vui lòng quay lại sau nhé!');
@@ -612,18 +662,18 @@ function App() {
                         <span className="verb-ru" style={{fontSize: '1.1rem', marginTop: '0.5rem', textAlign: 'center'}}>{sub.title}</span>
                         <span className="verb-hint">
                           {['3. Местоимение', '5. Вид глагола'].includes(currentSection) ? 'Xem lý thuyết' : 
-                           (currentSection === 'Формы русского глагола' && (sub.id === 'participle' || sub.id === 'gerund')) || ['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование и употребление.', '15. Деепричастие'].includes(currentSection) ? 'Chọn nội dung' : 'Chờ cập nhật'}
+                           (currentSection === 'Формы русского глагола' && (sub.id === 'participle' || sub.id === 'gerund')) || currentSection === 'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)' || currentSection === 'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП' || currentSection === 'III: Nhóm Câu phức chỉ hệ quả logic và hoàn cảnh (Toàn bộ các mục còn lại)' || ['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование и употребление.', '15. Деепричастие'].includes(currentSection) ? 'Chọn nội dung' : 'Chờ cập nhật'}
                         </span>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                {['5. Вид глагола'].includes(currentSection) && (
+                {['5. Вид глагола', '15. Деепричастие'].includes(currentSection) && (
                   <>
                     <h3 style={{color: 'var(--accent-color)', marginBottom: '1.5rem', marginTop: '3rem', marginLeft: '1rem', fontSize: '1.5rem'}}>📝 LUYỆN TẬP</h3>
                     <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))' }}>
-                      {vidGlagolaExercises.map((ex, index) => (
+                      {(currentSection === '5. Вид глагола' ? vidGlagolaExercises : deeprichastieExercises).map((ex, index) => (
                         <div 
                           key={`ex-${index}`} 
                           className="verb-card horizontal exercise-only" 
@@ -637,6 +687,11 @@ function App() {
                           </div>
                         </div>
                       ))}
+                      {(currentSection === '15. Деепричастие' && deeprichastieExercises.length === 0) && (
+                        <div className="placeholder-card" style={{ gridColumn: '1 / -1', padding: '2rem', textAlign: 'center', background: 'rgba(255,255,255,0.05)', borderRadius: '15px' }}>
+                          <p style={{ color: '#a0aec0' }}>Bài tập đang được cập nhật...</p>
+                        </div>
+                      )}
                     </div>
                   </>
                 )}
@@ -651,10 +706,20 @@ function App() {
               </div>
             )}
           </div>
-          {selectedVerb && ['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование и употребление.', '15. Деепричастие'].includes(currentSection) && (
+          {selectedVerb && ['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование và употребление.', 'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)', 'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП', 'III: Nhóm Câu phức chỉ hệ quả logic và hoàn cảnh (Toàn bộ các mục còn lại)'].includes(currentSection) && (
             <ChoiceOverlay 
               verb={selectedVerb} 
-              onChoice={(type) => setCurrentView({ type, verb: selectedVerb })}
+              onChoice={(type) => {
+                if (type === 'exercise' && ['soedinenie', 'sopostavlenie', 'protivopostavlenie', 'izyasnitelnye', 'pryamaya_rech', 'opredelitelnye'].includes(selectedVerb.id)) {
+                  setCurrentView({ type: 'subsection_practice_grid', subId: selectedVerb.id, subTitle: selectedVerb.title });
+                } else if (type === 'exercise' && ['vremya', 'prichina', 'uslovie', 'tsel', 'sledstvie', 'ustupka'].includes(selectedVerb.id)) {
+                  alert('Nội dung bài tập đang được cập nhật!');
+                } else if (type === 'theory' && ['vremya', 'prichina', 'uslovie', 'tsel', 'sledstvie', 'ustupka'].includes(selectedVerb.id)) {
+                  alert('Nội dung lý thuyết đang được cập nhật!');
+                } else {
+                  setCurrentView({ type, verb: selectedVerb });
+                }
+              }}
               onClose={() => setSelectedVerb(null)} 
             />
           )}
@@ -666,14 +731,14 @@ function App() {
               <span className="arrow">←</span> Quay lại
             </button>
             <div className="section-title">
-              <h2>🎯 {currentView.subTitle ? currentView.subTitle.toUpperCase() : 'BÀI TẬP'} - LUYỆN TẬP</h2>
+              <h2>🎯 {currentView.subTitle ? currentView.subTitle.toUpperCase() : 'BÀI TẬP'}</h2>
             </div>
           </nav>
           
-          <div className="practice-grid-container">
+          <div className="practice-grid-container" style={{ marginTop: '2rem' }}>
             <div className="grid">
-              {formyGlagolaExercises
-                .filter(ex => currentView.subId === 'participle' ? ex.id === 'ex50' || ex.id === 'ex51' : ex.id === 'ex52')
+              {(currentView.subId === 'soedinenie' ? soedinenieExercises : currentView.subId === 'sopostavlenie' ? sopostavlenieExercises : currentView.subId === 'protivopostavlenie' ? protivopostavlenieExercises : currentView.subId === 'izyasnitelnye' ? izyasnitelnyeExercises : currentView.subId === 'pryamaya_rech' ? pryamayaRechExercises : currentView.subId === 'opredelitelnye' ? opredelitelnyeExercises : formyGlagolaExercises
+                .filter(ex => currentView.subId === 'participle' ? ex.id === 'ex50' || ex.id === 'ex51' : ex.id === 'ex52'))
                 .map((ex, index) => (
                 <div 
                   key={index} 
@@ -692,6 +757,7 @@ function App() {
             </div>
           </div>
         </div>
+
         ) : currentView.type === 'subsection_exercise' ? (
         <div className="section-container">
           <nav className="section-nav">
