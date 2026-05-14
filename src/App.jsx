@@ -10,6 +10,12 @@ import { soedinenieExercises } from './ssp/data/ex_soedinenie';
 import { sopostavlenieExercises } from './ssp/data/ex_sopostavlenie';
 import { protivopostavlenieExercises } from './ssp/data/ex_protivopostavlenie';
 import { izyasnitelnyeExercises, pryamayaRechExercises, opredelitelnyeExercises } from './spp/data/ex_spp';
+import { vremyaExercises } from './spp/data/ex_vremya';
+import { uslovieExercises } from './spp/data/ex_uslovie';
+import { prichinaExercises } from './spp/data/ex_prichina';
+import { tselExercises } from './spp/data/ex_tsel';
+import { sledstvieExercises } from './spp/data/ex_sledstvie';
+import { ustupkaExercises } from './spp/data/ex_ustupka';
 import { mestoimenieExercises, neopredelennye_exercises } from './mestoimenie/data/mestoimenie_exercises';
 import { prilagatelnoeExercises_1 } from './prilagatelnoe/data/prilagatelnoe_exercises';
 import PracticalExercise from './components/PracticalExercise';
@@ -52,6 +58,12 @@ theoryComponents['protivopostavlenie'] = lazy(() => import('./ssp/theory/Protivo
 theoryComponents['izyasnitelnye'] = lazy(() => import('./spp/theory/IzyasnitelnyeTheory.jsx'));
 theoryComponents['pryamaya_rech'] = lazy(() => import('./spp/theory/PryamayaRechTheory.jsx'));
 theoryComponents['opredelitelnye'] = lazy(() => import('./spp/theory/OpredelitelnyeTheory.jsx'));
+theoryComponents['vremya'] = lazy(() => import('./spp/theory/VremyaTheory.jsx'));
+theoryComponents['prichina'] = lazy(() => import('./spp/theory/PrichinaTheory.jsx'));
+theoryComponents['uslovie'] = lazy(() => import('./spp/theory/UslovieTheory.jsx'));
+theoryComponents['tsel'] = lazy(() => import('./spp/theory/TselTheory.jsx'));
+theoryComponents['sledstvie'] = lazy(() => import('./spp/theory/SledstvieTheory.jsx'));
+theoryComponents['ustupka'] = lazy(() => import('./spp/theory/UstupkaTheory.jsx'));
 
 
 function DetailView({ verb, type, onBack }) {
@@ -710,12 +722,8 @@ function App() {
             <ChoiceOverlay 
               verb={selectedVerb} 
               onChoice={(type) => {
-                if (type === 'exercise' && ['soedinenie', 'sopostavlenie', 'protivopostavlenie', 'izyasnitelnye', 'pryamaya_rech', 'opredelitelnye'].includes(selectedVerb.id)) {
+                if (type === 'exercise' && ['soedinenie', 'sopostavlenie', 'protivopostavlenie', 'izyasnitelnye', 'pryamaya_rech', 'opredelitelnye', 'vremya', 'prichina', 'uslovie', 'tsel', 'sledstvie', 'ustupka'].includes(selectedVerb.id)) {
                   setCurrentView({ type: 'subsection_practice_grid', subId: selectedVerb.id, subTitle: selectedVerb.title });
-                } else if (type === 'exercise' && ['vremya', 'prichina', 'uslovie', 'tsel', 'sledstvie', 'ustupka'].includes(selectedVerb.id)) {
-                  alert('Nội dung bài tập đang được cập nhật!');
-                } else if (type === 'theory' && ['vremya', 'prichina', 'uslovie', 'tsel', 'sledstvie', 'ustupka'].includes(selectedVerb.id)) {
-                  alert('Nội dung lý thuyết đang được cập nhật!');
                 } else {
                   setCurrentView({ type, verb: selectedVerb });
                 }
@@ -737,23 +745,46 @@ function App() {
           
           <div className="practice-grid-container" style={{ marginTop: '2rem' }}>
             <div className="grid">
-              {(currentView.subId === 'soedinenie' ? soedinenieExercises : currentView.subId === 'sopostavlenie' ? sopostavlenieExercises : currentView.subId === 'protivopostavlenie' ? protivopostavlenieExercises : currentView.subId === 'izyasnitelnye' ? izyasnitelnyeExercises : currentView.subId === 'pryamaya_rech' ? pryamayaRechExercises : currentView.subId === 'opredelitelnye' ? opredelitelnyeExercises : formyGlagolaExercises
-                .filter(ex => currentView.subId === 'participle' ? ex.id === 'ex50' || ex.id === 'ex51' : ex.id === 'ex52'))
-                .map((ex, index) => (
-                <div 
-                  key={index} 
-                  className="verb-card simple exercise-only" 
-                  style={{ '--i': index }}
-                  onClick={() => setCurrentView({ type: 'subsection_exercise', exercise: ex, fromPractice: true, fromSubSectionGrid: true, subId: currentView.subId, subTitle: currentView.subTitle })}
-                >
-                  <div className="verb-content">
-                    <span className="page-num">Bài {ex.num}</span>
-                    <div className="verb-icon">📝</div>
-                    <span className="verb-ru" style={{fontSize: '1.2rem', marginTop: '0.5rem', textAlign: 'center'}}>{ex.title}</span>
-                    <span className="verb-hint">Làm bài tập</span>
+              {(() => {
+                let exercises = [];
+                if (currentView.subId === 'soedinenie') exercises = soedinenieExercises;
+                else if (currentView.subId === 'sopostavlenie') exercises = sopostavlenieExercises;
+                else if (currentView.subId === 'protivopostavlenie') exercises = protivopostavlenieExercises;
+                else if (currentView.subId === 'izyasnitelnye') exercises = izyasnitelnyeExercises;
+                else if (currentView.subId === 'pryamaya_rech') exercises = pryamayaRechExercises;
+                else if (currentView.subId === 'opredelitelnye') exercises = opredelitelnyeExercises;
+                else if (currentView.subId === 'vremya') exercises = vremyaExercises;
+                else if (currentView.subId === 'uslovie') exercises = uslovieExercises;
+                else if (currentView.subId === 'prichina') exercises = prichinaExercises;
+                else if (currentView.subId === 'tsel') exercises = tselExercises;
+                else if (currentView.subId === 'sledstvie') exercises = sledstvieExercises;
+                else if (currentView.subId === 'ustupka') exercises = ustupkaExercises;
+                else exercises = formyGlagolaExercises.filter(ex => currentView.subId === 'participle' ? ex.id === 'ex50' || ex.id === 'ex51' : ex.id === 'ex52');
+                
+                if (exercises.length === 0) {
+                  return (
+                    <div className="placeholder-card" style={{ gridColumn: '1 / -1', padding: '2rem', textAlign: 'center', background: 'rgba(255,255,255,0.05)', borderRadius: '15px' }}>
+                      <p style={{ color: '#a0aec0' }}>Bài tập đang được cập nhật...</p>
+                    </div>
+                  );
+                }
+                
+                return exercises.map((ex, index) => (
+                  <div 
+                    key={index} 
+                    className="verb-card simple exercise-only" 
+                    style={{ '--i': index }}
+                    onClick={() => setCurrentView({ type: 'subsection_exercise', exercise: ex, fromPractice: true, fromSubSectionGrid: true, subId: currentView.subId, subTitle: currentView.subTitle })}
+                  >
+                    <div className="verb-content">
+                      <span className="page-num">Bài {ex.num}</span>
+                      <div className="verb-icon">📝</div>
+                      <span className="verb-ru" style={{fontSize: '1.2rem', marginTop: '0.5rem', textAlign: 'center'}}>{ex.title}</span>
+                      <span className="verb-hint">Làm bài tập</span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ));
+              })()}
             </div>
           </div>
         </div>

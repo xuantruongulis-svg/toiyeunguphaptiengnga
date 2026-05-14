@@ -994,6 +994,7 @@ h1 {
   margin-bottom: 0.8rem;
   padding-left: 1rem;
   border-left: 3px solid #94a3b8;
+  white-space: pre-line;
 }
 
 .res-why {
@@ -1002,6 +1003,7 @@ h1 {
   background: rgba(0,0,0,0.03);
   padding: 1rem;
   border-radius: 0.8rem;
+  white-space: pre-line;
 }
 
 .analysis-item {
