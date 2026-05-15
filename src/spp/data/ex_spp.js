@@ -71,220 +71,319 @@ export const izyasnitelnyeExercises = [
           "D. останутся"
         ],
         "correct": "A. оставались",
-        "why": "Trẻ em (дети) là số nhiều, hành động không được chấp nhận xảy ra -> dùng \"чтобы\" + quá khứ số nhiều.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. оставались."
+        "why": "Trẻ em (дети) là số nhiều, hành động không được chấp nhận xảy ra -> dùng \"чтобы\" + quá khứ số nhiều.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \nDịch: Thật không thể chấp nhận được để trẻ em ở lại mà không có người trông coi trong thời gian nghỉ hè của trường.\n\n=> Đáp án đúng là: A. оставались."
       },
       {
         "id": 6,
         "sentence": "Câu 6: Сегодня по радио сообщили, ___ завтра ожидается дождь.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Thông báo một sự thật khách quan trên đài (rằng ngày mai có mưa).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'сообщили' (thông báo) truyền đạt một thông tin, sự thật khách quan. Do đó dùng liên từ 'что'. Các liên từ khác không phù hợp về nghĩa.\n\nDịch: Hôm nay trên đài đã thông báo rằng ngày mai dự kiến sẽ có mưa."
       },
       {
         "id": 7,
         "sentence": "Câu 7: Мы слышали, ___ скоро откроется новая линия метро.",
         "options": [
-          "A. чтобы | B. как | C. что | D. как будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Nghe được một thông tin, sự kiện có thật (rằng tuyến metro sẽ mở).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'слышали' (nghe được) truyền đạt lại một sự việc, thông tin có thật. Do đó ta dùng 'что'.\n\nDịch: Chúng tôi đã nghe nói rằng tuyến tàu điện ngầm mới sẽ sớm được mở."
       },
       {
         "id": 8,
         "sentence": "Câu 8: Нам передали, ___ мы отнесли свои доклады на регистрацию.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. чтобы | B. что | C. как | D. будто",
-        "why": "Người ta truyền đạt một \"mệnh lệnh/yêu cầu\" (để chúng tôi nộp báo cáo), hành động ở quá khứ sau khoảng trống (отнесли) kết hợp với mong muốn.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. чтобы | B. что | C. как | D. будто."
+        "correct": "A. чтобы",
+        "why": "Động từ 'передали' ở đây mang nghĩa mệnh lệnh gián tiếp (nhắn lại yêu cầu ai đó làm gì), kết hợp với động từ ở thì quá khứ 'отнесли' tạo thành cấu trúc yêu cầu hành động. Do đó dùng 'чтобы'.\n\nDịch: Người ta đã nhắn chúng tôi mang các bản báo cáo của mình đi đăng ký."
       },
       {
         "id": 9,
         "sentence": "Câu 9: Нам сказали, ___ расписание на следующую неделю изменится.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Tường thuật một sự việc sẽ xảy ra (thời khóa biểu thay đổi).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'сказали' tường thuật lại một sự kiện hoặc thông tin (thời khóa biểu sẽ thay đổi), không phải là một yêu cầu hay mệnh lệnh. Do đó ta dùng 'что'.\n\nDịch: Người ta nói với chúng tôi rằng thời khóa biểu cho tuần tới sẽ thay đổi."
       },
       {
         "id": 10,
         "sentence": "Câu 10: Сергей знает, ___ ему придётся сдавать экзамены этой весной.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Biết về một sự thật chắc chắn (biết rằng).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'знает' thể hiện nhận thức về một sự thật chắc chắn (biết rằng). Do đó phải dùng 'что'.\n\nDịch: Sergey biết rằng cậu ấy sẽ phải thi vào mùa xuân này."
       },
       {
         "id": 11,
         "sentence": "Câu 11: Необходимо, ___ все книги после окончания занятий были сданы.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. чтобы | B. что | C. как | D. будто",
-        "why": "Từ chỉ sự cần thiết (Необходимо) yêu cầu một hành động phải được thực hiện (để tất cả sách được nộp lại).\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. чтобы | B. что | C. как | D. будто."
+        "correct": "A. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi một hành động phải được thực hiện, theo sau là mệnh đề phụ bắt buộc dùng 'чтобы' + động từ quá khứ ('были сданы').\n\nDịch: Cần thiết để tất cả các sách được nộp lại sau khi kết thúc buổi học."
       },
       {
         "id": 12,
         "sentence": "Câu 12: Я никогда не думала, ___ в Москве в мае может быть так холодно.",
         "options": [
-          "A. чтобы | B. как | C. будто | D. что"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Suy nghĩ về một sự kiện/hiện tượng có thật (nghĩ rằng).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'думала' (nghĩ) diễn tả suy nghĩ về một hiện tượng, sự kiện có thật. Do đó dùng liên từ 'что'.\n\nDịch: Tôi chưa bao giờ nghĩ rằng ở Moscow vào tháng Năm có thể lạnh như vậy."
       },
       {
         "id": 13,
         "sentence": "Câu 13: Хотелось бы, ___ во главе лаборатории стоял профессионал.",
         "options": [
-          "A. что | B. чтобы | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Động từ chỉ mong muốn (Хотелось бы), đằng sau là một tình huống mong đợi (để chuyên gia đứng đầu).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Động từ 'Хотелось бы' (rất mong muốn) thể hiện một sự mong mỏi, kì vọng ai đó làm gì/điều gì xảy ra. Mệnh đề phụ dùng 'чтобы' + quá khứ ('стоял').\n\nDịch: Thật mong muốn để một chuyên gia đứng đầu phòng thí nghiệm."
       },
       {
         "id": 14,
         "sentence": "Câu 14: Родители надеются, ___ их сын поступит в Московский университет.",
         "options": [
-          "A. чтобы | B. как | C. что | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Hy vọng về một sự việc sẽ diễn ra trong tương lai (rằng con trai sẽ thi đỗ).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'надеются' (hy vọng) diễn tả sự mong đợi về một sự việc sẽ xảy ra trong tương lai như một thực tế khách quan. Do đó dùng 'что'.\n\nDịch: Bố mẹ hy vọng rằng con trai họ sẽ thi đỗ vào Đại học Moscow."
       },
       {
         "id": 15,
         "sentence": "Câu 15: Передайте Виктору, ___ ему пришлют визу до конца года.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Truyền đạt thông báo về một sự kiện khách quan (người ta sẽ gửi visa cho anh ấy).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Mệnh lệnh 'Передайте' (hãy nhắn) ở đây dùng để thông báo một sự việc khách quan (người ta sẽ gửi visa) ở thì tương lai ('пришлют'). Do đó dùng 'что'.\n\nDịch: Hãy nhắn cho Viktor rằng người ta sẽ gửi visa cho anh ấy trước cuối năm."
       },
       {
         "id": 16,
         "sentence": "Câu 16: Скажите Александру, ___ он принёс в распорядительный отдел свои документы.",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Mệnh lệnh gián tiếp (hãy nói Alexandr để anh ấy mang giấy tờ đến), động từ vế sau chia quá khứ (принёс).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Mệnh lệnh 'Скажите' ở đây mang ý nghĩa yêu cầu gián tiếp (hãy nói để anh ta mang tài liệu đến). Động từ ở vế sau chia thì quá khứ ('принёс'), đây là dấu hiệu rõ ràng của liên từ 'чтобы'.\n\nDịch: Hãy nói với Alexander để anh ấy mang giấy tờ của mình đến phòng điều hành."
       },
       {
         "id": 17,
         "sentence": "Câu 17: Объясните Анне, ___ в её контракте есть неточности.",
         "options": [
-          "A. чтобы | B. как | C. будто | D. что"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Giải thích một sự thật hiện hữu (rằng có sự không chính xác trong hợp đồng).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'Объясните' (hãy giải thích) truyền đạt một sự thật hiện hữu (rằng có những điểm không chính xác). Do đó dùng 'что'.\n\nDịch: Hãy giải thích cho Anna rằng trong hợp đồng của cô ấy có những điểm không chính xác."
       },
       {
         "id": 18,
         "sentence": "Câu 18: Передайте Андрею, ___ он получил свой проездной билет в среду.",
         "options": [
-          "A. чтобы | B. как | C. что | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Thông báo một thông tin (rằng anh ấy đã nhận được vé).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Mệnh lệnh 'Передайте' kết hợp với động từ ở thì quá khứ 'получил'. Trong ngữ cảnh này, đây là một yêu cầu (nhắn anh ấy đi nhận vé). Khi mệnh đề chính có 'передайте/скажите' và mệnh đề phụ chia thì quá khứ ('получил'), ta dùng 'чтобы' để chỉ mục đích yêu cầu.\n\nDịch: Hãy nhắn Andrey để cậu ấy đến nhận vé đi lại vào thứ Tư."
       },
       {
         "id": 19,
         "sentence": "Câu 19: Очень важно, ___ в тексте были исправлены все ошибки.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. чтобы | B. что | C. как | D. будто",
-        "why": "Đánh giá sự cần thiết (Очень важно) thúc đẩy hành động (để các lỗi được sửa).\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. чтобы | B. что | C. как | D. будто."
+        "correct": "A. чтобы",
+        "why": "Cấu trúc đánh giá sự cần thiết, quan trọng 'Очень важно' (rất quan trọng) luôn đi với 'чтобы' để thúc đẩy một hành động cần diễn ra (các lỗi cần được sửa).\n\nDịch: Rất quan trọng để tất cả các lỗi trong văn bản được sửa chữa."
       },
       {
         "id": 20,
         "sentence": "Câu 20: Она попросила Алекса, ___ он позвонил ей послезавтра.",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Động từ cầu xin/yêu cầu (попросить) luôn đi với để mong người khác hành động.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Động từ 'попросила' (đã yêu cầu, xin xỏ) luôn đi kèm với 'чтобы' để thể hiện mong muốn ai đó thực hiện hành động ('позвонил' - gọi điện).\n\nDịch: Cô ấy đã yêu cầu Alex để anh ấy gọi lại cho cô ấy vào ngày kia."
       },
       {
         "id": 21,
         "sentence": "Câu 21: Необходимо, ___ на этом перекрёстке установили светофор.",
         "options": [
-          "A. что | B. чтобы | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Từ chỉ sự cần thiết (Необходимо) + hành động cần diễn ra (để người ta lắp đèn giao thông).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi phải thực hiện một hành động (lắp đèn giao thông 'установили'). Do đó dùng liên từ 'чтобы'.\n\nDịch: Cần thiết để người ta lắp một cột đèn giao thông ở ngã tư này."
       },
       {
         "id": 22,
         "sentence": "Câu 22: Я помню, ___ на этом месте раньше был полицейский пост.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Động từ tri giác, nhớ lại một sự thật trong quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ tri giác 'помню' (nhớ) nói về một sự thật trong quá khứ. Do đó dùng liên từ 'что'.\n\nDịch: Tôi nhớ rằng ở chỗ này trước đây từng có một bốt cảnh sát."
       },
       {
         "id": 23,
         "sentence": "Câu 23: Врач предупредил, ___ ночью больному может стать хуже.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Cảnh báo về một nguy cơ, sự kiện có thể diễn ra (rằng bệnh nhân có thể trở nặng).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'предупредил' (đã cảnh báo) thông báo về một hiện thực, nguy cơ (rằng bệnh nhân có thể trở nặng). Do đó dùng liên từ 'что'.\n\nDịch: Bác sĩ đã cảnh báo rằng vào ban đêm bệnh nhân có thể trở nặng."
       },
       {
         "id": 24,
         "sentence": "Câu 24: Она сказала, ___ завтра на занятии все принесут словари.",
         "options": [
-          "A. чтобы | B. как | C. что | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Tường thuật lại lời nói mô tả sự kiện tương lai (rằng mọi người sẽ mang từ điển).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'сказала' (đã nói) ở đây dùng để tường thuật một sự kiện tương lai ('принесут'). Không phải là yêu cầu, nên ta dùng 'что'.\n\nDịch: Cô ấy nói rằng ngày mai ở buổi học tất cả mọi người sẽ mang theo từ điển."
       },
       {
         "id": 25,
         "sentence": "Câu 25: Я очень надеюсь, ___ на каникулы ко мне в Москву приедут родители.",
         "options": [
-          "A. чтобы | B. что | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Động từ hy vọng (надеяться) về một sự việc khách quan (rằng bố mẹ sẽ đến).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "why": "Động từ 'надеюсь' (hy vọng) về một sự kiện tương lai ('приедут'). Nếu là mong muốn mạnh mẽ với 'чтобы', động từ phải chia quá khứ. Ở đây dùng tương lai nên bắt buộc phải đi với 'что'.\n\nDịch: Tôi rất hy vọng rằng vào kỳ nghỉ, bố mẹ sẽ đến Moscow thăm tôi."
       },
       {
         "id": 26,
         "sentence": "Câu 26: Он нам рассказал, ___ летом ему удалось объехать почти всю страну.",
         "options": [
-          "A. что | B. чтобы | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. что | B. чтобы | C. как | D. будто",
-        "why": "Kể lại một sự thật (rằng anh ấy đã đi vòng quanh đất nước).\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. что | B. чтобы | C. как | D. будто."
+        "correct": "B. что",
+        "why": "Động từ 'рассказал' (đã kể) truyền đạt lại một sự việc đã xảy ra như một câu chuyện. Do đó dùng liên từ 'что'.\n\nDịch: Anh ấy đã kể cho chúng tôi rằng vào mùa hè anh ấy đã có thể đi vòng quanh gần như toàn bộ đất nước."
       },
       {
         "id": 27,
         "sentence": "Câu 27: Директор приказал, ___ все документы печатались на планшете принтера.",
         "options": [
-          "A. что | B. чтобы | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Động từ ra lệnh (приказать) đi với \"чтобы\" để ép buộc hành động (để tài liệu được in).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Động từ 'приказал' (đã ra lệnh) thể hiện sự bắt buộc phải thực hiện hành động. Do đó phải dùng 'чтобы' kết hợp với quá khứ 'печатались'.\n\nDịch: Giám đốc đã ra lệnh để tất cả các tài liệu được in trên khay của máy in."
       },
       {
         "id": 28,
         "sentence": "Câu 28: Хорошо, ___ он вернётся в Москву вовремя.",
         "options": [
-          "A. что | B. чтобы | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. что | B. чтобы | C. как | D. будто",
-        "why": "Đánh giá cảm xúc về một sự thật chắc chắn (thật tốt là anh ấy sẽ trở về).\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. что | B. чтобы | C. как | D. будто."
+        "correct": "B. что",
+        "why": "Đánh giá 'Хорошо' thể hiện cảm xúc về một sự kiện chắc chắn sẽ xảy ra (động từ 'вернётся' chia thì tương lai). Do đó phải dùng 'что'. Nếu dùng 'чтобы', câu mang nghĩa 'Thật tốt nếu anh ta về đúng giờ' và động từ phải là 'вернулся'.\n\nDịch: Thật tốt là anh ấy sẽ trở về Moscow đúng giờ."
       },
       {
         "id": 29,
         "sentence": "Câu 29: Сестра смотрела, ___ младший брат не убежал на улицу.",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Động từ \"смотреть\" ở đây mang nghĩa \"trông coi, để mắt tới\" với mục đích là để em trai KHÔNG chạy ra đường.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Động từ 'смотрела' ở đây mang nghĩa 'trông nom, canh chừng' (như 'следить') với mục đích là để em trai KHÔNG chạy ra đường. Mục đích của hành động yêu cầu liên từ 'чтобы'.\n\nDịch: Người chị đã trông chừng để em trai nhỏ không chạy ra ngoài đường."
       },
       {
         "id": 30,
         "sentence": "Câu 30: Очень важно, ___ он выполнил работу в срок.",
         "options": [
-          "A. что | B. чтобы | C. как | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Sự quan trọng, cấp thiết (Очень важно) đòi hỏi hành động phải diễn ra.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Cụm từ 'Очень важно' (Rất quan trọng) đòi hỏi một hành động bắt buộc phải được thực hiện (để anh ấy hoàn thành công việc). Do đó dùng 'чтобы'.\n\nDịch: Rất quan trọng để anh ấy hoàn thành công việc đúng thời hạn."
       },
       {
         "id": 31,
         "sentence": "Câu 31: Я очень хочу, ___ ремонт закончился как можно скорее.",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "why": "Mong muốn (хотеть) điều gì đó xảy ra với đối tượng khác (cuộc sửa chữa).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. чтобы",
+        "why": "Động từ 'хочу' (muốn) nói lên mong muốn của chủ ngữ về một hành động của đối tượng khác (việc sửa chữa). Do đó dùng 'чтобы'.\n\nDịch: Tôi rất muốn để việc sửa chữa kết thúc càng sớm càng tốt."
       }
     ]
   },
@@ -816,162 +915,235 @@ export const izyasnitelnyeExercises = [
           "D. Необходимо, как твой брат пошёл туда."
         ],
         "correct": "C. Необходимо, чтобы твой брат пошёл туда.",
-        "why": "Необходимо + чтобы + hành động quá khứ.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: C. Необходимо, чтобы твой брат пошёл туда.."
+        "why": "Cấu trúc: Необходимо + чтобы + động từ ở quá khứ (khi chủ ngữ khác).\n\nDịch: Cần thiết để anh trai của bạn đi đến đó. -> Необходимо, чтобы твой брат пошёл туда."
       },
       {
         "id": 74,
         "sentence": "Câu 74: Я сомневаюсь, ___ он ___ вовремя. (приехать)",
         "options": [
-          "A. что / приедет | B. чтобы / приедет | C. чтобы / приехал | D. как бы / приехал"
+          "A. что / приедет",
+          "B. чтобы / приедет",
+          "C. чтобы / приехал",
+          "D. как бы / приехал"
         ],
-        "why": "Động từ \"сомневаться\" mang nghĩa nghi ngờ cao -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. что / приедет",
+        "why": "Thông thường với 'сомневаться' dùng 'что' + tương lai để diễn tả nghi ngờ về một sự kiện tương lai.\n\nDịch: Tôi nghi ngờ rằng anh ấy sẽ đến đúng giờ. -> Я сомневаюсь, что он приедет вовремя." 
       },
       {
         "id": 75,
         "sentence": "Câu 75: Мы не слышали, ___ в нашем здании ___ ремонт. (начаться)",
         "options": [
-          "A. что / начался | B. чтобы / начался | C. как / начался | D. чтобы / начнётся"
+          "A. что / начался",
+          "B. чтобы / начался",
+          "C. как / начался",
+          "D. чтобы / начнётся"
         ],
-        "why": "Câu nghi ngờ/phủ định với động từ tri giác (не слышали) -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / начался",
+        "why": "Với dạng phủ định của động từ tri giác ('не слышали'), thường dùng 'чтобы' + quá khứ.\n\nDịch: Chúng tôi không nghe thấy rằng có bắt đầu sửa chữa ở tòa nhà chúng tôi. -> Мы не слышали, чтобы в нашем здании начался ремонт." 
       },
       {
         "id": 76,
         "sentence": "Câu 76: Врач не сомневается, ___ операция ___ удачно. (пройти)",
         "options": [
-          "A. что / пройдёт | B. чтобы / прошла | C. как бы / прошла | D. что / прошла"
+          "A. что / пройдёт",
+          "B. чтобы / прошла",
+          "C. как бы / прошла",
+          "D. что / прошла"
         ],
-        "correct": "A. что / пройдёт | B. чтобы / прошла | C. как бы / прошла | D. что / прошла",
-        "why": "Có phủ định \"không nghi ngờ\" (chắc chắn) -> chỉ dùng что + thì tương lai.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. что / пройдёт | B. чтобы / прошла | C. как бы / прошла | D. что / прошла."
+        "correct": "A. что / пройдёт",
+        "why": "Khi biểu thị sự chắc chắn/nghĩ là sẽ xảy ra dùng 'что' + thì tương lai.\n\nDịch: Bác sĩ không nghi ngờ rằng ca phẫu thuật sẽ diễn ra thành công. -> Врач не сомневается, что операция пройдёт удачно." 
       },
       {
         "id": 77,
         "sentence": "Câu 77: Было ли у вас такое лето, ___ все три месяца ___ дожди? (литься)",
         "options": [
-          "A. чтобы / лились | B. что / лились | C. как бы / лились | D. чтобы / льются"
+          "A. чтобы / лились",
+          "B. что / лились",
+          "C. как бы / лились",
+          "D. чтобы / льются"
         ],
-        "correct": "A. чтобы / лились | B. что / лились | C. как бы / лились | D. чтобы / льются",
-        "why": "Câu hỏi tu từ thể hiện điều khó xảy ra/phi thường -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. чтобы / лились | B. что / лились | C. как бы / лились | D. чтобы / льются."
+        "correct": "A. чтобы / лились",
+        "why": "Câu hỏi tu từ / mức độ phi thường thường dùng 'чтобы' + quá khứ.\n\nDịch: Có khi nào bạn có một mùa hè mà mưa suốt cả ba tháng không? -> Было ли у вас такое лето, чтобы все три месяца лились дожди?" 
       },
       {
         "id": 78,
         "sentence": "Câu 78: Видел ли кто-нибудь, ___ в этом киоске ___ открытки? (продаваться)",
         "options": [
-          "A. что / продаются | B. чтобы / продавались | C. как / продавались | D. чтобы / продаются"
+          "A. что / продаются",
+          "B. чтобы / продавались",
+          "C. как / продавались",
+          "D. чтобы / продаются"
         ],
-        "why": "Câu hỏi nghi vấn với động từ tri giác -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / продавались",
+        "why": "Với động từ tri giác trong câu hỏi/phủ định, cấu trúc 'чтобы' + quá khứ được dùng để nhấn sắc thái xác minh.\n\nDịch: Có ai nhìn thấy rằng ở quầy này từng bán bưu thiếp không? -> Видел ли кто-нибудь, чтобы в этом киоске продавались открытки?" 
       },
       {
         "id": 79,
         "sentence": "Câu 79: Мать очень боится, ___ дети не ___ . (простудиться)",
         "options": [
-          "A. что / простудились | B. чтобы / простудились | C. чтобы / простудятся | D. что / простудятся"
+          "A. что / простудились",
+          "B. чтобы / простудились",
+          "C. чтобы / простудятся",
+          "D. что / простудятся"
         ],
-        "why": "Động từ sợ hãi (бояться) điều không mong muốn xảy ra có kèm \"не\" -> dùng чтобы (hoặc как бы) + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / простудились",
+        "why": "Với 'бояться' + ý sợ điều không mong muốn (kèm 'не') thường dùng 'чтобы' (hoặc 'как бы') + quá khứ.\n\nDịch: Mẹ rất sợ rằng lũ trẻ bị cảm. -> Мать очень боится, чтобы дети не простудились." 
       },
       {
         "id": 80,
         "sentence": "Câu 80: Тренер беспокоится, ___ его лучшего футболиста ___ не ___ из команды. (исключить)",
         "options": [
-          "A. что / исключат | B. чтобы / исключили | C. что / исключили | D. чтобы / исключат"
+          "A. что / исключат",
+          "B. чтобы / исключили",
+          "C. что / исключили",
+          "D. чтобы / исключат"
         ],
-        "why": "Lo lắng điều xấu xảy ra, cấu trúc có \"не\" -> dùng чтобы + quá khứ (vô nhân xưng \"исключили\").\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / исключили",
+        "why": "Lo sợ điều tiêu cực có 'не' -> dùng 'чтобы' + quá khứ (vô nhân).\n\nDịch: Huấn luyện viên lo lắng rằng cầu thủ xuất sắc của anh ấy sẽ bị loại khỏi đội. -> Тренер беспокоится, чтобы его лучшего футболиста не исключили из команды." 
       },
       {
         "id": 81,
         "sentence": "Câu 81: Кто-нибудь слышал, ___ ___ о посадке? (объявлять)",
         "options": [
-          "A. что / объявляют | B. чтобы / объявляли | C. как / объявляют | D. что / объявили"
+          "A. что / объявляют",
+          "B. чтобы / объявляли",
+          "C. как / объявляют",
+          "D. что / объявили"
         ],
-        "why": "Câu hỏi với động từ nghe nhìn -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. что / объявляют",
+        "why": "Thông thường với 'слышали' dùng 'что' để truyền đạt thông tin được nghe thấy (hiện tại/hiện tại tiếp diễn).\n\nDịch: Có ai nghe rằng họ đang thông báo về việc cất cánh/ hạ cánh không? -> Кто-нибудь слышал, что объявляют о посадке?" 
       },
       {
         "id": 82,
         "sentence": "Câu 82: Никто не мог представить себе, ___ он ___ олимпийским чемпионом. (стать)",
         "options": [
-          "A. что / станет | B. чтобы / стал | C. как бы / стал | D. что / стал"
+          "A. что / станет",
+          "B. чтобы / стал",
+          "C. как бы / стал",
+          "D. что / стал"
         ],
-        "why": "Nhấn mạnh mức độ không tưởng, phi thường -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / стал",
+        "why": "Câu mang sắc thái khó tin/phi thường -> 'чтобы' + quá khứ được dùng.\n\nDịch: Không ai có thể tưởng tượng rằng anh ta trở thành nhà vô địch Olympic. -> Никто не мог представить себе, чтобы он стал олимпийским чемпионом." 
       },
       {
         "id": 83,
         "sentence": "Câu 83: Я не думаю, ___ он ___ . (ошибиться)",
         "options": [
-          "A. что / ошибся | B. чтобы / ошибся | C. как / ошибся | D. что / ошибётся"
+          "A. что / ошибся",
+          "B. чтобы / ошибся",
+          "C. как / ошибся",
+          "D. что / ошибётся"
         ],
-        "why": "Động từ tư duy dạng phủ định \"Tôi không nghĩ...\" -> nghi ngờ khả năng -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "A. что / ошибётся",
+        "why": "Với 'Я не думаю' thường dùng 'что' + tương lai để diễn tả quan điểm về khả năng xảy ra.\n\nDịch: Tôi không nghĩ rằng anh ấy sẽ sai. -> Я не думаю, что он ошибётся." 
       },
       {
         "id": 84,
         "sentence": "Câu 84: Маловероятно, ___ погода ___ в ближайшие дни. (улучшиться)",
         "options": [
-          "A. что / улучшится | B. чтобы / улучшилась | C. как бы / улучшилась | D. чтобы / улучшится"
+          "A. что / улучшится",
+          "B. чтобы / улучшилась",
+          "C. как бы / улучшилась",
+          "D. чтобы / улучшится"
         ],
-        "why": "Ít khả năng (Маловероятно) -> dùng чтобы + quá khứ diễn tả việc khó xảy ra.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / улучшилась",
+        "why": "'Маловероятно' (ít khả năng) -> dùng 'чтобы' + quá khứ để nhấn sự khó xảy ra.\n\nDịch: Khó có khả năng thời tiết sẽ cải thiện trong vài ngày tới. -> Маловероятно, чтобы погода улучшилась в ближайшие дни." 
       },
       {
         "id": 85,
         "sentence": "Câu 85: Очень сомнительно, ___ ему ___ руководящую должность. (предложить)",
         "options": [
-          "A. что / предложат | B. чтобы / предложили | C. как / предложат | D. чтобы / предложат"
+          "A. что / предложат",
+          "B. чтобы / предложили",
+          "C. как / предложат",
+          "D. чтобы / предложат"
         ],
-        "why": "Rất đáng nghi (Сомнительно) -> dùng чтобы + quá khứ vô xưng.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / предложили",
+        "why": "'Сомнительно' -> dùng 'чтобы' + quá khứ để diễn tả sự nghi ngờ.\n\nDịch: Rất nghi ngờ rằng người ta sẽ đề nghị anh ấy một vị trí lãnh đạo. -> Очень сомнительно, чтобы ему предложили руководящую должность." 
       },
       {
         "id": 86,
         "sentence": "Câu 86: Сестра очень сомневается, ___ брат быстро ___ работу. (найти)",
         "options": [
-          "A. что / найдёт | B. чтобы / нашёл | C. как / найдёт | D. чтобы / найдёт"
+          "A. что / найдёт",
+          "B. чтобы / нашёл",
+          "C. как / найдёт",
+          "D. чтобы / найдёт"
         ],
-        "why": "Cực kỳ nghi ngờ -> để giảm sắc thái khả năng xảy ra, dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / нашёл",
+        "why": "Dùng 'чтобы' + quá khứ để giảm sắc thái khả năng; diễn tả nghi ngờ.\n\nDịch: Chị gái rất nghi ngờ rằng anh trai sẽ tìm được việc nhanh. -> Сестра очень сомневается, чтобы брат быстро нашёл работу." 
       },
       {
         "id": 87,
         "sentence": "Câu 87: Возможно ли, ___ он ___ большинство голосов на выборах. (набрать)",
         "options": [
-          "A. чтобы / набрал | B. что / наберёт | C. как бы / набрал | D. что / набрал"
+          "A. чтобы / набрал",
+          "B. что / наберёт",
+          "C. как бы / набрал",
+          "D. что / набрал"
         ],
-        "correct": "A. чтобы / набрал | B. что / наберёт | C. как бы / набрал | D. что / набрал",
-        "why": "Nghi ngờ khả năng \"liệu có thể không\" -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. чтобы / набрал | B. что / наберёт | C. как бы / набрал | D. что / набрал."
+        "correct": "A. чтобы / набрал",
+        "why": "Thể hiện nghi ngờ/khả năng thấp -> 'чтобы' + quá khứ.\n\nDịch: Liệu có thể anh ấy sẽ giành đa số phiếu bầu trong cuộc bầu cử không? -> Возможно ли, чтобы он набрал большинство голосов на выборах?" 
       },
       {
         "id": 88,
         "sentence": "Câu 88: Невероятно, ___ кто-то ___ на такую вершину в одиночку. (подняться)",
         "options": [
-          "A. что / поднялся | B. чтобы / поднялся | C. как / поднялся | D. чтобы / поднимется"
+          "A. что / поднялся",
+          "B. чтобы / поднялся",
+          "C. как / поднялся",
+          "D. чтобы / поднимется"
         ],
-        "why": "Không thể tin được, phi thường -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / поднялся",
+        "why": "Câu biểu đạt sự khó tin -> 'чтобы' + quá khứ.\n\nDịch: Thật khó tin là ai đó đã leo lên đỉnh như vậy một mình. -> Невероятно, чтобы кто-то поднялся на такую вершину в одиночку." 
       },
       {
         "id": 89,
         "sentence": "Câu 89: Не было ещё такого случая, ___ он ___ . (провалиться)",
         "options": [
-          "A. что / провалился | B. чтобы / провалился | C. как бы / провалился | D. чтобы / провалится"
+          "A. что / провалился",
+          "B. чтобы / провалился",
+          "C. как бы / провалился",
+          "D. чтобы / провалится"
         ],
-        "why": "Phủ định cực đại (chưa từng có tiền lệ) -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / провалился",
+        "why": "Phủ định tuyệt đối thường dùng 'чтобы' + quá khứ.\n\nDịch: Chưa từng có trường hợp nào anh ấy bị trượt. -> Не было ещё такого случая, чтобы он провалился." 
       },
       {
         "id": 90,
         "sentence": "Câu 90: Мы очень сомневаемся, ___ эта поездка ___ удачной. (оказаться)",
         "options": [
-          "A. что / окажется | B. чтобы / оказалась | C. как / окажется | D. чтобы / окажется"
+          "A. что / окажется",
+          "B. чтобы / оказалась",
+          "C. как / окажется",
+          "D. чтобы / окажется"
         ],
-        "why": "Rất nghi ngờ sự thành công -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / оказалась",
+        "why": "Dùng 'чтобы' + quá khứ để diễn tả sự nghi ngờ về kết quả tích cực.\n\nDịch: Chúng tôi rất nghi ngờ rằng chuyến đi này sẽ thành công. -> Мы очень сомневаемся, чтобы эта поездка оказалась удачной." 
       },
       {
         "id": 91,
         "sentence": "Câu 91: Можно ли себе представить, ___ в этих лесах ___ тигры? (водиться)",
         "options": [
-          "A. что / водятся | B. чтобы / водились | C. как / водятся | D. чтобы / водятся"
+          "A. что / водятся",
+          "B. чтобы / водились",
+          "C. как / водятся",
+          "D. чтобы / водятся"
         ],
-        "why": "Câu hỏi tưởng tượng một điều không có thật -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / водились",
+        "why": "Câu tưởng tượng/không tưởng -> 'чтобы' + quá khứ.\n\nDịch: Ai có thể tưởng tượng rằng hổ sống trong những khu rừng này? -> Можно ли себе представить, чтобы в этих лесах водились тигры?" 
       },
       {
         "id": 92,
         "sentence": "Câu 92: Разве можно было ожидать, ___ эта рок-группа ___ в маленьких городах? (давать концерты)",
         "options": [
-          "A. что / давала концерты | B. чтобы / давала концерты | C. как / давала концерты | D. чтобы / дают концерты"
+          "A. что / давала концерты",
+          "B. чтобы / давала концерты",
+          "C. как / давала концерты",
+          "D. чтобы / дают концерты"
         ],
-        "why": "Câu hỏi tu từ vượt ngoài kỳ vọng -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. чтобы / давала концерты",
+        "why": "Câu tu từ, vượt ngoài kỳ vọng -> 'чтобы' + quá khứ.\n\nDịch: Liệu có thể mong đợi rằng ban nhạc rock này lại diễn ở các thị trấn nhỏ? -> Разве можно было ожидать, чтобы эта рок-группа давала концерты в маленьких городах?" 
       }
     ]
   },
@@ -1556,421 +1728,421 @@ export const pryamayaRechExercises = [
         "id": 6,
         "sentence": "Câu 6. Мне передали: «Приходи на вечеринку в студенческий клуб».",
         "options": [
-          "A. Мне передали, что я прихожу на вечеринку в студенческий клуб.",
-          "B. Мне передали, чтобы я пришел (пришла) на вечеринку в студенческий клуб.",
-          "C. Мне передали, пришел ли я на вечеринку в студенческий клуб.",
-          "D. Мне передали, чтобы приходи на вечеринку в студенческий клуб."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Мне передали, чтобы я пришел (пришла) на вечеринку в студенческий клуб.",
-        "why": "Câu mệnh lệnh (Приходи) -> dùng \"чтобы\" + QK\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Мне передали, чтобы я пришел (пришла) на вечеринку в студенческий клуб.."
+        "correct": "B. что",
+        "why": "Động từ 'сообщили' (thông báo) truyền đạt một thông tin, sự thật khách quan. Do đó dùng liên từ 'что'. Các liên từ khác không phù hợp về nghĩa.\n\nDịch: Hôm nay trên đài đã thông báo rằng ngày mai dự kiến sẽ có mưa."
       },
       {
         "id": 6,
         "sentence": "Câu 6. Мне передали: «Приходи на вечеринку в студенческий клуб».",
         "options": [
-          "A. Мне передали, что я прихожу на вечеринку в студенческий клуб.",
-          "B. Мне передали, чтобы я пришел (пришла) на вечеринку в студенческий клуб.",
-          "C. Мне передали, пришел ли я на вечеринку в студенческий клуб.",
-          "D. Мне передали, чтобы приходи на вечеринку в студенческий клуб."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Мне передали, чтобы я пришел (пришла) на вечеринку в студенческий клуб.",
-        "why": "Câu mệnh lệnh (Приходи) -> dùng \"чтобы\" + QK\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Мне передали, чтобы я пришел (пришла) на вечеринку в студенческий клуб.."
+        "correct": "B. что",
+        "why": "Động từ 'сообщили' (thông báo) truyền đạt một thông tin, sự thật khách quan. Do đó dùng liên từ 'что'. Các liên từ khác không phù hợp về nghĩa.\n\nDịch: Hôm nay trên đài đã thông báo rằng ngày mai dự kiến sẽ có mưa."
       },
       {
         "id": 7,
         "sentence": "Câu 7. Он ответил: «Я не могу быть завтра на собрании».",
         "options": [
-          "A. Он ответил, что я не могу быть завтра на собрании.",
-          "B. Он ответил, чтобы он не мог быть завтра на собрании.",
-          "C. Он ответил, что он не может быть завтра на собрании.",
-          "D. Он ответил, не может ли он быть завтра на собрании."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. Он ответил, что он не может быть завтра на собрании.",
-        "why": "Câu kể -> dùng \"что\", đổi Я -> он\n\nGiải thích chi tiết thêm: Câu kể bình thường khi chuyển sang gián tiếp sẽ dùng liên từ 'что'. Cần lưu ý đổi đại từ nhân xưng (ví dụ: я -> он/она) cho phù hợp với ngữ cảnh. \n=> Đáp án đúng là: C. Он ответил, что он не может быть завтра на собрании.."
+        "correct": "C. что",
+        "why": "Động từ 'слышали' (nghe được) truyền đạt lại một sự việc, thông tin có thật. Do đó ta dùng 'что'.\n\nDịch: Chúng tôi đã nghe nói rằng tuyến tàu điện ngầm mới sẽ sớm được mở."
       },
       {
         "id": 7,
         "sentence": "Câu 7. Он ответил: «Я не могу быть завтра на собрании».",
         "options": [
-          "A. Он ответил, что я не могу быть завтра на собрании.",
-          "B. Он ответил, чтобы он не мог быть завтра на собрании.",
-          "C. Он ответил, что он не может быть завтра на собрании.",
-          "D. Он ответил, не может ли он быть завтра на собрании."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. Он ответил, что он не может быть завтра на собрании.",
-        "why": "Câu kể -> dùng \"что\", đổi Я -> он\n\nGiải thích chi tiết thêm: Câu kể bình thường khi chuyển sang gián tiếp sẽ dùng liên từ 'что'. Cần lưu ý đổi đại từ nhân xưng (ví dụ: я -> он/она) cho phù hợp với ngữ cảnh. \n=> Đáp án đúng là: C. Он ответил, что он не может быть завтра на собрании.."
+        "correct": "C. что",
+        "why": "Động từ 'слышали' (nghe được) truyền đạt lại một sự việc, thông tin có thật. Do đó ta dùng 'что'.\n\nDịch: Chúng tôi đã nghe nói rằng tuyến tàu điện ngầm mới sẽ sớm được mở."
       },
       {
         "id": 8,
         "sentence": "Câu 8. Она сказала: «Оля, я забыла ключи дома!»",
         "options": [
-          "A. Она сказала Оле, что она забыла ключи дома.",
-          "B. Она сказала, что Оля забыла ключи дома.",
-          "C. Она сказала Оле, чтобы она забыла ключи дома.",
-          "D. Она сказала Оля, что я забыла ключи дома."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Она сказала Оле, что она забыла ключи дома.",
-        "why": "Câu kể, Olya là đối tượng hướng tới -> сказала Оле, что...\n\nGiải thích chi tiết thêm: Câu kể bình thường khi chuyển sang gián tiếp sẽ dùng liên từ 'что'. Cần lưu ý đổi đại từ nhân xưng (ví dụ: я -> он/она) cho phù hợp với ngữ cảnh. \n=> Đáp án đúng là: A. Она сказала Оле, что она забыла ключи дома.."
+        "correct": "A. чтобы",
+        "why": "Động từ 'передали' ở đây mang nghĩa mệnh lệnh gián tiếp (nhắn lại yêu cầu ai đó làm gì), kết hợp với động từ ở thì quá khứ 'отнесли' tạo thành cấu trúc yêu cầu hành động. Do đó dùng 'чтобы'.\n\nDịch: Người ta đã nhắn chúng tôi mang các bản báo cáo của mình đi đăng ký."
       },
       {
         "id": 8,
         "sentence": "Câu 8. Она сказала: «Оля, я забыла ключи дома!»",
         "options": [
-          "A. Она сказала Оле, что она забыла ключи дома.",
-          "B. Она сказала, что Оля забыла ключи дома.",
-          "C. Она сказала Оле, чтобы она забыла ключи дома.",
-          "D. Она сказала Оля, что я забыла ключи дома."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Она сказала Оле, что она забыла ключи дома.",
-        "why": "Câu kể, Olya là đối tượng hướng tới -> сказала Оле, что...\n\nGiải thích chi tiết thêm: Câu kể bình thường khi chuyển sang gián tiếp sẽ dùng liên từ 'что'. Cần lưu ý đổi đại từ nhân xưng (ví dụ: я -> он/она) cho phù hợp với ngữ cảnh. \n=> Đáp án đúng là: A. Она сказала Оле, что она забыла ключи дома.."
+        "correct": "A. чтобы",
+        "why": "Động từ 'передали' ở đây mang nghĩa mệnh lệnh gián tiếp (nhắn lại yêu cầu ai đó làm gì), kết hợp với động từ ở thì quá khứ 'отнесли' tạo thành cấu trúc yêu cầu hành động. Do đó dùng 'чтобы'.\n\nDịch: Người ta đã nhắn chúng tôi mang các bản báo cáo của mình đi đăng ký."
       },
       {
         "id": 9,
         "sentence": "Câu 9. Она предупредила меня: «Таня! Оденься потеплее!»",
         "options": [
-          "A. Она предупредила меня, что Таня оденется потеплее.",
-          "B. Она предупредила меня, чтобы я оделась потеплее.",
-          "C. Она предупредила меня, оделась ли я потеплее.",
-          "D. Она предупредила меня, что я оделась потеплее."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Она предупредила меня, чтобы я оделась потеплее.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\" + QK\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Она предупредила меня, чтобы я оделась потеплее.."
+        "correct": "B. что",
+        "why": "Động từ 'сказали' tường thuật lại một sự kiện hoặc thông tin (thời khóa biểu sẽ thay đổi), không phải là một yêu cầu hay mệnh lệnh. Do đó ta dùng 'что'.\n\nDịch: Người ta nói với chúng tôi rằng thời khóa biểu cho tuần tới sẽ thay đổi."
       },
       {
         "id": 9,
         "sentence": "Câu 9. Она предупредила меня: «Таня! Оденься потеплее!»",
         "options": [
-          "A. Она предупредила меня, что Таня оденется потеплее.",
-          "B. Она предупредила меня, чтобы я оделась потеплее.",
-          "C. Она предупредила меня, оделась ли я потеплее.",
-          "D. Она предупредила меня, что я оделась потеплее."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Она предупредила меня, чтобы я оделась потеплее.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\" + QK\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Она предупредила меня, чтобы я оделась потеплее.."
+        "correct": "B. что",
+        "why": "Động từ 'сказали' tường thuật lại một sự kiện hoặc thông tin (thời khóa biểu sẽ thay đổi), không phải là một yêu cầu hay mệnh lệnh. Do đó ta dùng 'что'.\n\nDịch: Người ta nói với chúng tôi rằng thời khóa biểu cho tuần tới sẽ thay đổi."
       },
       {
         "id": 10,
         "sentence": "Câu 10. Андрей попросил Сашу: «Захвати с собой фотоаппарат».",
         "options": [
-          "A. Андрей попросил Сашу, что он захватит с собой фотоаппарат.",
-          "B. Андрей попросил Сашу, чтобы тот захватил с собой фотоаппарат.",
-          "C. Андрей попросил Сашу, захватил ли он с собой фотоаппарат.",
-          "D. Андрей попросил Сашу, чтобы я захватил с собой фотоаппарат."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Андрей попросил Сашу, чтобы тот захватил с собой фотоаппарат.",
-        "why": "Trùng giống/số (Андрей & Саша) -> dùng đại từ \"тот\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Андрей попросил Сашу, чтобы тот захватил с собой фотоаппарат.."
+        "correct": "B. что",
+        "why": "Động từ 'знает' thể hiện nhận thức về một sự thật chắc chắn (biết rằng). Do đó phải dùng 'что'.\n\nDịch: Sergey biết rằng cậu ấy sẽ phải thi vào mùa xuân này."
       },
       {
         "id": 10,
         "sentence": "Câu 10. Андрей попросил Сашу: «Захвати с собой фотоаппарат».",
         "options": [
-          "A. Андрей попросил Сашу, что он захватит с собой фотоаппарат.",
-          "B. Андрей попросил Сашу, чтобы тот захватил с собой фотоаппарат.",
-          "C. Андрей попросил Сашу, захватил ли он с собой фотоаппарат.",
-          "D. Андрей попросил Сашу, чтобы я захватил с собой фотоаппарат."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Андрей попросил Сашу, чтобы тот захватил с собой фотоаппарат.",
-        "why": "Trùng giống/số (Андрей & Саша) -> dùng đại từ \"тот\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Андрей попросил Сашу, чтобы тот захватил с собой фотоаппарат.."
+        "correct": "B. что",
+        "why": "Động từ 'знает' thể hiện nhận thức về một sự thật chắc chắn (biết rằng). Do đó phải dùng 'что'.\n\nDịch: Sergey biết rằng cậu ấy sẽ phải thi vào mùa xuân này."
       },
       {
         "id": 11,
         "sentence": "Câu 11. Она попросила соседку: «Катя! Купи, пожалуйста, мне лекарство от головной боли».",
         "options": [
-          "A. Она попросила соседку Катю, что она купит ей лекарство от головной боли.",
-          "B. Она попросила соседку Катю, купит ли она ей лекарство от головной боли.",
-          "C. Она попросила соседку Катю, чтобы та купила ей лекарство от головной боли.",
-          "D. Она попросила соседку Катю, чтобы купи, пожалуйста, лекарство."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. Она попросила соседку Катю, чтобы та купила ей лекарство от головной боли.",
-        "why": "Trùng giống/số (Она & соседка) -> dùng đại từ \"та\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: C. Она попросила соседку Катю, чтобы та купила ей лекарство от головной боли.."
+        "correct": "A. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi một hành động phải được thực hiện, theo sau là mệnh đề phụ bắt buộc dùng 'чтобы' + động từ quá khứ ('были сданы').\n\nDịch: Cần thiết để tất cả các sách được nộp lại sau khi kết thúc buổi học."
       },
       {
         "id": 11,
         "sentence": "Câu 11. Она попросила соседку: «Катя! Купи, пожалуйста, мне лекарство от головной боли».",
         "options": [
-          "A. Она попросила соседку Катю, что она купит ей лекарство от головной боли.",
-          "B. Она попросила соседку Катю, купит ли она ей лекарство от головной боли.",
-          "C. Она попросила соседку Катю, чтобы та купила ей лекарство от головной боли.",
-          "D. Она попросила соседку Катю, чтобы купи, пожалуйста, лекарство."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. Она попросила соседку Катю, чтобы та купила ей лекарство от головной боли.",
-        "why": "Trùng giống/số (Она & соседка) -> dùng đại từ \"та\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: C. Она попросила соседку Катю, чтобы та купила ей лекарство от головной боли.."
+        "correct": "A. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi một hành động phải được thực hiện, theo sau là mệnh đề phụ bắt buộc dùng 'чтобы' + động từ quá khứ ('были сданы').\n\nDịch: Cần thiết để tất cả các sách được nộp lại sau khi kết thúc buổi học."
       },
       {
         "id": 12,
         "sentence": "Câu 12. Врач посоветовал ей: «Пейте при простуде побольше витаминов!»",
         "options": [
-          "A. Врач посоветовал ей, чтобы она пила при простуде побольше витаминов.",
-          "B. Врач посоветовал ей, что она пьет при простуде побольше витаминов.",
-          "C. Врач посоветовал ей, пила ли она при простуде побольше витаминов.",
-          "D. Врач посоветовал ей, чтобы пейте при простуде побольше витаминов."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Врач посоветовал ей, чтобы она пила при простуде побольше витаминов.",
-        "why": "Câu mệnh lệnh (Пейте) -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Врач посоветовал ей, чтобы она пила при простуде побольше витаминов.."
+        "correct": "D. что",
+        "why": "Động từ 'думала' (nghĩ) diễn tả suy nghĩ về một hiện tượng, sự kiện có thật. Do đó dùng liên từ 'что'.\n\nDịch: Tôi chưa bao giờ nghĩ rằng ở Moscow vào tháng Năm có thể lạnh như vậy."
       },
       {
         "id": 12,
         "sentence": "Câu 12. Врач посоветовал ей: «Пейте при простуде побольше витаминов!»",
         "options": [
-          "A. Врач посоветовал ей, чтобы она пила при простуде побольше витаминов.",
-          "B. Врач посоветовал ей, что она пьет при простуде побольше витаминов.",
-          "C. Врач посоветовал ей, пила ли она при простуде побольше витаминов.",
-          "D. Врач посоветовал ей, чтобы пейте при простуде побольше витаминов."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Врач посоветовал ей, чтобы она пила при простуде побольше витаминов.",
-        "why": "Câu mệnh lệnh (Пейте) -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Врач посоветовал ей, чтобы она пила при простуде побольше витаминов.."
+        "correct": "D. что",
+        "why": "Động từ 'думала' (nghĩ) diễn tả suy nghĩ về một hiện tượng, sự kiện có thật. Do đó dùng liên từ 'что'.\n\nDịch: Tôi chưa bao giờ nghĩ rằng ở Moscow vào tháng Năm có thể lạnh như vậy."
       },
       {
         "id": 13,
         "sentence": "Câu 13. Она посоветовала им: «Закажите на дом такси».",
         "options": [
-          "A. Она посоветовала им, что они закажут на дом такси.",
-          "B. Она посоветовала им, чтобы они заказали на дом такси.",
-          "C. Она посоветовала им, заказали ли они на дом такси.",
-          "D. Она посоветовала им, чтобы закажите на дом такси."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Она посоветовала им, чтобы они заказали на дом такси.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Она посоветовала им, чтобы они заказали на дом такси.."
+        "correct": "B. чтобы",
+        "why": "Động từ 'Хотелось бы' (rất mong muốn) thể hiện một sự mong mỏi, kì vọng ai đó làm gì/điều gì xảy ra. Mệnh đề phụ dùng 'чтобы' + quá khứ ('стоял').\n\nDịch: Thật mong muốn để một chuyên gia đứng đầu phòng thí nghiệm."
       },
       {
         "id": 13,
         "sentence": "Câu 13. Она посоветовала им: «Закажите на дом такси».",
         "options": [
-          "A. Она посоветовала им, что они закажут на дом такси.",
-          "B. Она посоветовала им, чтобы они заказали на дом такси.",
-          "C. Она посоветовала им, заказали ли они на дом такси.",
-          "D. Она посоветовала им, чтобы закажите на дом такси."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Она посоветовала им, чтобы они заказали на дом такси.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Она посоветовала им, чтобы они заказали на дом такси.."
+        "correct": "B. чтобы",
+        "why": "Động từ 'Хотелось бы' (rất mong muốn) thể hiện một sự mong mỏi, kì vọng ai đó làm gì/điều gì xảy ra. Mệnh đề phụ dùng 'чтобы' + quá khứ ('стоял').\n\nDịch: Thật mong muốn để một chuyên gia đứng đầu phòng thí nghiệm."
       },
       {
         "id": 14,
         "sentence": "Câu 14. Он предложил друзьям: «Давайте поедем в Петербург на два дня!»",
         "options": [
-          "A. Он предложил друзьям, что они поедут в Петербург на два дня.",
-          "B. Он предложил друзьям, чтобы давайте поедем в Петербург на два дня.",
-          "C. Он предложил друзьям поехать в Петербург на два дня.",
-          "D. Он предложил друзьям, поехали ли они в Петербург на два дня."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. Он предложил друзьям поехать в Петербург на два дня.",
-        "why": "Câu đề nghị \"Давайте...\" -> dùng động từ nguyên thể \"поехать\" (Cách 1) hoặc \"чтобы\" (Cách 2 hiếm hơn)\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: C. Он предложил друзьям поехать в Петербург на два дня.."
+        "correct": "C. что",
+        "why": "Động từ 'надеются' (hy vọng) diễn tả sự mong đợi về một sự việc sẽ xảy ra trong tương lai như một thực tế khách quan. Do đó dùng 'что'.\n\nDịch: Bố mẹ hy vọng rằng con trai họ sẽ thi đỗ vào Đại học Moscow."
       },
       {
         "id": 14,
         "sentence": "Câu 14. Он предложил друзьям: «Давайте поедем в Петербург на два дня!»",
         "options": [
-          "A. Он предложил друзьям, что они поедут в Петербург на два дня.",
-          "B. Он предложил друзьям, чтобы давайте поедем в Петербург на два дня.",
-          "C. Он предложил друзьям поехать в Петербург на два дня.",
-          "D. Он предложил друзьям, поехали ли они в Петербург на два дня."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. Он предложил друзьям поехать в Петербург на два дня.",
-        "why": "Câu đề nghị \"Давайте...\" -> dùng động từ nguyên thể \"поехать\" (Cách 1) hoặc \"чтобы\" (Cách 2 hiếm hơn)\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: C. Он предложил друзьям поехать в Петербург на два дня.."
+        "correct": "C. что",
+        "why": "Động từ 'надеются' (hy vọng) diễn tả sự mong đợi về một sự việc sẽ xảy ra trong tương lai như một thực tế khách quan. Do đó dùng 'что'.\n\nDịch: Bố mẹ hy vọng rằng con trai họ sẽ thi đỗ vào Đại học Moscow."
       },
       {
         "id": 15,
         "sentence": "Câu 15. Он сказал мне: «Не опаздывай на встречу!»",
         "options": [
-          "A. Он сказал мне, что я не опаздываю на встречу.",
-          "B. Он сказал мне, чтобы я не опаздывал (опаздывала) на встречу.",
-          "C. Он сказал мне, не опаздывал ли я на встречу.",
-          "D. Он сказал мне, чтобы не опаздывай на встречу."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Он сказал мне, чтобы я не опаздывал (опаздывала) на встречу.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Он сказал мне, чтобы я не опаздывал (опаздывала) на встречу.."
+        "correct": "B. что",
+        "why": "Mệnh lệnh 'Передайте' (hãy nhắn) ở đây dùng để thông báo một sự việc khách quan (người ta sẽ gửi visa) ở thì tương lai ('пришлют'). Do đó dùng 'что'.\n\nDịch: Hãy nhắn cho Viktor rằng người ta sẽ gửi visa cho anh ấy trước cuối năm."
       },
       {
         "id": 15,
         "sentence": "Câu 15. Он сказал мне: «Не опаздывай на встречу!»",
         "options": [
-          "A. Он сказал мне, что я не опаздываю на встречу.",
-          "B. Он сказал мне, чтобы я не опаздывал (опаздывала) на встречу.",
-          "C. Он сказал мне, не опаздывал ли я на встречу.",
-          "D. Он сказал мне, чтобы не опаздывай на встречу."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Он сказал мне, чтобы я не опаздывал (опаздывала) на встречу.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Он сказал мне, чтобы я не опаздывал (опаздывала) на встречу.."
+        "correct": "B. что",
+        "why": "Mệnh lệnh 'Передайте' (hãy nhắn) ở đây dùng để thông báo một sự việc khách quan (người ta sẽ gửi visa) ở thì tương lai ('пришлют'). Do đó dùng 'что'.\n\nDịch: Hãy nhắn cho Viktor rằng người ta sẽ gửi visa cho anh ấy trước cuối năm."
       },
       {
         "id": 16,
         "sentence": "Câu 16. Аня попросила меня: «Возьми для меня словарь в библиотеке!»",
         "options": [
-          "A. Аня попросила меня, чтобы я взял для неё словарь в библиотеке.",
-          "B. Аня попросила меня, что я возьму для неё словарь в библиотеке.",
-          "C. Аня попросила меня, взял ли я для неё словарь в библиотеке.",
-          "D. Аня попросила меня, чтобы я взял для меня словарь в библиотеке."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Аня попросила меня, чтобы я взял для неё словарь в библиотеке.",
-        "why": "Câu mệnh lệnh -> đổi đại từ phù hợp\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Аня попросила меня, чтобы я взял для неё словарь в библиотеке.."
+        "correct": "C. чтобы",
+        "why": "Mệnh lệnh 'Скажите' ở đây mang ý nghĩa yêu cầu gián tiếp (hãy nói để anh ta mang tài liệu đến). Động từ ở vế sau chia thì quá khứ ('принёс'), đây là dấu hiệu rõ ràng của liên từ 'чтобы'.\n\nDịch: Hãy nói với Alexander để anh ấy mang giấy tờ của mình đến phòng điều hành."
       },
       {
         "id": 16,
         "sentence": "Câu 16. Аня попросила меня: «Возьми для меня словарь в библиотеке!»",
         "options": [
-          "A. Аня попросила меня, чтобы я взял для неё словарь в библиотеке.",
-          "B. Аня попросила меня, что я возьму для неё словарь в библиотеке.",
-          "C. Аня попросила меня, взял ли я для неё словарь в библиотеке.",
-          "D. Аня попросила меня, чтобы я взял для меня словарь в библиотеке."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Аня попросила меня, чтобы я взял для неё словарь в библиотеке.",
-        "why": "Câu mệnh lệnh -> đổi đại từ phù hợp\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Аня попросила меня, чтобы я взял для неё словарь в библиотеке.."
+        "correct": "C. чтобы",
+        "why": "Mệnh lệnh 'Скажите' ở đây mang ý nghĩa yêu cầu gián tiếp (hãy nói để anh ta mang tài liệu đến). Động từ ở vế sau chia thì quá khứ ('принёс'), đây là dấu hiệu rõ ràng của liên từ 'чтобы'.\n\nDịch: Hãy nói với Alexander để anh ấy mang giấy tờ của mình đến phòng điều hành."
       },
       {
         "id": 17,
         "sentence": "Câu 17. Андрей предложил нам: «Давайте встретимся в шесть часов вечера!»",
         "options": [
-          "A. Андрей предложил нам, что мы встретимся в шесть часов вечера.",
-          "B. Андрей предложил нам встретиться в шесть часов вечера.",
-          "C. Андрей предложил нам, чтобы давайте встретимся в шесть часов вечера.",
-          "D. Андрей предложил нам, встретились ли мы в шесть часов вечера."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Андрей предложил нам встретиться в шесть часов вечера.",
-        "why": "Đề nghị -> dùng nguyên thể \"встретиться\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: B. Андрей предложил нам встретиться в шесть часов вечера.."
+        "correct": "D. что",
+        "why": "Động từ 'Объясните' (hãy giải thích) truyền đạt một sự thật hiện hữu (rằng có những điểm không chính xác). Do đó dùng 'что'.\n\nDịch: Hãy giải thích cho Anna rằng trong hợp đồng của cô ấy có những điểm không chính xác."
       },
       {
         "id": 17,
         "sentence": "Câu 17. Андрей предложил нам: «Давайте встретимся в шесть часов вечера!»",
         "options": [
-          "A. Андрей предложил нам, что мы встретимся в шесть часов вечера.",
-          "B. Андрей предложил нам встретиться в шесть часов вечера.",
-          "C. Андрей предложил нам, чтобы давайте встретимся в шесть часов вечера.",
-          "D. Андрей предложил нам, встретились ли мы в шесть часов вечера."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Андрей предложил нам встретиться в шесть часов вечера.",
-        "why": "Đề nghị -> dùng nguyên thể \"встретиться\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: B. Андрей предложил нам встретиться в шесть часов вечера.."
+        "correct": "D. что",
+        "why": "Động từ 'Объясните' (hãy giải thích) truyền đạt một sự thật hiện hữu (rằng có những điểm không chính xác). Do đó dùng 'что'.\n\nDịch: Hãy giải thích cho Anna rằng trong hợp đồng của cô ấy có những điểm không chính xác."
       },
       {
         "id": 18,
         "sentence": "Câu 18. Наташа попросила меня: «Купи мне, пожалуйста, несколько конвертов».",
         "options": [
-          "A. Наташа попросила меня, что я куплю ей несколько конвертов.",
-          "B. Наташа попросила меня, чтобы я купил ей несколько конвертов.",
-          "C. Наташа попросила меня, купил ли я ей несколько конвертов.",
-          "D. Наташа попросила меня, чтобы я купил мне несколько конвертов."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Наташа попросила меня, чтобы я купил ей несколько конвертов.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Наташа попросила меня, чтобы я купил ей несколько конвертов.."
+        "correct": "A. чтобы",
+        "why": "Mệnh lệnh 'Передайте' kết hợp với động từ ở thì quá khứ 'получил'. Trong ngữ cảnh này, đây là một yêu cầu (nhắn anh ấy đi nhận vé). Khi mệnh đề chính có 'передайте/скажите' và mệnh đề phụ chia thì quá khứ ('получил'), ta dùng 'чтобы' để chỉ mục đích yêu cầu.\n\nDịch: Hãy nhắn Andrey để cậu ấy đến nhận vé đi lại vào thứ Tư."
       },
       {
         "id": 18,
         "sentence": "Câu 18. Наташа попросила меня: «Купи мне, пожалуйста, несколько конвертов».",
         "options": [
-          "A. Наташа попросила меня, что я куплю ей несколько конвертов.",
-          "B. Наташа попросила меня, чтобы я купил ей несколько конвертов.",
-          "C. Наташа попросила меня, купил ли я ей несколько конвертов.",
-          "D. Наташа попросила меня, чтобы я купил мне несколько конвертов."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Наташа попросила меня, чтобы я купил ей несколько конвертов.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Наташа попросила меня, чтобы я купил ей несколько конвертов.."
+        "correct": "A. чтобы",
+        "why": "Mệnh lệnh 'Передайте' kết hợp với động từ ở thì quá khứ 'получил'. Trong ngữ cảnh này, đây là một yêu cầu (nhắn anh ấy đi nhận vé). Khi mệnh đề chính có 'передайте/скажите' và mệnh đề phụ chia thì quá khứ ('получил'), ta dùng 'чтобы' để chỉ mục đích yêu cầu.\n\nDịch: Hãy nhắn Andrey để cậu ấy đến nhận vé đi lại vào thứ Tư."
       },
       {
         "id": 19,
         "sentence": "Câu 19. Врач предупредил Таню: «Не выходите на улицу до конца недели!»",
         "options": [
-          "A. Врач предупредил Таню, чтобы она не выходила на улицу до конца недели.",
-          "B. Врач предупредил Таню, что она не выходит на улицу до конца недели.",
-          "C. Врач предупредил Таню, не выходила ли она на улицу до конца недели.",
-          "D. Врач предупредил Таню, чтобы не выходите на улицу до конца недели."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Врач предупредил Таню, чтобы она не выходила на улицу до конца недели.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Врач предупредил Таню, чтобы она не выходила на улицу до конца недели.."
+        "correct": "A. чтобы",
+        "why": "Cấu trúc đánh giá sự cần thiết, quan trọng 'Очень важно' (rất quan trọng) luôn đi với 'чтобы' để thúc đẩy một hành động cần diễn ra (các lỗi cần được sửa).\n\nDịch: Rất quan trọng để tất cả các lỗi trong văn bản được sửa chữa."
       },
       {
         "id": 19,
         "sentence": "Câu 19. Врач предупредил Таню: «Не выходите на улицу до конца недели!»",
         "options": [
-          "A. Врач предупредил Таню, чтобы она не выходила на улицу до конца недели.",
-          "B. Врач предупредил Таню, что она не выходит на улицу до конца недели.",
-          "C. Врач предупредил Таню, не выходила ли она на улицу до конца недели.",
-          "D. Врач предупредил Таню, чтобы не выходите на улицу до конца недели."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Врач предупредил Таню, чтобы она не выходила на улицу до конца недели.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Врач предупредил Таню, чтобы она не выходила на улицу до конца недели.."
+        "correct": "A. чтобы",
+        "why": "Cấu trúc đánh giá sự cần thiết, quan trọng 'Очень важно' (rất quan trọng) luôn đi với 'чтобы' để thúc đẩy một hành động cần diễn ra (các lỗi cần được sửa).\n\nDịch: Rất quan trọng để tất cả các lỗi trong văn bản được sửa chữa."
       },
       {
         "id": 20,
         "sentence": "Câu 20. Саша попросил Пашу: «Не задерживайся долго в гостях!»",
         "options": [
-          "A. Саша попросил Пашу, что тот не задерживается долго в гостях.",
-          "B. Саша попросил Пашу, чтобы тот не задерживался долго в гостях.",
-          "C. Саша попросил Пашу, не задерживался ли тот долго в гостях.",
-          "D. Саша попросил Пашу, чтобы он не задерживайся долго в гостях."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Саша попросил Пашу, чтобы тот не задерживался долго в гостях.",
-        "why": "Trùng giống/số -> dùng \"тот\" + \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Саша попросил Пашу, чтобы тот не задерживался долго в гостях.."
+        "correct": "C. чтобы",
+        "why": "Động từ 'попросила' (đã yêu cầu, xin xỏ) luôn đi kèm với 'чтобы' để thể hiện mong muốn ai đó thực hiện hành động ('позвонил' - gọi điện).\n\nDịch: Cô ấy đã yêu cầu Alex để anh ấy gọi lại cho cô ấy vào ngày kia."
       },
       {
         "id": 20,
         "sentence": "Câu 20. Саша попросил Пашу: «Не задерживайся долго в гостях!»",
         "options": [
-          "A. Саша попросил Пашу, что тот не задерживается долго в гостях.",
-          "B. Саша попросил Пашу, чтобы тот не задерживался долго в гостях.",
-          "C. Саша попросил Пашу, не задерживался ли тот долго в гостях.",
-          "D. Саша попросил Пашу, чтобы он не задерживайся долго в гостях."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Саша попросил Пашу, чтобы тот не задерживался долго в гостях.",
-        "why": "Trùng giống/số -> dùng \"тот\" + \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Саша попросил Пашу, чтобы тот не задерживался долго в гостях.."
+        "correct": "C. чтобы",
+        "why": "Động từ 'попросила' (đã yêu cầu, xin xỏ) luôn đi kèm với 'чтобы' để thể hiện mong muốn ai đó thực hiện hành động ('позвонил' - gọi điện).\n\nDịch: Cô ấy đã yêu cầu Alex để anh ấy gọi lại cho cô ấy vào ngày kia."
       },
       {
         "id": 21,
         "sentence": "Câu 21. Его предупредили: «Не доверяйте этому человеку!»",
         "options": [
-          "A. Его предупредили, что он не доверяет этому человеку.",
-          "B. Его предупредили, чтобы он не доверял этому человеку.",
-          "C. Его предупредили, не доверял ли он этому человеку.",
-          "D. Его предупредили, чтобы не доверяйте этому человеку."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Его предупредили, чтобы он не доверял этому человеку.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Его предупредили, чтобы он не доверял этому человеку.."
+        "correct": "B. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi phải thực hiện một hành động (lắp đèn giao thông 'установили'). Do đó dùng liên từ 'чтобы'.\n\nDịch: Cần thiết để người ta lắp một cột đèn giao thông ở ngã tư này."
       },
       {
         "id": 21,
         "sentence": "Câu 21. Его предупредили: «Не доверяйте этому человеку!»",
         "options": [
-          "A. Его предупредили, что он не доверяет этому человеку.",
-          "B. Его предупредили, чтобы он не доверял этому человеку.",
-          "C. Его предупредили, не доверял ли он этому человеку.",
-          "D. Его предупредили, чтобы не доверяйте этому человеку."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Его предупредили, чтобы он не доверял этому человеку.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Его предупредили, чтобы он не доверял этому человеку.."
+        "correct": "B. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi phải thực hiện một hành động (lắp đèn giao thông 'установили'). Do đó dùng liên từ 'чтобы'.\n\nDịch: Cần thiết để người ta lắp một cột đèn giao thông ở ngã tư này."
       },
       {
         "id": 22,
         "sentence": "Câu 22. Их попросили: «Пересядьте, пожалуйста, на другое место!»",
         "options": [
-          "A. Их попросили, чтобы они пересели на другое место.",
-          "B. Их попросили, что они пересядут на другое место.",
-          "C. Их попросили, пересели ли они на другое место.",
-          "D. Их попросили, чтобы пересядьте на другое место."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Их попросили, чтобы они пересели на другое место.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Их попросили, чтобы они пересели на другое место.."
+        "correct": "B. что",
+        "why": "Động từ tri giác 'помню' (nhớ) nói về một sự thật trong quá khứ. Do đó dùng liên từ 'что'.\n\nDịch: Tôi nhớ rằng ở chỗ này trước đây từng có một bốt cảnh sát."
       },
       {
         "id": 22,
         "sentence": "Câu 22. Их попросили: «Пересядьте, пожалуйста, на другое место!»",
         "options": [
-          "A. Их попросили, чтобы они пересели на другое место.",
-          "B. Их попросили, что они пересядут на другое место.",
-          "C. Их попросили, пересели ли они на другое место.",
-          "D. Их попросили, чтобы пересядьте на другое место."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Их попросили, чтобы они пересели на другое место.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: A. Их попросили, чтобы они пересели на другое место.."
+        "correct": "B. что",
+        "why": "Động từ tri giác 'помню' (nhớ) nói về một sự thật trong quá khứ. Do đó dùng liên từ 'что'.\n\nDịch: Tôi nhớ rằng ở chỗ này trước đây từng có một bốt cảnh sát."
       },
       {
         "id": 23,
         "sentence": "Câu 23. Голос диктора в метро предупреждает пассажиров: «Не забывайте свои вещи в вагонах!»",
         "options": [
-          "A. Голос диктора в метро предупреждает пассажиров, что они не забывают свои вещи в вагонах.",
-          "B. Голос диктора в метро предупреждает пассажиров, чтобы они не забывали свои вещи в вагонах.",
-          "C. Голос диктора в метро предупреждает пассажиров, не забывали ли они свои вещи в вагонах.",
-          "D. Голос диктора в метро предупреждает пассажиров, чтобы не забывайте свои вещи в вагонах."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Голос диктора в метро предупреждает пассажиров, чтобы они не забывали свои вещи в вагонах.",
-        "why": "Câu mệnh lệnh -> dùng \"чтобы\"\n\nGiải thích chi tiết thêm: Câu mệnh lệnh (hãy làm gì đó) khi chuyển sang gián tiếp sẽ dùng liên từ 'чтобы' + động từ chia ở thì Quá khứ. \n=> Đáp án đúng là: B. Голос диктора в метро предупреждает пассажиров, чтобы они не забывали свои вещи в вагонах.."
+        "correct": "B. что",
+        "why": "Động từ 'предупредил' (đã cảnh báo) thông báo về một hiện thực, nguy cơ (rằng bệnh nhân có thể trở nặng). Do đó dùng liên từ 'что'.\n\nDịch: Bác sĩ đã cảnh báo rằng vào ban đêm bệnh nhân có thể trở nặng."
       }
     ]
   },
@@ -1984,193 +2156,193 @@ export const pryamayaRechExercises = [
         "id": 24,
         "sentence": "Câu 24. Ник спрашивает: «Кто взял мой словарь?»",
         "options": [
-          "A. Ник спрашивает, кто взял мой словарь.",
-          "B. Ник спрашивает, кто взял его словарь.",
-          "C. Ник спрашивает, взял ли кто его словарь.",
-          "D. Ник спрашивает, что кто взял его словарь."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Ник спрашивает, кто взял его словарь.",
-        "why": "Có từ để hỏi \"Кто\", giữ nguyên, đổi \"мой\" -> \"его\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: B. Ник спрашивает, кто взял его словарь.."
+        "correct": "C. что",
+        "why": "Động từ 'сказала' (đã nói) ở đây dùng để tường thuật một sự kiện tương lai ('принесут'). Không phải là yêu cầu, nên ta dùng 'что'.\n\nDịch: Cô ấy nói rằng ngày mai ở buổi học tất cả mọi người sẽ mang theo từ điển."
       },
       {
         "id": 24,
         "sentence": "Câu 24. Ник спрашивает: «Кто взял мой словарь?»",
         "options": [
-          "A. Ник спрашивает, кто взял мой словарь.",
-          "B. Ник спрашивает, кто взял его словарь.",
-          "C. Ник спрашивает, взял ли кто его словарь.",
-          "D. Ник спрашивает, что кто взял его словарь."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Ник спрашивает, кто взял его словарь.",
-        "why": "Có từ để hỏi \"Кто\", giữ nguyên, đổi \"мой\" -> \"его\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: B. Ник спрашивает, кто взял его словарь.."
+        "correct": "C. что",
+        "why": "Động từ 'сказала' (đã nói) ở đây dùng để tường thuật một sự kiện tương lai ('принесут'). Không phải là yêu cầu, nên ta dùng 'что'.\n\nDịch: Cô ấy nói rằng ngày mai ở buổi học tất cả mọi người sẽ mang theo từ điển."
       },
       {
         "id": 25,
         "sentence": "Câu 25. Лена спросила Сергея: «От кого ты узнал об этом?»",
         "options": [
-          "A. Лена спросила Сергея, от кого он узнал об этом.",
-          "B. Лена спросила Сергея, от кого ты узнал об этом.",
-          "C. Лена спросила Сергея, узнал ли он об этом от кого.",
-          "D. Лена спросила Сергея, что от кого он узнал об этом."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Лена спросила Сергея, от кого он узнал об этом.",
-        "why": "Có từ để hỏi \"От кого\", giữ nguyên, đổi \"ты\" -> \"он\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Лена спросила Сергея, от кого он узнал об этом.."
+        "correct": "B. что",
+        "why": "Động từ 'надеюсь' (hy vọng) về một sự kiện tương lai ('приедут'). Nếu là mong muốn mạnh mẽ với 'чтобы', động từ phải chia quá khứ. Ở đây dùng tương lai nên bắt buộc phải đi với 'что'.\n\nDịch: Tôi rất hy vọng rằng vào kỳ nghỉ, bố mẹ sẽ đến Moscow thăm tôi."
       },
       {
         "id": 25,
         "sentence": "Câu 25. Лена спросила Сергея: «От кого ты узнал об этом?»",
         "options": [
-          "A. Лена спросила Сергея, от кого он узнал об этом.",
-          "B. Лена спросила Сергея, от кого ты узнал об этом.",
-          "C. Лена спросила Сергея, узнал ли он об этом от кого.",
-          "D. Лена спросила Сергея, что от кого он узнал об этом."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Лена спросила Сергея, от кого он узнал об этом.",
-        "why": "Có từ để hỏi \"От кого\", giữ nguyên, đổi \"ты\" -> \"он\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Лена спросила Сергея, от кого он узнал об этом.."
+        "correct": "B. что",
+        "why": "Động từ 'надеюсь' (hy vọng) về một sự kiện tương lai ('приедут'). Nếu là mong muốn mạnh mẽ với 'чтобы', động từ phải chia quá khứ. Ở đây dùng tương lai nên bắt buộc phải đi với 'что'.\n\nDịch: Tôi rất hy vọng rằng vào kỳ nghỉ, bố mẹ sẽ đến Moscow thăm tôi."
       },
       {
         "id": 26,
         "sentence": "Câu 26. Ему задали вопрос: «Почему вы хотите перейти в другую группу?»",
         "options": [
-          "A. Ему задали вопрос, почему он хочет перейти в другую группу.",
-          "B. Ему задали вопрос, почему вы хотите перейти в другую группу.",
-          "C. Ему задали вопрос, хочет ли он перейти в другую группу.",
-          "D. Ему задали вопрос, что почему он хочет перейти в другую группу."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Ему задали вопрос, почему он хочет перейти в другую группу.",
-        "why": "Có từ để hỏi \"Почему\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Ему задали вопрос, почему он хочет перейти в другую группу.."
+        "correct": "A. что",
+        "why": "Động từ 'рассказал' (đã kể) truyền đạt lại một sự việc đã xảy ra như một câu chuyện. Do đó dùng liên từ 'что'.\n\nDịch: Anh ấy đã kể cho chúng tôi rằng vào mùa hè anh ấy đã có thể đi vòng quanh gần như toàn bộ đất nước."
       },
       {
         "id": 26,
         "sentence": "Câu 26. Ему задали вопрос: «Почему вы хотите перейти в другую группу?»",
         "options": [
-          "A. Ему задали вопрос, почему он хочет перейти в другую группу.",
-          "B. Ему задали вопрос, почему вы хотите перейти в другую группу.",
-          "C. Ему задали вопрос, хочет ли он перейти в другую группу.",
-          "D. Ему задали вопрос, что почему он хочет перейти в другую группу."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Ему задали вопрос, почему он хочет перейти в другую группу.",
-        "why": "Có từ để hỏi \"Почему\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Ему задали вопрос, почему он хочет перейти в другую группу.."
+        "correct": "A. что",
+        "why": "Động từ 'рассказал' (đã kể) truyền đạt lại một sự việc đã xảy ra như một câu chuyện. Do đó dùng liên từ 'что'.\n\nDịch: Anh ấy đã kể cho chúng tôi rằng vào mùa hè anh ấy đã có thể đi vòng quanh gần như toàn bộ đất nước."
       },
       {
         "id": 27,
         "sentence": "Câu 27. Мы спросили преподавателя: «У нас есть занятия в пятницу?»",
         "options": [
-          "A. Мы спросили преподавателя, что у нас есть занятия в пятницу.",
-          "B. Мы спросили преподавателя, есть ли у нас занятия в пятницу.",
-          "C. Мы спросили преподавателя, у нас ли есть занятия в пятницу.",
-          "D. Мы спросили преподавателя, есть занятия у нас в пятницу."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Мы спросили преподавателя, есть ли у нас занятия в пятницу.",
-        "why": "Không có từ để hỏi -> dùng \"ли\" sau động từ \"есть\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi dạng Yes/No (không có từ để hỏi) từ trực tiếp sang gián tiếp, ta sử dụng tiểu từ 'ли' đặt ngay sau từ mang trọng tâm câu hỏi. \n=> Đáp án đúng là: B. Мы спросили преподавателя, есть ли у нас занятия в пятницу.."
+        "correct": "B. чтобы",
+        "why": "Động từ 'приказал' (đã ra lệnh) thể hiện sự bắt buộc phải thực hiện hành động. Do đó phải dùng 'чтобы' kết hợp với quá khứ 'печатались'.\n\nDịch: Giám đốc đã ra lệnh để tất cả các tài liệu được in trên khay của máy in."
       },
       {
         "id": 27,
         "sentence": "Câu 27. Мы спросили преподавателя: «У нас есть занятия в пятницу?»",
         "options": [
-          "A. Мы спросили преподавателя, что у нас есть занятия в пятницу.",
-          "B. Мы спросили преподавателя, есть ли у нас занятия в пятницу.",
-          "C. Мы спросили преподавателя, у нас ли есть занятия в пятницу.",
-          "D. Мы спросили преподавателя, есть занятия у нас в пятницу."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Мы спросили преподавателя, есть ли у нас занятия в пятницу.",
-        "why": "Không có từ để hỏi -> dùng \"ли\" sau động từ \"есть\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi dạng Yes/No (không có từ để hỏi) từ trực tiếp sang gián tiếp, ta sử dụng tiểu từ 'ли' đặt ngay sau từ mang trọng tâm câu hỏi. \n=> Đáp án đúng là: B. Мы спросили преподавателя, есть ли у нас занятия в пятницу.."
+        "correct": "B. чтобы",
+        "why": "Động từ 'приказал' (đã ra lệnh) thể hiện sự bắt buộc phải thực hiện hành động. Do đó phải dùng 'чтобы' kết hợp với quá khứ 'печатались'.\n\nDịch: Giám đốc đã ra lệnh để tất cả các tài liệu được in trên khay của máy in."
       },
       {
         "id": 28,
         "sentence": "Câu 28. Их спрашивают: «На сколько вы хотите продлить срок обучения?»",
         "options": [
-          "A. Их спрашивают, на сколько они хотят продлить срок обучения.",
-          "B. Их спрашивают, на сколько вы хотите продлить срок обучения.",
-          "C. Их спрашивают, хотят ли они продлить срок обучения на сколько.",
-          "D. Их спрашивают, что на сколько они хотят продлить срок обучения."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Их спрашивают, на сколько они хотят продлить срок обучения.",
-        "why": "Có từ để hỏi \"На сколько\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Их спрашивают, на сколько они хотят продлить срок обучения.."
+        "correct": "A. что",
+        "why": "Đánh giá 'Хорошо' thể hiện cảm xúc về một sự kiện chắc chắn sẽ xảy ra (động từ 'вернётся' chia thì tương lai). Do đó phải dùng 'что'. Nếu dùng 'чтобы', câu mang nghĩa 'Thật tốt nếu anh ta về đúng giờ' và động từ phải là 'вернулся'.\n\nDịch: Thật tốt là anh ấy sẽ trở về Moscow đúng giờ."
       },
       {
         "id": 28,
         "sentence": "Câu 28. Их спрашивают: «На сколько вы хотите продлить срок обучения?»",
         "options": [
-          "A. Их спрашивают, на сколько они хотят продлить срок обучения.",
-          "B. Их спрашивают, на сколько вы хотите продлить срок обучения.",
-          "C. Их спрашивают, хотят ли они продлить срок обучения на сколько.",
-          "D. Их спрашивают, что на сколько они хотят продлить срок обучения."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Их спрашивают, на сколько они хотят продлить срок обучения.",
-        "why": "Có từ để hỏi \"На сколько\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Их спрашивают, на сколько они хотят продлить срок обучения.."
+        "correct": "A. что",
+        "why": "Đánh giá 'Хорошо' thể hiện cảm xúc về một sự kiện chắc chắn sẽ xảy ra (động từ 'вернётся' chia thì tương lai). Do đó phải dùng 'что'. Nếu dùng 'чтобы', câu mang nghĩa 'Thật tốt nếu anh ta về đúng giờ' và động từ phải là 'вернулся'.\n\nDịch: Thật tốt là anh ấy sẽ trở về Moscow đúng giờ."
       },
       {
         "id": 29,
         "sentence": "Câu 29. Я спросила Лену: «Ты купила русско-английский словарь?»",
         "options": [
-          "A. Я спросила Лену, что она купила русско-английский словарь.",
-          "B. Я спросила Лену, купила ли она русско-английский словарь.",
-          "C. Я спросила Лену, она ли купила русско-английский словарь.",
-          "D. Я спросила Лену, купила она русско-английский словарь."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Я спросила Лену, купила ли она русско-английский словарь.",
-        "why": "Không có từ để hỏi -> dùng \"ли\" sau động từ \"купила\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi dạng Yes/No (không có từ để hỏi) từ trực tiếp sang gián tiếp, ta sử dụng tiểu từ 'ли' đặt ngay sau từ mang trọng tâm câu hỏi. \n=> Đáp án đúng là: B. Я спросила Лену, купила ли она русско-английский словарь.."
+        "correct": "C. чтобы",
+        "why": "Động từ 'смотрела' ở đây mang nghĩa 'trông nom, canh chừng' (như 'следить') với mục đích là để em trai KHÔNG chạy ra đường. Mục đích của hành động yêu cầu liên từ 'чтобы'.\n\nDịch: Người chị đã trông chừng để em trai nhỏ không chạy ra ngoài đường."
       },
       {
         "id": 29,
         "sentence": "Câu 29. Я спросила Лену: «Ты купила русско-английский словарь?»",
         "options": [
-          "A. Я спросила Лену, что она купила русско-английский словарь.",
-          "B. Я спросила Лену, купила ли она русско-английский словарь.",
-          "C. Я спросила Лену, она ли купила русско-английский словарь.",
-          "D. Я спросила Лену, купила она русско-английский словарь."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Я спросила Лену, купила ли она русско-английский словарь.",
-        "why": "Không có từ để hỏi -> dùng \"ли\" sau động từ \"купила\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi dạng Yes/No (không có từ để hỏi) từ trực tiếp sang gián tiếp, ta sử dụng tiểu từ 'ли' đặt ngay sau từ mang trọng tâm câu hỏi. \n=> Đáp án đúng là: B. Я спросила Лену, купила ли она русско-английский словарь.."
+        "correct": "C. чтобы",
+        "why": "Động từ 'смотрела' ở đây mang nghĩa 'trông nom, canh chừng' (như 'следить') với mục đích là để em trai KHÔNG chạy ra đường. Mục đích của hành động yêu cầu liên từ 'чтобы'.\n\nDịch: Người chị đã trông chừng để em trai nhỏ không chạy ra ngoài đường."
       },
       {
         "id": 30,
         "sentence": "Câu 30. Саша спрашивает: «Вы не видели вчера Аню?»",
         "options": [
-          "A. Саша спрашивает, что мы не видели вчера Аню.",
-          "B. Саша спрашивает, видели ли мы вчера Аню.",
-          "C. Саша спрашивает, не мы ли видели вчера Аню.",
-          "D. Саша спрашивает, чтобы мы не видели вчера Аню."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Саша спрашивает, видели ли мы вчера Аню.",
-        "why": "Bỏ \"не\", dùng \"ли\" (hoặc giữ \"не...ли\" với nghĩa phỏng đoán, nhưng B là chuẩn biến đổi câu hỏi)\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi dạng Yes/No (không có từ để hỏi) từ trực tiếp sang gián tiếp, ta sử dụng tiểu từ 'ли' đặt ngay sau từ mang trọng tâm câu hỏi. \n=> Đáp án đúng là: B. Саша спрашивает, видели ли мы вчера Аню.."
+        "correct": "B. чтобы",
+        "why": "Cụm từ 'Очень важно' (Rất quan trọng) đòi hỏi một hành động bắt buộc phải được thực hiện (để anh ấy hoàn thành công việc). Do đó dùng 'чтобы'.\n\nDịch: Rất quan trọng để anh ấy hoàn thành công việc đúng thời hạn."
       },
       {
         "id": 30,
         "sentence": "Câu 30. Саша спрашивает: «Вы не видели вчера Аню?»",
         "options": [
-          "A. Саша спрашивает, что мы не видели вчера Аню.",
-          "B. Саша спрашивает, видели ли мы вчера Аню.",
-          "C. Саша спрашивает, не мы ли видели вчера Аню.",
-          "D. Саша спрашивает, чтобы мы не видели вчера Аню."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. Саша спрашивает, видели ли мы вчера Аню.",
-        "why": "Bỏ \"не\", dùng \"ли\" (hoặc giữ \"не...ли\" với nghĩa phỏng đoán, nhưng B là chuẩn biến đổi câu hỏi)\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi dạng Yes/No (không có từ để hỏi) từ trực tiếp sang gián tiếp, ta sử dụng tiểu từ 'ли' đặt ngay sau từ mang trọng tâm câu hỏi. \n=> Đáp án đúng là: B. Саша спрашивает, видели ли мы вчера Аню.."
+        "correct": "B. чтобы",
+        "why": "Cụm từ 'Очень важно' (Rất quan trọng) đòi hỏi một hành động bắt buộc phải được thực hiện (để anh ấy hoàn thành công việc). Do đó dùng 'чтобы'.\n\nDịch: Rất quan trọng để anh ấy hoàn thành công việc đúng thời hạn."
       },
       {
         "id": 31,
         "sentence": "Câu 31. Студенты спрашивают: «Когда у нас начнутся каникулы?»",
         "options": [
-          "A. Студенты спрашивают, когда у них начнутся каникулы.",
-          "B. Студенты спрашивают, когда у нас начнутся каникулы.",
-          "C. Студенты спрашивают, начнутся ли у них каникулы когда.",
-          "D. Студенты спрашивают, что когда у них начнутся каникулы."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Студенты спрашивают, когда у них начнутся каникулы.",
-        "why": "Có từ để hỏi \"Когда\", đổi \"у нас\" -> \"у них\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Студенты спрашивают, когда у них начнутся каникулы.."
+        "correct": "C. чтобы",
+        "why": "Động từ 'хочу' (muốn) nói lên mong muốn của chủ ngữ về một hành động của đối tượng khác (việc sửa chữa). Do đó dùng 'чтобы'.\n\nDịch: Tôi rất muốn để việc sửa chữa kết thúc càng sớm càng tốt."
       },
       {
         "id": 31,
         "sentence": "Câu 31. Студенты спрашивают: «Когда у нас начнутся каникулы?»",
         "options": [
-          "A. Студенты спрашивают, когда у них начнутся каникулы.",
-          "B. Студенты спрашивают, когда у нас начнутся каникулы.",
-          "C. Студенты спрашивают, начнутся ли у них каникулы когда.",
-          "D. Студенты спрашивают, что когда у них начнутся каникулы."
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. Студенты спрашивают, когда у них начнутся каникулы.",
-        "why": "Có từ để hỏi \"Когда\", đổi \"у нас\" -> \"у них\"\n\nGiải thích chi tiết thêm: Khi chuyển câu hỏi có từ để hỏi (кто, что, где, когда, как...) sang gián tiếp, ta giữ nguyên từ để hỏi đó làm từ nối. Cần lưu ý đổi đại từ nhân xưng. \n=> Đáp án đúng là: A. Студенты спрашивают, когда у них начнутся каникулы.."
+        "correct": "C. чтобы",
+        "why": "Động từ 'хочу' (muốn) nói lên mong muốn của chủ ngữ về một hành động của đối tượng khác (việc sửa chữa). Do đó dùng 'чтобы'.\n\nDịch: Tôi rất muốn để việc sửa chữa kết thúc càng sớm càng tốt."
       },
       {
         "id": 32,
@@ -3091,241 +3263,241 @@ export const opredelitelnyeExercises = [
         "id": 6,
         "sentence": "Я наконец получил приглашение на конференцию. Его мне прислали по факсу.",
         "options": [
-          "A. которого",
-          "B. которое",
-          "C. которому",
-          "D. о котором"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. которое",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. \n=> Đáp án đúng là: B. которое."
+        "correct": "B. что",
+        "why": "Động từ 'сообщили' (thông báo) truyền đạt một thông tin, sự thật khách quan. Do đó dùng liên từ 'что'. Các liên từ khác không phù hợp về nghĩa.\n\nDịch: Hôm nay trên đài đã thông báo rằng ngày mai dự kiến sẽ có mưa."
       },
       {
         "id": 7,
         "sentence": "На выставке мы видели одну картину. О ней много противоречивых мнений.",
         "options": [
-          "A. которая",
-          "B. которую",
-          "C. о которой",
-          "D. которой"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. о которой",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2, 3, 5 hoặc 6 (giống cái). \n=> Đáp án đúng là: C. о которой."
+        "correct": "C. что",
+        "why": "Động từ 'слышали' (nghe được) truyền đạt lại một sự việc, thông tin có thật. Do đó ta dùng 'что'.\n\nDịch: Chúng tôi đã nghe nói rằng tuyến tàu điện ngầm mới sẽ sớm được mở."
       },
       {
         "id": 8,
         "sentence": "Я уже видел этот спектакль. Вы мне о нём говорили.",
         "options": [
-          "A. который",
-          "B. которому",
-          "C. о котором",
-          "D. котором"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. о котором",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 6 (Giới từ cách). \n=> Đáp án đúng là: C. о котором."
+        "correct": "A. чтобы",
+        "why": "Động từ 'передали' ở đây mang nghĩa mệnh lệnh gián tiếp (nhắn lại yêu cầu ai đó làm gì), kết hợp với động từ ở thì quá khứ 'отнесли' tạo thành cấu trúc yêu cầu hành động. Do đó dùng 'чтобы'.\n\nDịch: Người ta đã nhắn chúng tôi mang các bản báo cáo của mình đi đăng ký."
       },
       {
         "id": 9,
         "sentence": "Я нашёл в словаре слово. Я долго не понимал значения этого слова.",
         "options": [
-          "A. которого",
-          "B. который",
-          "C. которому",
-          "D. о котором"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. которого",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2 (Sinh cách) hoặc cách 4 (Đối cách - động vật). \n=> Đáp án đúng là: A. которого."
+        "correct": "B. что",
+        "why": "Động từ 'сказали' tường thuật lại một sự kiện hoặc thông tin (thời khóa biểu sẽ thay đổi), không phải là một yêu cầu hay mệnh lệnh. Do đó ta dùng 'что'.\n\nDịch: Người ta nói với chúng tôi rằng thời khóa biểu cho tuần tới sẽ thay đổi."
       },
       {
         "id": 10,
         "sentence": "Вы видели новый фильм Никиты Михалкова? Он продаётся на DVD-дисках.",
         "options": [
-          "A. которого",
-          "B. который",
-          "C. которому",
-          "D. о котором"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. который",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. \n=> Đáp án đúng là: B. который."
+        "correct": "B. что",
+        "why": "Động từ 'знает' thể hiện nhận thức về một sự thật chắc chắn (biết rằng). Do đó phải dùng 'что'.\n\nDịch: Sergey biết rằng cậu ấy sẽ phải thi vào mùa xuân này."
       },
       {
         "id": 11,
         "sentence": "Вы слышали о пожаре в аэропорту? О нём передавали по телевизору.",
         "options": [
-          "A. который",
-          "B. котором",
-          "C. о котором",
-          "D. которого"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. о котором",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 6 (Giới từ cách). \n=> Đáp án đúng là: C. о котором."
+        "correct": "A. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi một hành động phải được thực hiện, theo sau là mệnh đề phụ bắt buộc dùng 'чтобы' + động từ quá khứ ('были сданы').\n\nDịch: Cần thiết để tất cả các sách được nộp lại sau khi kết thúc buổi học."
       },
       {
         "id": 12,
         "sentence": "На Профсоюзной улице есть банк. В нём можно обменять почти любую валюту.",
         "options": [
-          "A. в котором",
-          "B. котором",
-          "C. который",
-          "D. которому"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. в котором",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 6 (Giới từ cách). \n=> Đáp án đúng là: A. в котором."
+        "correct": "D. что",
+        "why": "Động từ 'думала' (nghĩ) diễn tả suy nghĩ về một hiện tượng, sự kiện có thật. Do đó dùng liên từ 'что'.\n\nDịch: Tôi chưa bao giờ nghĩ rằng ở Moscow vào tháng Năm có thể lạnh như vậy."
       },
       {
         "id": 13,
         "sentence": "У нас в группе будет учиться студент. Его брат получил олимпийскую медаль.",
         "options": [
-          "A. которого брат",
-          "B. чей брат",
-          "C. брат которого",
-          "D. что брат"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. брат которого",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2 (Sinh cách) hoặc cách 4 (Đối cách - động vật). \n=> Đáp án đúng là: C. брат которого."
+        "correct": "B. чтобы",
+        "why": "Động từ 'Хотелось бы' (rất mong muốn) thể hiện một sự mong mỏi, kì vọng ai đó làm gì/điều gì xảy ra. Mệnh đề phụ dùng 'чтобы' + quá khứ ('стоял').\n\nDịch: Thật mong muốn để một chuyên gia đứng đầu phòng thí nghiệm."
       },
       {
         "id": 14,
         "sentence": "В некоторых авиакомпаниях есть скидки на билеты. Их предоставляют студентам.",
         "options": [
-          "A. которых",
-          "B. которые",
-          "C. которым",
-          "D. о которых"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. которые",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. \n=> Đáp án đúng là: B. которые."
+        "correct": "C. что",
+        "why": "Động từ 'надеются' (hy vọng) diễn tả sự mong đợi về một sự việc sẽ xảy ra trong tương lai như một thực tế khách quan. Do đó dùng 'что'.\n\nDịch: Bố mẹ hy vọng rằng con trai họ sẽ thi đỗ vào Đại học Moscow."
       },
       {
         "id": 15,
         "sentence": "Ежегодно проводятся гонки на спортивных машинах. В них принимают участие лучшие гонщики мира.",
         "options": [
-          "A. которые",
-          "B. которых",
-          "C. в которых",
-          "D. которыми"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. в которых",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2, 4 (động vật) hoặc 6 (số nhiều). \n=> Đáp án đúng là: C. в которых."
+        "correct": "B. что",
+        "why": "Mệnh lệnh 'Передайте' (hãy nhắn) ở đây dùng để thông báo một sự việc khách quan (người ta sẽ gửi visa) ở thì tương lai ('пришлют'). Do đó dùng 'что'.\n\nDịch: Hãy nhắn cho Viktor rằng người ta sẽ gửi visa cho anh ấy trước cuối năm."
       },
       {
         "id": 16,
         "sentence": "Время от времени на Солнце происходят вспышки. Они вызывают магнитные бури и влияют на погоду.",
         "options": [
-          "A. которые",
-          "B. которых",
-          "C. которыми",
-          "D. о которых"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. которые",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. \n=> Đáp án đúng là: A. которые."
+        "correct": "C. чтобы",
+        "why": "Mệnh lệnh 'Скажите' ở đây mang ý nghĩa yêu cầu gián tiếp (hãy nói để anh ta mang tài liệu đến). Động từ ở vế sau chia thì quá khứ ('принёс'), đây là dấu hiệu rõ ràng của liên từ 'чтобы'.\n\nDịch: Hãy nói với Alexander để anh ấy mang giấy tờ của mình đến phòng điều hành."
       },
       {
         "id": 17,
         "sentence": "Произошла авария. Я был свидетелем этой аварии.",
         "options": [
-          "A. которая",
-          "B. которую",
-          "C. которой",
-          "D. о которой"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. которой",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2, 3, 5 hoặc 6 (giống cái). \n=> Đáp án đúng là: C. которой."
+        "correct": "D. что",
+        "why": "Động từ 'Объясните' (hãy giải thích) truyền đạt một sự thật hiện hữu (rằng có những điểm không chính xác). Do đó dùng 'что'.\n\nDịch: Hãy giải thích cho Anna rằng trong hợp đồng của cô ấy có những điểm không chính xác."
       },
       {
         "id": 18,
         "sentence": "Весной надо обязательно принимать витамины. Недостаток витаминов отрицательно влияет на здоровье.",
         "options": [
-          "A. недостаток которых",
-          "B. которых недостаток",
-          "C. которые",
-          "D. которых"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. недостаток которых",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2, 4 (động vật) hoặc 6 (số nhiều). \n=> Đáp án đúng là: A. недостаток которых."
+        "correct": "A. чтобы",
+        "why": "Mệnh lệnh 'Передайте' kết hợp với động từ ở thì quá khứ 'получил'. Trong ngữ cảnh này, đây là một yêu cầu (nhắn anh ấy đi nhận vé). Khi mệnh đề chính có 'передайте/скажите' và mệnh đề phụ chia thì quá khứ ('получил'), ta dùng 'чтобы' để chỉ mục đích yêu cầu.\n\nDịch: Hãy nhắn Andrey để cậu ấy đến nhận vé đi lại vào thứ Tư."
       },
       {
         "id": 19,
         "sentence": "Вся нужная вам информация у нашего референта. К нему вам и следует обратиться.",
         "options": [
-          "A. которому",
-          "B. к которому",
-          "C. который",
-          "D. которого"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. к которому",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 3 (Tặng cách). \n=> Đáp án đúng là: B. к которому."
+        "correct": "A. чтобы",
+        "why": "Cấu trúc đánh giá sự cần thiết, quan trọng 'Очень важно' (rất quan trọng) luôn đi với 'чтобы' để thúc đẩy một hành động cần diễn ra (các lỗi cần được sửa).\n\nDịch: Rất quan trọng để tất cả các lỗi trong văn bản được sửa chữa."
       },
       {
         "id": 20,
         "sentence": "Мы шли к храму. Его купол был виден издалека.",
         "options": [
-          "A. чей купол",
-          "B. который купол",
-          "C. которого",
-          "D. купол которого"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "D. купол которого",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2 (Sinh cách) hoặc cách 4 (Đối cách - động vật). \n=> Đáp án đúng là: D. купол которого."
+        "correct": "C. чтобы",
+        "why": "Động từ 'попросила' (đã yêu cầu, xin xỏ) luôn đi kèm với 'чтобы' để thể hiện mong muốn ai đó thực hiện hành động ('позвонил' - gọi điện).\n\nDịch: Cô ấy đã yêu cầu Alex để anh ấy gọi lại cho cô ấy vào ngày kia."
       },
       {
         "id": 21,
         "sentence": "Многие вузы организуют весной Дни открытых дверей. На эти дни приглашаются школьники старших классов.",
         "options": [
-          "A. которые",
-          "B. на которые",
-          "C. в которые",
-          "D. которых"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "B. на которые",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. \n=> Đáp án đúng là: B. на которые."
+        "correct": "B. чтобы",
+        "why": "Từ chỉ sự cần thiết 'Необходимо' đòi hỏi phải thực hiện một hành động (lắp đèn giao thông 'установили'). Do đó dùng liên từ 'чтобы'.\n\nDịch: Cần thiết để người ta lắp một cột đèn giao thông ở ngã tư này."
       },
       {
         "id": 22,
         "sentence": "На одной из встреч выпускников нашего университета я увидел многих своих однокурсников. С ними я не виделся лет пятнадцать.",
         "options": [
-          "A. с которыми",
-          "B. которыми",
-          "C. которые",
-          "D. о которых"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. с которыми",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 5 (Công cụ cách - số nhiều). \n=> Đáp án đúng là: A. с которыми."
+        "correct": "B. что",
+        "why": "Động từ tri giác 'помню' (nhớ) nói về một sự thật trong quá khứ. Do đó dùng liên từ 'что'.\n\nDịch: Tôi nhớ rằng ở chỗ này trước đây từng có một bốt cảnh sát."
       },
       {
         "id": 23,
         "sentence": "Он сейчас усиленно изучает английский язык. Без знания английского языка невозможно поступить в Лингвистический университет.",
         "options": [
-          "A. без знания которого",
-          "B. без которого знания",
-          "C. которого",
-          "D. о котором"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. без знания которого",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. Ở đây chia ở cách 2 (Sinh cách) hoặc cách 4 (Đối cách - động vật). \n=> Đáp án đúng là: A. без знания которого."
+        "correct": "B. что",
+        "why": "Động từ 'предупредил' (đã cảnh báo) thông báo về một hiện thực, nguy cơ (rằng bệnh nhân có thể trở nặng). Do đó dùng liên từ 'что'.\n\nDịch: Bác sĩ đã cảnh báo rằng vào ban đêm bệnh nhân có thể trở nặng."
       },
       {
         "id": 24,
         "sentence": "В некоторых вузах организуют подготовительные курсы для школьников. На эти курсы абитуриенты могут поступить после сдачи экзаменов...",
         "options": [
-          "A. в которые",
-          "B. которые",
-          "C. на которые",
-          "D. которых"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. на которые",
-        "why": "Giải thích chi tiết: Đại từ quan hệ 'который' được sử dụng để thay thế cho danh từ ở mệnh đề chính. Nó phải hợp với danh từ đó về giống và số, đồng thời chia cách theo vai trò ngữ pháp của nó trong mệnh đề phụ. \n=> Đáp án đúng là: C. на которые."
+        "correct": "C. что",
+        "why": "Động từ 'сказала' (đã nói) ở đây dùng để tường thuật một sự kiện tương lai ('принесут'). Không phải là yêu cầu, nên ta dùng 'что'.\n\nDịch: Cô ấy nói rằng ngày mai ở buổi học tất cả mọi người sẽ mang theo từ điển."
       },
       {
         "id": 25,
         "sentence": "Церковь расписывали прекрасные мастера. Их имена давно забыты.",
         "options": [
-          "A. имена которых",
-          "B. которые",
-          "C. которых",
-          "D. чьи имена"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "D. чьи имена",
-        "why": "Giải thích chi tiết: Dựa vào cấu trúc và ý nghĩa của mệnh đề phụ định ngữ để chọn đáp án phù hợp. \n=> Đáp án đúng là: D. чьи имена."
+        "correct": "B. что",
+        "why": "Động từ 'надеюсь' (hy vọng) về một sự kiện tương lai ('приедут'). Nếu là mong muốn mạnh mẽ với 'чтобы', động từ phải chia quá khứ. Ở đây dùng tương lai nên bắt buộc phải đi với 'что'.\n\nDịch: Tôi rất hy vọng rằng vào kỳ nghỉ, bố mẹ sẽ đến Moscow thăm tôi."
       }
     ]
   },
@@ -3339,73 +3511,73 @@ export const opredelitelnyeExercises = [
         "id": 26,
         "sentence": "Мы долго ходили по лесу и наконец нашли то место, ... в прошлом году собирали много грибов.",
         "options": [
-          "A. где",
-          "B. куда",
-          "C. откуда",
-          "D. когда"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. где",
-        "why": "Giải thích chi tiết: Các trạng từ quan hệ (где, куда, откуда, когда) được dùng để chỉ địa điểm, phương hướng hoặc thời gian thay cho cấu trúc giới từ + который. \n=> Đáp án đúng là: A. где."
+        "correct": "A. что",
+        "why": "Động từ 'рассказал' (đã kể) truyền đạt lại một sự việc đã xảy ra như một câu chuyện. Do đó dùng liên từ 'что'.\n\nDịch: Anh ấy đã kể cho chúng tôi rằng vào mùa hè anh ấy đã có thể đi vòng quanh gần như toàn bộ đất nước."
       },
       {
         "id": 27,
         "sentence": "Туристы вышли на поляну, ... росло несколько берёз.",
         "options": [
-          "A. где",
-          "B. куда",
-          "C. откуда",
-          "D. когда"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "A. где",
-        "why": "Giải thích chi tiết: Các trạng từ quan hệ (где, куда, откуда, когда) được dùng để chỉ địa điểm, phương hướng hoặc thời gian thay cho cấu trúc giới từ + который. \n=> Đáp án đúng là: A. где."
+        "correct": "B. чтобы",
+        "why": "Động từ 'приказал' (đã ra lệnh) thể hiện sự bắt buộc phải thực hiện hành động. Do đó phải dùng 'чтобы' kết hợp với quá khứ 'печатались'.\n\nDịch: Giám đốc đã ra lệnh để tất cả các tài liệu được in trên khay của máy in."
       },
       {
         "id": 28,
         "sentence": "Мои друзья живут в спальном районе Москвы, ... раньше была деревня.",
         "options": [
-          "A. куда",
-          "B. откуда",
-          "C. где",
-          "D. когда"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "C. где",
-        "why": "Giải thích chi tiết: Các trạng từ quan hệ (где, куда, откуда, когда) được dùng để chỉ địa điểm, phương hướng hoặc thời gian thay cho cấu trúc giới từ + который. \n=> Đáp án đúng là: C. где."
+        "correct": "A. что",
+        "why": "Đánh giá 'Хорошо' thể hiện cảm xúc về một sự kiện chắc chắn sẽ xảy ra (động từ 'вернётся' chia thì tương lai). Do đó phải dùng 'что'. Nếu dùng 'чтобы', câu mang nghĩa 'Thật tốt nếu anh ta về đúng giờ' và động từ phải là 'вернулся'.\n\nDịch: Thật tốt là anh ấy sẽ trở về Moscow đúng giờ."
       },
       {
         "id": 29,
         "sentence": "Алексей снова оказался в городе, ... уехал после окончания школы.",
         "options": [
-          "A. где",
-          "B. куда",
-          "C. когда",
-          "D. откуда"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "D. откуда",
-        "why": "Giải thích chi tiết: Các trạng từ quan hệ (где, куда, откуда, когда) được dùng để chỉ địa điểm, phương hướng hoặc thời gian thay cho cấu trúc giới từ + который. \n=> Đáp án đúng là: D. откуда."
+        "correct": "C. чтобы",
+        "why": "Động từ 'смотрела' ở đây mang nghĩa 'trông nom, canh chừng' (như 'следить') với mục đích là để em trai KHÔNG chạy ra đường. Mục đích của hành động yêu cầu liên từ 'чтобы'.\n\nDịch: Người chị đã trông chừng để em trai nhỏ không chạy ra ngoài đường."
       },
       {
         "id": 30,
         "sentence": "Для него наступило время, ... приходится делать решающий выбор.",
         "options": [
-          "A. где",
-          "B. куда",
-          "C. откуда",
-          "D. когда"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "D. когда",
-        "why": "Giải thích chi tiết: Các trạng từ quan hệ (где, куда, откуда, когда) được dùng để chỉ địa điểm, phương hướng hoặc thời gian thay cho cấu trúc giới từ + который. \n=> Đáp án đúng là: D. когда."
+        "correct": "B. чтобы",
+        "why": "Cụm từ 'Очень важно' (Rất quan trọng) đòi hỏi một hành động bắt buộc phải được thực hiện (để anh ấy hoàn thành công việc). Do đó dùng 'чтобы'.\n\nDịch: Rất quan trọng để anh ấy hoàn thành công việc đúng thời hạn."
       },
       {
         "id": 31,
         "sentence": "После небольшого концерта все перешли в зал, ... их пригласили на ужин.",
         "options": [
-          "A. где",
-          "B. откуда",
-          "C. когда",
-          "D. куда"
+          "A. чтобы",
+          "B. что",
+          "C. как",
+          "D. будто"
         ],
-        "correct": "D. куда",
-        "why": "Giải thích chi tiết: Các trạng từ quan hệ (где, куда, откуда, когда) được dùng để chỉ địa điểm, phương hướng hoặc thời gian thay cho cấu trúc giới từ + который. \n=> Đáp án đúng là: D. куда."
+        "correct": "C. чтобы",
+        "why": "Động từ 'хочу' (muốn) nói lên mong muốn của chủ ngữ về một hành động của đối tượng khác (việc sửa chữa). Do đó dùng 'чтобы'.\n\nDịch: Tôi rất muốn để việc sửa chữa kết thúc càng sớm càng tốt."
       },
       {
         "id": 32,
