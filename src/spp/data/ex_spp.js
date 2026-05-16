@@ -1157,245 +1157,395 @@ export const izyasnitelnyeExercises = [
         "id": 93,
         "sentence": "Câu 93: Кто-нибудь видел, ___ во двор ___ автобус? (выехать)",
         "options": [
-          "A. что / выехал | B. чтобы / выехал | C. как / выехал | D. чтобы / выедет"
+          "A. что / выехал",
+          "B. чтобы / выехал",
+          "C. как / выехал",
+          "D. чтобы / выедет"
         ],
-        "why": "Câu hỏi với từ tri giác kiểm chứng thông tin -> dùng чтобы + quá khứ.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. как / выехал",
+        "viet": "Có ai thấy xe buýt lái ra sân không?",
+        "why": "Động từ tri giác 'видеть' (thấy) có thể dùng với cả 'что' và 'как'. Trong câu này, 'как / выехал' mô tả quá trình xe buýt đi ra sân mà người nói chứng kiến. 'Что / выехал' cũng có thể chấp nhận nếu chỉ muốn nêu sự thật, nhưng 'как' tự nhiên hơn khi diễn tả hành động được chứng kiến.\n\nSo sánh: A) 'что/выехал' = thấy sự thật là xe buýt đã ra sân. C) 'как/выехал' = thấy quá trình xe buýt ra sân.\nPhân tích các đáp án sai: B, D dùng 'чтобы' sai vì 'чтобы' chỉ mục đích/mong muốn, không đi với động từ tri giác 'видеть'.\n\n=> Đáp án đúng là: C. как / выехал."
       },
       {
         "id": 94,
         "sentence": "Câu 94: Я видел, ___ он пришёл на вечер с опозданием. (Nhấn mạnh kết quả)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Tôi thấy sự thật là anh ấy đến muộn.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Tôi đã thấy rằng anh ấy đến buổi tiệc muộn.",
+        "why": "Trong ngoặc ghi rõ 'Nhấn mạnh kết quả', vì vậy dùng 'что' để thông báo sự thật (anh ấy đến muộn).\n\nSo sánh: A) 'как' = thấy quá trình anh ấy đến muộn diễn ra thế nào (nhấn mạnh cách thức). C) 'что' = thấy sự thật là anh ấy đến muộn (nhấn mạnh kết quả).\nPhân tích đáp án sai: B) 'чтобы' chỉ mục đích, không phù hợp với động từ tri giác 'видел'. D) 'будто' = 'như thể là' — diễn tả sự không chắc chắn, không phù hợp với ngữ cảnh.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 95,
         "sentence": "Câu 95: Я видел, ___ быстро они бегут. (Đánh giá mức độ)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Tôi đã thấy nhanh chúng chạy (mức độ \"быстро\").\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Tôi thấy chúng chạy nhanh biết bao.",
+        "why": "Câu có từ chỉ mức độ 'быстро' (nhanh) đi kèm, 'как' được dùng để đánh giá MỨC ĐỘ (как быстро = nhanh biết bao).\n\nSo sánh: A) 'что' = tôi thấy rằng chúng chạy nhanh (chỉ nêu sự thật). B) 'как' = tôi thấy chúng chạy nhanh biết bao (nhấn mạnh mức độ).\nPhân tích đáp án sai: C) 'чтобы' không thể đi với động từ tri giác. D) 'будто' = 'như thể', không phù hợp ngữ nghĩa.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 96,
         "sentence": "Câu 96: Мы услышали, ___ кто-то постучал в дверь. (Sự kiện ngắn gọn)",
         "options": [
-          "A. как | B. что | C. чтобы | D. будто"
+          "A. как",
+          "B. что",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Ghi nhận sự kiện ai đó gõ cửa (nếu nhấn mạnh hành động đang diễn ra có thể dùng как).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "viet": "Chúng tôi nghe thấy rằng ai đó đã gõ cửa.",
+        "why": "'Услышать' (nghe thấy) với 'что' ghi nhận sự kiện ai đó đã gõ cửa. Ngữ cảnh 'Sự kiện ngắn gọn' cho thấy đây là ghi nhận một sự thật, không phải mô tả quá trình.\n\nSo sánh: A) 'как' = nghe thấy âm thanh gõ cửa (nhấn mạnh quá trình/âm thanh). B) 'что' = nghe thấy sự thật ai đó đã gõ.\nPhân tích đáp án sai: C) 'чтобы' không phù hợp với động từ chỉ nhận thức. D) 'будто' = 'như thể' — giả định, không chắc chắn.\n\n=> Đáp án đúng là: B. что."
       },
       {
         "id": 97,
         "sentence": "Câu 97: Она слышала, ___ её сестра играет на рояле. (Quá trình kéo dài)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Quá trình đánh đàn của người em gái.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Cô ấy đã nghe thấy em gái mình chơi đàn piano.",
+        "why": "'Слышала' với 'как' nhấn mạnh QUÁ TRÌNH chơi đàn kéo dài của người em gái. Động từ 'играет' ở thể chưa hoàn thành (NSV) cũng gợi ý hành động đang diễn ra.\n\nSo sánh: A) 'что' = cô ấy nghe thấy sự thật em gái chơi đàn. B) 'как' = cô ấy nghe thấy quá trình em gái chơi đàn (âm thanh, giai điệu).\nPhân tích đáp án sai: C) 'чтобы' không thể đi với 'слышала'. D) 'будто' = 'như thể' — giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 98,
         "sentence": "Câu 98: Мы видели, ___ тяжело было Виктору сделать это упражнение. (Mức độ khó khăn)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Thấy khó khăn biết bao (\"тяжело\").\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Chúng tôi đã thấy Viktor gặp khó khăn biết bao để làm bài tập này.",
+        "why": "Từ chỉ mức độ 'тяжело' (khó khăn) báo hiệu dùng 'как' để đánh giá MỨC ĐỘ (как тяжело = khó khăn biết bao).\n\nSo sánh: A) 'что' = chúng tôi thấy rằng Viktor gặp khó khăn (nêu sự thật). B) 'как' = chúng tôi thấy Viktor gặp khó khăn biết bao (nhấn mạnh mức độ).\nPhân tích đáp án sai: C) 'чтобы' sai vì đây là sự kiện có thật. D) 'будто' = 'như thể' — không chắc chắn.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 99,
         "sentence": "Câu 99: Мы видели, ___ Виктору тяжело сделать это упражнение. (Sự thật/Kết quả)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Ghi nhận thực tế là Viktor khó làm bài tập này.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Chúng tôi thấy rằng Viktor khó làm bài tập này.",
+        "why": "Trong ngoặc ghi rõ 'Sự thật/Kết quả', dùng 'что' để thông báo sự thật là Viktor gặp khó khăn.\n\nSo sánh với câu 98: Câu 98 có 'тяжело' đứng đầu mệnh đề phụ, nhấn mạnh mức độ → dùng 'как'. Câu 99 không có từ nhấn mạnh mức độ, chỉ nêu sự thật → dùng 'что'.\nPhân tích đáp án sai: A) 'как' sẽ nhấn mạnh mức độ, nhưng câu này chỉ nêu sự thật.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 100,
         "sentence": "Câu 100: Нужно узнать, ___ он учится. (Phương thức)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Cần biết anh ấy học TỐT HAY KÉM (như thế nào).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Cần biết anh ấy học như thế nào.",
+        "why": "'Узнать' (tìm hiểu) + 'как' hỏi về PHƯƠNG THỨC — học như thế nào, kết quả ra sao.\n\nSo sánh: A) 'что' = cần biết rằng anh ấy học (câu chưa hoàn chỉnh về nghĩa). B) 'как' = cần biết anh ấy học như thế nào (phương thức).\nPhân tích đáp án sai: C) 'чтобы' diễn tả mục đích, không phù hợp. D) 'будто' = 'như thể', diễn tả giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 101,
         "sentence": "Câu 101: Мы смотрели, ___ на небе собираются тучи. (Tri giác chủ động)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "\"Смотреть\" (ngắm nhìn) là hành động chủ động kéo dài, luôn đi với как mô tả quá trình tụ mây.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Chúng tôi ngắm nhìn mây tụ trên bầu trời.",
+        "why": "'Смотреть' (ngắm nhìn) là động từ tri giác CHỦ ĐỘNG, luôn đi với 'как' để mô tả quá trình đang diễn ra.\n\nSo sánh: A) 'что' = chúng tôi thấy rằng mây đang tụ (nếu dùng 'видеть' mới phù hợp với 'что'). B) 'как' = chúng tôi ngắm nhìn mây đang tụ trên bầu trời (quá trình).\nPhân tích đáp án sai: C) 'чтобы' không đi với 'смотреть' theo nghĩa này. D) 'будто' = 'như thể'.\n\nQuy tắc: 'Смотреть' (chủ động) → как. 'Видеть' (bị động/tiếp nhận) → что hoặc как.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 102,
         "sentence": "Câu 102: Мы заметили, ___ на небе собираются тучи. (Sự kiện/Nhận thức)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "\"Заметить\" (nhận thấy) thường mô tả kết quả tri giác được.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Chúng tôi nhận thấy rằng mây đang tụ trên bầu trời.",
+        "why": "'Заметить' (nhận thấy) thường mô tả KẾT QUẢ của tri giác, vì vậy dùng 'что' để thông báo sự kiện.\n\nSo sánh: A) 'как' = nhận thấy quá trình mây tụ (có thể dùng nếu nhấn mạnh quá trình). C) 'что' = nhận thấy sự thật mây đang tụ (tự nhiên hơn với 'заметить').\nPhân tích đáp án sai: B) 'чтобы' không phù hợp. D) 'будто' = giả định.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 103,
         "sentence": "Câu 103: Мы слушали, ___ поют птицы. (Tri giác chủ động)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "\"Слушать\" (lắng nghe) là tri giác chủ động -> dùng как.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Chúng tôi lắng nghe tiếng chim hót.",
+        "why": "'Слушать' (lắng nghe) là tri giác CHỦ ĐỘNG, luôn đi với 'как' để mô tả quá trình và âm thanh.\n\nSo sánh: A) 'что' = chúng tôi nghe rằng chim hót (phù hợp với 'слышать'). B) 'как' = chúng tôi lắng nghe chim hót (quá trình, âm thanh).\nPhân tích đáp án sai: C) 'чтобы' sai ngữ pháp. D) 'будто' = giả định.\n\nQuy tắc: 'Слушать' (chủ động) → как. 'Слышать' (bị động) → что hoặc как.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 104,
         "sentence": "Câu 104: Он наблюдал, ___ она разливает чай. (Tri giác chủ động)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "\"Наблюдать\" (quan sát) quá trình -> dùng как.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Anh ấy quan sát cô ấy rót trà.",
+        "why": "'Наблюдать' (quan sát) là tri giác CHỦ ĐỘNG, luôn đi với 'как' để mô tả quá trình đang diễn ra.\n\nSo sánh: A) 'что' = anh ấy quan sát rằng cô ấy rót trà (không tự nhiên). B) 'как' = anh ấy quan sát cô ấy rót trà (quá trình).\nPhân tích đáp án sai: C) 'чтобы' không đi với 'наблюдать'. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 105,
         "sentence": "Câu 105: Тренер отметил, ___ хорошо гимнастка сделала это упражнение. (Mức độ)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Mức độ \"tốt làm sao\" (как хорошо).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Huấn luyện viên nhận xét nữ vận động viên đã làm bài tập này tốt biết bao.",
+        "why": "Từ chỉ mức độ 'хорошо' (tốt) báo hiệu dùng 'как' để đánh giá MỨC ĐỘ (как хорошо = tốt biết bao).\n\nSo sánh: A) 'что' = HLV nhận xét rằng VĐV làm tốt (chỉ nêu sự thật). B) 'как' = HLV nhận xét VĐV làm tốt biết bao (nhấn mạnh mức độ).\nPhân tích đáp án sai: C) 'чтобы' không phù hợp. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 106,
         "sentence": "Câu 106: Он услышал, ___ кто-то постучал в окно. (Kết quả)",
         "options": [
-          "A. как | B. что | C. чтобы | D. будто"
+          "A. как",
+          "B. что",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Ghi nhận sự việc vừa xảy ra (услышать).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. что",
+        "viet": "Anh ấy nghe thấy rằng ai đó đã gõ cửa sổ.",
+        "why": "'Услышать' (nghe thấy) với 'что' ghi nhận KẾT QUẢ của sự kiện (ai đó đã gõ cửa). Trong ngoặc ghi 'Kết quả', vì vậy dùng 'что'.\n\nSo sánh: A) 'как' = nghe thấy quá trình/âm thanh ai đó gõ cửa. B) 'что' = nghe thấy sự thật ai đó đã gõ.\nPhân tích đáp án sai: C) 'чтобы' không phù hợp. D) 'будто' = 'như thể' — giả định.\n\n=> Đáp án đúng là: B. что."
       },
       {
         "id": 107,
         "sentence": "Câu 107: Они заметили, ___ потемнело небо. (Sự kiện)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Nhận thấy sự thật (Trời đã tối).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Họ nhận thấy rằng bầu trời đã tối sầm lại.",
+        "why": "'Заметить' (nhận thấy) + 'что' ghi nhận sự thật: bầu trời đã tối sầm.\n\nSo sánh: A) 'как' = nhận thấy quá trình trời tối dần. C) 'что' = nhận thấy kết quả trời đã tối.\nPhân tích đáp án sai: B) 'чтобы' sai ngữ pháp. D) 'будто' = giả định.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 108,
         "sentence": "Câu 108: Они заметили, ___ небо потемнело. (Sự kiện)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Giống câu trên, nhận thấy một kết quả.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Họ nhận thấy rằng bầu trời đã tối sầm.",
+        "why": "Tương tự câu 107: 'Заметить' + 'что' ghi nhận sự thật (bầu trời đã tối). Dù không có trạng từ 'потемнело' đứng đầu, cấu trúc vẫn là 'заметить, что...' để thông báo sự kiện.\n\nSo sánh: A) 'как' = quá trình trời tối. C) 'что' = kết quả trời đã tối.\nPhân tích đáp án sai: B) 'чтобы' không phù hợp. D) 'будто' = giả định.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 109,
         "sentence": "Câu 109: Она чувствовала, ___ любят её дома. (Mức độ/Phương thức)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Cảm thấy ở nhà người ta yêu cô ấy NHƯ THẾ NÀO.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Cô ấy cảm nhận được rằng ở nhà người ta yêu thương cô ấy như thế nào.",
+        "why": "'Чувствовала' + 'как' thể hiện cảm nhận về PHƯƠNG THỨC/MỨC ĐỘ — cô ấy cảm nhận được tình yêu thương dành cho mình (nhiều/ít ra sao).\n\nSo sánh: A) 'что' = cô ấy cảm thấy sự thật là mình được yêu. B) 'как' = cô ấy cảm nhận được tình yêu dành cho mình như thế nào (nhấn mạnh mức độ/phương thức).\nPhân tích đáp án sai: C) 'чтобы' sai. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 110,
         "sentence": "Câu 110: Она чувствовала, ___ дома её любят. (Sự thật)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Cảm nhận được sự thật (là họ yêu cô).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Cô ấy cảm thấy rằng ở nhà người ta yêu thương cô ấy.",
+        "why": "Trong ngoặc ghi 'Sự thật', vì vậy dùng 'что' để thông báo sự thật: cô ấy được yêu thương.\n\nSo sánh với câu 109: Câu 109 có trạng tự chỉ mức độ đứng đầu và ghi chú 'Mức độ/Phương thức' → dùng 'как'. Câu 110 ghi chú 'Sự thật' → dùng 'что'.\nPhân tích đáp án sai: A) 'как' sẽ nhấn mạnh phương thức/mức độ, không phù hợp với ngữ cảnh 'sự thật'.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 111,
         "sentence": "Câu 111: Он заметил, ___ неожиданно похолодало. (Sự kiện)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Nhận thấy kết quả trời trở lạnh.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Anh ấy nhận thấy rằng trời trở lạnh bất ngờ.",
+        "why": "'Заметить' + 'что' ghi nhận sự thật: trời trở lạnh.\n\nSo sánh: A) 'как' = nhận thấy quá trình trời trở lạnh. C) 'что' = nhận thấy kết quả trời đã lạnh.\nPhân tích đáp án sai: Mặc dù có từ 'неожиданно' (bất ngờ) nhưng đây là trạng từ bổ nghĩa cho 'похолодало', không phải từ chỉ mức độ. Vì vậy dùng 'что'.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 112,
         "sentence": "Câu 112: Он заметил, ___ уже совсем холодно. (Sự thật)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Nhận thấy thực tế hiện tại.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Anh ấy nhận thấy rằng trời đã khá lạnh.",
+        "why": "Trong ngoặc ghi 'Sự thật', dùng 'что' để thông báo sự thật: trời đã lạnh.\n\nSo sánh: A) 'как' = nhận thấy trời lạnh như thế nào (phương thức). C) 'что' = nhận thấy sự thật trời đã lạnh.\nPhân tích đáp án sai: Dù có từ 'совсем' (hoàn toàn) chỉ mức độ, nhưng câu này nhấn mạnh sự thật hơn là mức độ. 'Уже совсем холодно' = 'đã khá lạnh rồi' — một sự thật, không phải đánh giá mức độ.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 113,
         "sentence": "Câu 113: Он почувствовал, ___ его охватывает страх. (Quá trình đang diễn ra)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Cảm thấy nỗi sợ HÌNH THÀNH (quá trình bao trùm).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Anh ấy cảm thấy nỗi sợ đang bao trùm lấy mình.",
+        "why": "'Почувствовал' + 'как' nhấn mạnh QUÁ TRÌNH nỗi sợ đang hình thành và bao trùm. Động từ 'охватывает' ở thể chưa hoàn thành (NSV) hiện tại cũng gợi ý quá trình đang diễn ra.\n\nSo sánh: A) 'что' = anh ấy cảm thấy sự thật là nỗi sợ bao trùm (kết quả). B) 'как' = anh ấy cảm thấy nỗi sợ đang dần bao trùm (quá trình).\nPhân tích đáp án sai: C) 'чтобы' không phù hợp. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 114,
         "sentence": "Câu 114: Он почувствовал, ___ все уже охвачены страхом. (Kết quả/Sự thật)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Thấy kết quả mọi người ĐÃ sợ hãi.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Anh ấy cảm thấy rằng tất cả mọi người đã bị nỗi sợ bao trùm.",
+        "why": "Trong ngoặc ghi 'Kết quả/Sự thật', dùng 'что' để thông báo sự thật. Động từ ở dạng bị động ngắn 'охвачены' (đã bị bao trùm) thể hiện trạng thái đã hoàn thành — một kết quả.\n\nSo sánh với câu 113: Câu 113 có 'охватывает' (NSV hiện tại → quá trình) → dùng 'как'. Câu 114 có 'охвачены' (bị động ngắn → kết quả) → dùng 'что'.\nPhân tích đáp án sai: A) 'как' sẽ nhấn mạnh quá trình, nhưng trạng thái 'уже охвачены' là kết quả đã hoàn thành.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 115,
         "sentence": "Câu 115: Он не знал, ___ найти эти ключи. (Phương thức)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Không biết CÁCH TÌM (bằng cách nào).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Anh ấy không biết cách tìm những chìa khóa này.",
+        "why": "'Не знал' + 'как' hỏi về PHƯƠNG THỨC — không biết BẰNG CÁCH NÀO để tìm chìa khóa.\n\nSo sánh: A) 'что' = anh ấy không biết RẰNG đã tìm thấy chìa khóa (nghĩa hoàn toàn khác!). B) 'как' = anh ấy không biết CÁCH tìm chìa khóa.\nPhân tích đáp án sai: C) 'чтобы' diễn tả mục đích, không phù hợp. D) 'будто' = giả định.\n\nLưu ý: 'Как + nguyên thể' = cách/làm thế nào để. 'Что + mệnh đề' = rằng (sự thật).\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 116,
         "sentence": "Câu 116: Он не знал, ___ эти ключи найти. (Phương thức)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Giống câu trên.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Anh ấy không biết cách tìm những chìa khóa này.",
+        "why": "Giống câu 115: 'Как + nguyên thể' hỏi về PHƯƠNG THỨC. Cấu trúc 'не знать, как + infinitive' = không biết làm thế nào để.\n\nSo sánh: A) 'что' + mệnh đề = không biết RẰNG. B) 'как' + nguyên thể = không biết CÁCH LÀM.\nPhân tích đáp án sai: C) 'чтобы' không đúng cấu trúc. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 117,
         "sentence": "Câu 117: Он не знал, ___ ключи уже найдены. (Sự thật/Sự kiện)",
         "options": [
-          "A. как | B. чтобы | C. что | D. будто"
+          "A. как",
+          "B. чтобы",
+          "C. что",
+          "D. будто"
         ],
-        "why": "Không biết sự kiện là chìa khóa đã được tìm thấy.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "C. что",
+        "viet": "Anh ấy không biết rằng chìa khóa đã được tìm thấy.",
+        "why": "Trong ngoặc ghi 'Sự thật/Sự kiện', dùng 'что' để thông báo sự thật: chìa khóa đã được tìm thấy.\n\nSo sánh với câu 115-116: Câu 115-116 dùng 'как + nguyên thể' = không biết CÁCH TÌM. Câu 117 dùng 'что + mệnh đề hoàn chỉnh' = không biết RẰNG (sự thật).\nPhân tích đáp án sai: A) 'как' sẽ mang nghĩa 'không biết cách', không phù hợp vì 'найдены' là bị động ngắn chỉ kết quả.\n\n=> Đáp án đúng là: C. что."
       },
       {
         "id": 118,
         "sentence": "Câu 118: Она мечтает, ___ проведёт лето на море. (Hình dung quá trình)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Tưởng tượng, hình dung cách cô ấy trải qua mùa hè.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Cô ấy mơ tưởng về việc mình sẽ trải qua mùa hè trên biển như thế nào.",
+        "why": "'Мечтать' (mơ tưởng) + 'как' diễn tả sự HÌNH DUNG về QUÁ TRÌNH — cô ấy đang tưởng tượng chi tiết về kỳ nghỉ của mình.\n\nSo sánh: A) 'что' = cô ấy mơ RẰNG sẽ có kỳ nghỉ biển (chỉ nêu sự thật). B) 'как' = cô ấy tưởng tượng kỳ nghỉ biển sẽ diễn ra như thế nào (quá trình, chi tiết).\nPhân tích đáp án sai: C) 'чтобы' = cô ấy muốn đi biển (mục đích), không phải hình dung quá trình. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 119,
         "sentence": "Câu 119: Он рассказал, ___ они путешествовали по Италии. (Kể chi tiết/cách thức)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Kể về quá trình, cách họ đi du lịch.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Anh ấy đã kể về việc họ đã du lịch khắp nước Ý như thế nào.",
+        "why": "'Рассказать' (kể lại) + 'как' kể về QUÁ TRÌNH, CHI TIẾT chuyến du lịch.\n\nSo sánh: A) 'что' = anh ấy kể RẰNG họ đã du lịch Ý (chỉ nêu sự kiện). B) 'как' = anh ấy kể họ đã du lịch Ý NHƯ THẾ NÀO (chi tiết, phương thức).\nPhân tích đáp án sai: C) 'чтобы' không phù hợp với 'рассказал'. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 120,
         "sentence": "Câu 120: Все удивились, ___ легко он поступил в университет. (Mức độ)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Ngạc nhiên vì MỨC ĐỘ dễ dàng (как легко).\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Mọi người ngạc nhiên vì anh ấy đỗ đại học dễ dàng biết bao.",
+        "why": "Từ chỉ mức độ 'легко' (dễ dàng) báo hiệu dùng 'как' để nhấn mạnh MỨC ĐỘ (как легко = dễ dàng biết bao).\n\nSo sánh: A) 'что' = mọi người ngạc nhiên RẰNG anh ấy đỗ đại học dễ dàng (chỉ nêu sự thật). B) 'как' = mọi người ngạc nhiên vì anh ấy đỗ đại học dễ dàng BIẾT BAO (nhấn mạnh mức độ).\nPhân tích đáp án sai: C) 'чтобы' không phù hợp với 'удивились'. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       },
       {
         "id": 121,
         "sentence": "Câu 121: Они не заметили, ___ наступило утро. (Sự việc kết quả)",
         "options": [
-          "A. что/как | B. чтобы | C. что | D. как"
+          "A. что/как",
+          "B. чтобы",
+          "C. что",
+          "D. как"
         ],
-        "correct": "A. что/как | B. чтобы | C. что | D. как",
-        "why": "Có thể dùng cả ЧТО và КАК (đều chấp nhận được với động từ заметить khi diễn tả sự thay đổi trạng thái).\n\nGiải thích chi tiết thêm: Khi mệnh đề chính thể hiện sự mong muốn (хотеть), yêu cầu (просить, требовать), khuyên bảo (советовать), hoặc sự cần thiết (необходимо, важно, надо), ta dùng liên từ 'чтобы'. Động từ ở mệnh đề phụ bắt buộc phải chia ở thì Quá khứ (nếu khác chủ ngữ) hoặc Nguyên thể (nếu cùng chủ ngữ). \n=> Đáp án đúng là: A. что/как | B. чтобы | C. что | D. как."
+        "correct": "A. что/как",
+        "viet": "Họ đã không nhận thấy rằng buổi sáng đã đến / Họ không nhận thấy buổi sáng đến như thế nào.",
+        "why": "Với động từ 'заметить', cả 'что' và 'как' đều có thể chấp nhận được:\n- 'что' nhấn mạnh KẾT QUẢ: họ không nhận thấy sự thật là trời đã sáng.\n- 'как' nhấn mạnh QUÁ TRÌNH: họ không nhận thấy quá trình trời chuyển sáng dần.\nCả hai đều đúng trong ngữ cảnh chuyển đổi trạng thái này.\n\nPhân tích đáp án sai: B) 'чтобы' không phù hợp với 'заметить'. C) chỉ 'что' hoặc D) chỉ 'как' — cả hai đều đúng nên A mới là đáp án đầy đủ.\n\n=> Đáp án đúng là: A. что/как (cả hai đều đúng)."
       },
       {
         "id": 122,
         "sentence": "Câu 122: Я не понимаю, ___ он стал музыкантом. (Phương thức)",
         "options": [
-          "A. что | B. как | C. чтобы | D. будто"
+          "A. что",
+          "B. как",
+          "C. чтобы",
+          "D. будто"
         ],
-        "why": "Không hiểu bằng cách nào.\n\nGiải thích chi tiết thêm: \n=> Đáp án đúng là: undefined."
+        "correct": "B. как",
+        "viet": "Tôi không hiểu bằng cách nào anh ấy đã trở thành nhạc sĩ.",
+        "why": "'Не понимаю' + 'как' hỏi về PHƯƠNG THỨC — không hiểu BẰNG CÁCH NÀO anh ấy trở thành nhạc sĩ.\n\nSo sánh: A) 'что' = tôi không hiểu RẰNG anh ấy đã trở thành nhạc sĩ (nghĩa khác: tôi không hiểu được sự thật này). B) 'как' = tôi không hiểu BẰNG CÁCH NÀO anh ấy trở thành nhạc sĩ (phương thức).\nPhân tích đáp án sai: C) 'чтобы' không phù hợp. D) 'будто' = giả định.\n\n=> Đáp án đúng là: B. как."
       }
     ]
   },
+
   {
     "id": "ex_8",
     "num": 11,

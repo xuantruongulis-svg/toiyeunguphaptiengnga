@@ -68,14 +68,16 @@ function ScoreBoard({ questions, answers, onRetry, onBack }) {
   );
 }
 
-function QuestionCard({ q, onAnswer, answered, selected }) {
+function QuestionCard({ q, onAnswer, answered, selected, examId }) {
   const isCorrect = selected === q.correct;
 
   return (
     <div className={`er-qcard ${answered ? (isCorrect ? 'er-qcard-correct' : 'er-qcard-wrong') : ''}`}>
       <div className="er-qcard-header">
         <div className="er-qnum">Câu {q.num}</div>
-        <div className="er-task-badge">{q.num <= 30 ? 'Задание 1' : 'Задание 2'}</div>
+        <div className="er-task-badge">
+          {examId === 'exam4' ? (q.num <= 20 ? 'Задание 1' : 'Задание 2') : (q.num <= 30 ? 'Задание 1' : 'Задание 2')}
+        </div>
       </div>
 
       <div className="er-sentence">
@@ -121,7 +123,7 @@ function QuestionCard({ q, onAnswer, answered, selected }) {
           <div className="er-analysis">
             <div className="er-analysis-title">🔍 Phân tích từng đáp án:</div>
             {q.analysis.map((a, i) => (
-              <div key={i} className={`er-analysis-row ${a.opt === q.correct ? 'er-analysis-correct' : ''}`}>
+              <div key={i} className={`er-analysis-row ${a.opt[0] === q.correct[0] ? 'er-analysis-correct' : ''}`}>
                 <span className="er-analysis-opt">{a.opt.split(')')[0]})</span>
                 <span className="er-analysis-note">{a.note}</span>
               </div>
@@ -207,7 +209,10 @@ export default function ExamRoom({ exam, onBack }) {
       </div>
 
       <div className="er-task-label">
-        {current < 30 ? '📋 ЗАДАНИЕ 1 — Chọn phương án đúng (Câu 1–30)' : '✏️ ЗАДАНИЕ 2 — Hoàn thiện câu (Câu 31–40)'}
+        {exam.id === 'exam4' 
+          ? (current < 20 ? '📋 ЗАДАНИЕ 1 — Chọn phương án đúng (Câu 1–20)' : '✏️ ЗАДАНИЕ 2 — Viết lại câu đồng nghĩa (Câu 21–30)')
+          : (current < 30 ? '📋 ЗАДАНИЕ 1 — Chọn phương án đúng (Câu 1–30)' : '✏️ ЗАДАНИЕ 2 — Hoàn thiện câu (Câu 31–40)')
+        }
       </div>
 
       <div ref={cardRef}>
@@ -217,6 +222,7 @@ export default function ExamRoom({ exam, onBack }) {
           answered={answered}
           selected={answers[current]}
           onAnswer={handleAnswer}
+          examId={exam.id}
         />
       </div>
 

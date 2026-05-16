@@ -9,6 +9,8 @@ import { exam3_task1_part2 } from './exam3_data_part2';
 import { exam3_task2 } from './exam3_data_part3';
 import { exam7Questions } from './exam7_data';
 import { exam4Questions } from './exam4_data';
+import { exam8Questions } from './exam8_data';
+import { exam9Questions } from './exam9_data';
 
 const exam1Questions = [...exam1_task1, ...exam1_task1_part2, ...exam1_task2];
 const exam2Questions = [...exam2_task1, ...exam2_task1_part2, ...exam2_task2];
@@ -70,5 +72,21 @@ export const practicalExams = [
     description: 'Задание 1 (30 câu) + Задание 2 (10 câu) — Tổng hợp ngữ pháp tiếng Nga',
     questionCount: 40,
     questions: exam7Questions
+  },
+  {
+    id: 'exam8',
+    num: 8,
+    title: 'Đề thi thực chiến số 8',
+    description: 'Задание 1 (30 câu) + Задание 2 (10 câu) — Tổng hợp ngữ pháp tiếng Nga',
+    questionCount: 40,
+    questions: exam8Questions
+  },
+  {
+    id: 'exam9',
+    num: 9,
+    title: 'Đề thi thực chiến số 9',
+    description: 'Задание 1 (30 câu) + Задание 2 (10 câu) — Tổng hợp ngữ pháp tiếng Nga',
+    questionCount: 40,
+    questions: exam9Questions
   }
 ];

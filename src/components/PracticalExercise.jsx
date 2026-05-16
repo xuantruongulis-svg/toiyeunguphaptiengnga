@@ -30,6 +30,7 @@ function PracticalQuestion({ q, index }) {
           <div className="res-header">
             {isCorrect ? '✅ Chính xác!' : `❌ Sai! Đáp án đúng: ${q.correct}`}
           </div>
+          {q.full && <div className="res-viet"><strong>Câu hoàn chỉnh (RU):</strong> {q.full}</div>}
           {q.viet && <div className="res-viet">Dịch: {q.viet}</div>}
           <div className="res-why"><strong>Giải thích:</strong> {q.why}</div>
         </div>

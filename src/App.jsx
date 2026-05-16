@@ -18,6 +18,8 @@ import { sledstvieExercises } from './spp/data/ex_sledstvie';
 import { ustupkaExercises } from './spp/data/ex_ustupka';
 import { mestoimenieExercises, neopredelennye_exercises } from './mestoimenie/data/mestoimenie_exercises';
 import { prilagatelnoeExercises_1 } from './prilagatelnoe/data/prilagatelnoe_exercises';
+import { bezPristavokExercises } from './glagoly_dvizheniya/data/bez_pristavok_exercises';
+import { sPristavkamiExercises } from './glagoly_dvizheniya/data/s_pristavkami_exercises';
 import PracticalExercise from './components/PracticalExercise';
 import { practicalExams } from './practical_exams/data/exams';
 import ExamRoom from './components/ExamRoom';
@@ -53,6 +55,8 @@ theoryComponents['vid_future'] = lazy(() => import('./vid_glagola/theory/VidFutu
 exerciseComponents['vid_future'] = lazy(() => import('./vid_glagola/exercise/VidFutureExercise.jsx'));
 theoryComponents['imperative'] = lazy(() => import('./vid_glagola/theory/ImperativeTheory.jsx'));
 theoryComponents['mestoimenie'] = lazy(() => import('./mestoimenie/theory/MestoimenieTheory.jsx'));
+theoryComponents['bez_pristavok_theory'] = lazy(() => import('./glagoly_dvizheniya/theory/BezPristavokTheory.jsx'));
+theoryComponents['s_pristavkami_theory'] = lazy(() => import('./glagoly_dvizheniya/theory/SPristavkamiTheory.jsx'));
 theoryComponents['sopostavlenie'] = lazy(() => import('./ssp/theory/SopostavlenieTheory.jsx'));
 theoryComponents['protivopostavlenie'] = lazy(() => import('./ssp/theory/ProtivopostavlenieTheory.jsx'));
 theoryComponents['izyasnitelnye'] = lazy(() => import('./spp/theory/IzyasnitelnyeTheory.jsx'));
@@ -138,10 +142,6 @@ function App() {
     '14. Пассивные причастия: образование và употребление.',
     '15. Деепричастие',
     '16. Прямая и косвенная речь',
-    '17. Придаточное предложение со словом который',
-    '18. Выражение временных и причинных отношений',
-    '19. Выражение условных и целевых отношений',
-    '20. Выражение следственных отношений и уступки',
     '21. Префиксальные глаголы',
     'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)',
     'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП',
@@ -176,6 +176,12 @@ function App() {
       { id: 'vid_past', title: 'Вид глагола в прошедшем времени', icon: '⏳' },
       { id: 'vid_future', title: 'Значение и употребление видов глагола в будущем времени', icon: '🔮' },
       { id: 'imperative', title: 'Вид глагола в инфинитиве и императиве', icon: '❗️' }
+    ],
+    '9. Глаголы движения без приставок.': [
+      { id: 'bez_pristavok_theory', title: 'Động từ chuyển động không có tiền tố', icon: '🚶' }
+    ],
+    '10. Глаголы движения с приставками.': [
+      { id: 's_pristavkami_theory', title: 'Động từ chuyển động có tiền tố', icon: '🚀' }
     ],
     '13. Активные причастия: образование и употребление.': [
       { id: 'prichastie', title: 'Активные причастия', icon: '🔗' }
@@ -632,7 +638,7 @@ function App() {
           <div className="practice-grid-container">
             {subSectionsMap[currentSection].length > 0 ? (
               <>
-                {['3. Местоимение', '5. Вид глагола', '15. Деепричастие'].includes(currentSection) && <h3 style={{color: 'var(--accent-color)', marginBottom: '1.5rem', marginLeft: '1rem', fontSize: '1.5rem'}}>📚 LÝ THUYẾT</h3>}
+                {['3. Местоимение', '5. Вид глагола', '9. Глаголы движения без приставок.', '10. Глаголы движения с приставками.', '15. Деепричастие'].includes(currentSection) && <h3 style={{color: 'var(--accent-color)', marginBottom: '1.5rem', marginLeft: '1rem', fontSize: '1.5rem'}}>📚 LÝ THUYẾT</h3>}
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))' }}>
                   {subSectionsMap[currentSection].map((sub, index) => (
                     <div 
@@ -660,7 +666,7 @@ function App() {
                           } else {
                             alert('Nội dung đang được cập nhật. Anh vui lòng quay lại sau nhé!');
                           }
-                        } else if (['3. Местоимение', '5. Вид глагола', '15. Деепричастие'].includes(currentSection)) {
+                        } else if (['3. Местоимение', '5. Вид глагола', '9. Глаголы движения без приставок.', '10. Глаголы движения с приставками.', '15. Деепричастие'].includes(currentSection)) {
                           setCurrentView({ type: 'theory', verb: { ...sub, ru: sub.title } });
                         } else if (['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование và употребление.'].includes(currentSection)) {
                           setSelectedVerb({ ...sub, ru: sub.title });
@@ -673,7 +679,7 @@ function App() {
                         <div className="verb-icon">{sub.icon}</div>
                         <span className="verb-ru" style={{fontSize: '1.1rem', marginTop: '0.5rem', textAlign: 'center'}}>{sub.title}</span>
                         <span className="verb-hint">
-                          {['3. Местоимение', '5. Вид глагола'].includes(currentSection) ? 'Xem lý thuyết' : 
+                          {['3. Местоимение', '5. Вид глагола', '9. Глаголы движения без приставок.', '10. Глаголы движения с приставками.'].includes(currentSection) ? 'Xem lý thuyết' : 
                            (currentSection === 'Формы русского глагола' && (sub.id === 'participle' || sub.id === 'gerund')) || currentSection === 'I. Mối quan hệ trong Câu ghép đẳng lập (Сложносочинённые предложения - ССП)' || currentSection === 'II. Сложноподчинённые предложения với mệnh đề phụ bổ nghĩa cho từ - СПП' || currentSection === 'III: Nhóm Câu phức chỉ hệ quả logic và hoàn cảnh (Toàn bộ các mục còn lại)' || ['13. Активные причастия: образование и употребление.', '14. Пассивные причастия: образование и употребление.', '15. Деепричастие'].includes(currentSection) ? 'Chọn nội dung' : 'Chờ cập nhật'}
                         </span>
                       </div>
@@ -681,11 +687,11 @@ function App() {
                   ))}
                 </div>
 
-                {['5. Вид глагола', '15. Деепричастие'].includes(currentSection) && (
+                {['5. Вид глагола', '9. Глаголы движения без приставок.', '10. Глаголы движения с приставками.', '15. Деепричастие'].includes(currentSection) && (
                   <>
                     <h3 style={{color: 'var(--accent-color)', marginBottom: '1.5rem', marginTop: '3rem', marginLeft: '1rem', fontSize: '1.5rem'}}>📝 LUYỆN TẬP</h3>
                     <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))' }}>
-                      {(currentSection === '5. Вид глагола' ? vidGlagolaExercises : deeprichastieExercises).map((ex, index) => (
+                      {(currentSection === '5. Вид глагола' ? vidGlagolaExercises : currentSection === '9. Глаголы движения без приставок.' ? bezPristavokExercises : currentSection === '10. Глаголы движения с приставками.' ? sPristavkamiExercises : deeprichastieExercises).map((ex, index) => (
                         <div 
                           key={`ex-${index}`} 
                           className="verb-card horizontal exercise-only" 
@@ -699,7 +705,7 @@ function App() {
                           </div>
                         </div>
                       ))}
-                      {(currentSection === '15. Деепричастие' && deeprichastieExercises.length === 0) && (
+                      {((currentSection === '15. Деепричастие' && deeprichastieExercises.length === 0) || (currentSection === '9. Глаголы движения без приставок.' && bezPristavokExercises.length === 0) || (currentSection === '10. Глаголы движения с приставками.' && sPristavkamiExercises.length === 0)) && (
                         <div className="placeholder-card" style={{ gridColumn: '1 / -1', padding: '2rem', textAlign: 'center', background: 'rgba(255,255,255,0.05)', borderRadius: '15px' }}>
                           <p style={{ color: '#a0aec0' }}>Bài tập đang được cập nhật...</p>
                         </div>
